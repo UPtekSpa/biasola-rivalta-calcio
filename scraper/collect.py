@@ -21,7 +21,7 @@ import sys
 import time
 import traceback
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import quote_plus, urljoin, urlparse
@@ -32,6 +32,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "site" / "data"
 MAX_NEWS = 300
+FONDAZIONE = "2023-07-01"  # nascita della Biasola-Rivalta Calcio
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -255,9 +256,9 @@ def pdf_mentions(pdf_bytes, keywords):
             line = clean(line)
             up = line.upper()
             for s in SEZIONI:
-                if s in up and len(line) < 80:
+                if len(line) < 60 and re.match(rf"^(CAMPIONATO\s+)?{s}\b", up):
                     sezione = s
-            if mentions(line, keywords):
+            if mentions(line, keywords) and len(line) >= 15:
                 out.append({"sezione": sezione, "testo": line})
     return out
 
@@ -366,7 +367,22 @@ def run_source(stato, nome, fn):
         return None
 
 
+def attuale(n):
+    """Scarta pagine anagrafiche, notizie precedenti alla fondazione e news di campionato vecchie."""
+    if n["titolo"].lower().startswith("scheda"):
+        return False
+    data = n.get("data") or ""
+    if data < FONDAZIONE:
+        return False
+    if n["tipo"] == "campionato":
+        limite = datetime.now(timezone.utc) - timedelta(days=60)
+        return data >= limite.isoformat()
+    return True
+
+
 def merge_news(old, new):
+    old = [n for n in old if attuale(n)]
+    new = [n for n in new if attuale(n)]
     by_id = {n["id"]: n for n in old}
     titles = {norm_title(n["titolo"]) for n in old}
     for n in new:
