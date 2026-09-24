@@ -85,7 +85,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; display: grid; gap: 20p
 table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 th, td { padding: 7px 6px; text-align: left; border-bottom: 1px solid var(--bordo); }
 th { font-size: .72rem; text-transform: uppercase; color: var(--muto); letter-spacing: .05em; }
-td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 tr.noi td { background: color-mix(in srgb, var(--arancione) 18%, transparent); font-weight: 700; }
 .table-wrap { overflow-x: auto; }
 
