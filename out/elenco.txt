@@ -1,0 +1,5 @@
+ig_embed.html 200 text/html; charset="utf-8" 637779
+ig_api.json 401 application/json; charset=utf-8 119
+ig_www_api.json 401 application/json; charset=utf-8 119
+cr_gallery.html 404 text/html; charset=utf-8 4854
+cr_squadra.html 200 text/html; charset=utf-8 316645
