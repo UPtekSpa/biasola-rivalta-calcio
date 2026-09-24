@@ -1,5 +1,76 @@
 [
  {
+  "id": "8292ad7497e1",
+  "titolo": "Comunicato Ufficiale n. 13 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7577/CU13.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:43:57+00:00",
+  "trovata": "2026-09-24T20:43:57+00:00",
+  "estratto": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30 · INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30",
+  "squadra": "prima-squadra",
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30"
+   },
+   {
+    "sezione": "PULCINI",
+    "testo": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30"
+   }
+  ]
+ },
+ {
+  "id": "f9ab93d3b28f",
+  "titolo": "Comunicato Ufficiale n. 12 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7569/CU12.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:43:57+00:00",
+  "trovata": "2026-09-24T20:43:57+00:00",
+  "estratto": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30",
+  "squadra": "prima-squadra",
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30"
+   }
+  ]
+ },
+ {
+  "id": "865d3b58ba81",
+  "titolo": "Comunicato Ufficiale n. 16 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7606/CU16.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:43:54+00:00",
+  "trovata": "2026-09-24T20:43:54+00:00",
+  "estratto": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30 · BIASOLA RIVALTA · BIASOLA RIVALTA",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": null,
+    "testo": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA GAVASSETO PARROCCHIALE 6/09/26 17:30"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA RIVALTA"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA RIVALTA"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BOSCO BIASOLA-RIVALTA BOSCO DI SCANDIANO COMUNA 13/09/26 15:30 1A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA INVICTA GAVASSETO A.S.D. REGGIO EMILIA BIASOLA 12/09/26 15:00 1A"
+   }
+  ]
+ },
+ {
   "id": "636a7fd8a0e8",
   "titolo": "Comunicato Ufficiale n. 17 FIGC Reggio Emilia: le righe sulla Biasola",
   "link": "https://www.figcreggioemilia.it/files/announcements/2026/7619/CU17.pdf",
