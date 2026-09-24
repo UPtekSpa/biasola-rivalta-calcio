@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-24T20:38:59+00:00",
+ "aggiornato": "2026-09-24T20:41:40+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -24,7 +24,8 @@
      "casa": "Bosco",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": "2-1",
-     "esito": "P"
+     "esito": "P",
+     "noi": true
     },
     {
      "giornata": 2,
@@ -32,7 +33,17 @@
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Amici di Davide",
      "risultato": "2-1",
-     "esito": "V"
+     "esito": "V",
+     "noi": true
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Saxum United",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 4,
@@ -40,7 +51,8 @@
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Collagna",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 5,
@@ -48,7 +60,8 @@
      "casa": "Felina",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 6,
@@ -56,7 +69,8 @@
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Salvaterra",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 7,
@@ -64,7 +78,8 @@
      "casa": "Eagles Virtus Ancora",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 8,
@@ -72,7 +87,8 @@
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Levizzano",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
     },
     {
      "giornata": 9,
@@ -80,7 +96,143 @@
      "casa": "Coviolo",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
-     "esito": null
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Amici di Davide",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Collagna",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Salvaterra",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Levizzano",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Folese",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Montefiorino",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
     }
    ],
    "classifica": [
@@ -306,6 +458,1412 @@
      "pos": 13
     }
    ],
+   "girone": [
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Amici di Davide",
+     "ospite": "Montefiorino",
+     "risultato": "0-1",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Bosco",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": "2-1",
+     "esito": "P",
+     "noi": true
+    },
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Collagna",
+     "ospite": "Coviolo",
+     "risultato": "0-3",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Felina",
+     "ospite": "Levizzano",
+     "risultato": "2-1",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Salvaterra",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": "0-4",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Saxum United",
+     "ospite": "Folese",
+     "risultato": "0-1",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Amici di Davide",
+     "risultato": "2-1",
+     "esito": "V",
+     "noi": true
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Coviolo",
+     "ospite": "Bosco",
+     "risultato": "3-0",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Saxum United",
+     "risultato": "4-1",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Folese",
+     "ospite": "Collagna",
+     "risultato": "2-0",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Montefiorino",
+     "ospite": "Real Casina 04 U21",
+     "risultato": "2-0",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Levizzano",
+     "ospite": "Salvaterra",
+     "risultato": "1-1",
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Bosco",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Collagna",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Felina",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Salvaterra",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Saxum United",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-27",
+     "casa": "Levizzano",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Coviolo",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Folese",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Montefiorino",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Collagna",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Felina",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Salvaterra",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Saxum United",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Levizzano",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Amici di Davide",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Coviolo",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Folese",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Montefiorino",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Felina",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Folese",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Salvaterra",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Saxum United",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Levizzano",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Amici di Davide",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Bosco",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Coviolo",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Montefiorino",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Coviolo",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Felina",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Folese",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Salvaterra",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Levizzano",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Amici di Davide",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Bosco",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Collagna",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Montefiorino",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-08",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Coviolo",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Felina",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Folese",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Salvaterra",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 11,
+     "data": "2026-11-15",
+     "casa": "Levizzano",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Amici di Davide",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Bosco",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Collagna",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Salvaterra",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 12,
+     "data": "2026-11-22",
+     "casa": "Saxum United",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Coviolo",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Felina",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Folese",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 13,
+     "data": "2026-11-29",
+     "casa": "Levizzano",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Montefiorino",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Coviolo",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Levizzano",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 14,
+     "data": "2027-01-17",
+     "casa": "Folese",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Amici di Davide",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Bosco",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Saxum United",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Collagna",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 15,
+     "data": "2027-01-24",
+     "casa": "Salvaterra",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Montefiorino",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Folese",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Coviolo",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 16,
+     "data": "2027-01-31",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Collagna",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Saxum United",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Felina",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Salvaterra",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Bosco",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 17,
+     "data": "2027-02-07",
+     "casa": "Amici di Davide",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Amici di Davide",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Folese",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Montefiorino",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 18,
+     "data": "2027-02-14",
+     "casa": "Coviolo",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Bosco",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Salvaterra",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Felina",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Levizzano",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Saxum United",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 19,
+     "data": "2027-02-21",
+     "casa": "Collagna",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Coviolo",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Amici di Davide",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Bosco",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 20,
+     "data": "2027-02-28",
+     "casa": "Montefiorino",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Saxum United",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Levizzano",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Collagna",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Felina",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 21,
+     "data": "2027-03-07",
+     "casa": "Salvaterra",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Bosco",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Montefiorino",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Collagna",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 22,
+     "data": "2027-03-14",
+     "casa": "Amici di Davide",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Felina",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Folese",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Salvaterra",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Saxum United",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Montefiorino",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 23,
+     "data": "2027-03-21",
+     "casa": "Levizzano",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Montefiorino",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Amici di Davide",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Collagna",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Saxum United",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 24,
+     "data": "2027-04-04",
+     "casa": "Bosco",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Coviolo",
+     "ospite": "Amici di Davide",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Folese",
+     "ospite": "Bosco",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Real Casina 04 U21",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Felina",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 25,
+     "data": "2027-04-11",
+     "casa": "Levizzano",
+     "ospite": "Saxum United",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Montefiorino",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Real Casina 04 U21",
+     "ospite": "Coviolo",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Bosco",
+     "ospite": "Eagles Virtus Ancora",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Saxum United",
+     "ospite": "Felina",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Amici di Davide",
+     "ospite": "Folese",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    },
+    {
+     "giornata": 26,
+     "data": "2027-04-18",
+     "casa": "Collagna",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null,
+     "noi": false
+    }
+   ],
    "link": [
     "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
     "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
@@ -319,6 +1877,7 @@
    "da_confermare": true,
    "partite": [],
    "classifica": [],
+   "girone": [],
    "link": [
     "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
    ]
