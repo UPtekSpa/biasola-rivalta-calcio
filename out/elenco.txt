@@ -1,0 +1,10 @@
+total 88
+drwxr-xr-x 2 runner runner  4096 Sep 24 23:11 .
+drwxr-xr-x 6 runner runner  4096 Sep 24 23:11 ..
+-rw-r--r-- 1 runner runner 60883 Sep 24 23:11 calcioreggiano_logo
+-rw-r--r-- 1 runner runner  3482 Sep 24 23:11 calcioreggiano_logo_pannello
+-rw-r--r-- 1 runner runner     0 Sep 24 23:11 elenco.txt
+-rw-r--r-- 1 runner runner     0 Sep 24 23:11 instagram.html
+-rw-r--r-- 1 runner runner  8008 Sep 24 23:11 romagnasport.gif
+-rw-r--r-- 1 runner runner  1882 Sep 24 23:11 romagnasport_squadra.jpg
+-rw-r--r-- 1 runner runner   520 Sep 24 23:11 tuttocampo.html
