@@ -30,7 +30,7 @@ function layout(pagina, squadre) {
   const header = document.querySelector("header");
   header.innerHTML = `
     <div class="top"><div class="top-inner">
-      <a class="brand" href="index.html"><img src="assets/stemma.svg" alt=""><span><b>Biasola Rivalta</b><small>Calcio · Reggio Emilia</small></span></a>
+      <a class="brand" href="index.html"><img src="assets/stemma.png" alt=""><span><b>Biasola Rivalta</b><small>Calcio · Reggio Emilia</small></span></a>
       <button class="menu-btn" aria-label="Apri il menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <nav>${links.map(([h, t, id]) => `<a href="${h}"${id === pagina ? ' aria-current="page"' : ""}>${esc(t)}</a>`).join("")}</nav>
     </div></div>`;
@@ -44,7 +44,7 @@ function footer(stato, soc, squadre) {
   const fonti = Object.entries(stato?.fonti || {});
   f.innerHTML = `
     <div class="footer-inner">
-      <div class="footer-brand"><img src="assets/stemma.svg" alt="">
+      <div class="footer-brand"><img src="assets/stemma.png" alt="">
         <div><h3>${esc(soc.nome_esteso || "Biasola-Rivalta Calcio A.P.S.")}</h3>
         <p>${esc(soc.sede || "")}<br>Campo: ${esc(soc.campo || "")}<br>Colori: ${esc(soc.colori || "")}</p></div></div>
       <div><h3>Squadre</h3><ul>${squadre.map((s) => `<li><a href="squadra.html?id=${s.id}">${esc(s.nome)}</a></li>`).join("")}</ul></div>

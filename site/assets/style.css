@@ -38,7 +38,7 @@ img { max-width: 100%; }
 }
 .top-inner { max-width: 1100px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-right: auto; }
-.brand img { width: 44px; height: 52px; flex: none; }
+.brand img { width: 48px; height: 48px; flex: none; border-radius: 50%; }
 .brand b { display: block; font-family: var(--titoli); font-size: 1.25rem; letter-spacing: .04em; text-transform: uppercase; }
 .brand small { opacity: .8; font-size: .8rem; }
 nav { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -137,7 +137,7 @@ h2, .blocco-titolo h2 { font-family: var(--titoli); text-transform: uppercase; l
 }
 .copertina-inner { position: relative; max-width: 1100px; margin: 0 auto; padding: 120px 16px 72px; display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: center; }
 .copertina-testo { display: flex; gap: 28px; align-items: flex-start; }
-.stemma-grande { width: 130px; flex: none; filter: drop-shadow(0 12px 24px rgba(0,0,0,.45)); }
+.stemma-grande { width: 150px; flex: none; border-radius: 50%; filter: drop-shadow(0 12px 24px rgba(0,0,0,.45)); }
 .copertina h1 { font-family: var(--titoli); text-transform: uppercase; font-size: clamp(2.6rem, 6.5vw, 4.6rem); line-height: .95; margin: 0 0 16px; letter-spacing: .01em; }
 .copertina h1 span { color: var(--arancione); }
 .motto { font-size: 1.08rem; max-width: 34ch; opacity: .9; margin: 0 0 24px; }
@@ -238,7 +238,7 @@ footer.ricco { max-width: none; margin: 0; padding: 0; border: 0; background: va
 }
 @media (max-width: 600px) {
   .copertina-testo { flex-direction: column; gap: 16px; }
-  .stemma-grande { display: none; }
+  .stemma-grande { width: 110px; }
   .news-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .numero b { font-size: 1.6rem; }
