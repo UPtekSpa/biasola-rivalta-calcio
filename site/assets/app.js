@@ -61,7 +61,7 @@ function listaNews(el, news, filtroIniziale = "tutte") {
 
 function voceNews(n) {
   const righe = n.righe?.length
-    ? `<details><summary>Righe del comunicato (${n.righe.length})</summary><ul>${n.righe.map((r) => `<li>${r.sezione ? `<b>${esc(r.sezione)}:</b> ` : ""}${esc(r.testo)}</li>`).join("")}</ul></details>`
+    ? `<details><summary>Righe del comunicato (${n.righe.length})</summary><ul>${n.righe.map((r) => `<li>${esc(r.testo)}</li>`).join("")}</ul></details>`
     : "";
   return `<li>
     <a class="t" href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.titolo)}</a>
@@ -153,7 +153,7 @@ async function avvia() {
     const gt = giornataTab(s.girone);
     $("giornata").innerHTML = gt;
     $("giornata").hidden = !gt;
-    const mie = (news || []).filter((n) => n.squadra === s.id || (!n.squadra && n.tipo === "societa" && s === squadre[0]));
+    const mie = (news || []).filter((n) => n.squadra === s.id || n.tipo === "ufficiale" || (!n.squadra && n.tipo === "societa" && s === squadre[0]));
     listaNews($("news"), mie);
     $("fonti").innerHTML = `<h2>Approfondisci</h2><ul>${(s.link || []).map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(new URL(u).hostname.replace("www.", ""))}</a></li>`).join("")}</ul>`;
   }
