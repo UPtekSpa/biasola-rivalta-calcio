@@ -23,8 +23,9 @@ async function carica(nome) {
   } catch { return null; }
 }
 
-function layout(pagina, squadre) {
+function layout(pagina, squadre, conFoto) {
   const links = [["index.html", "Home", "home"], ["notizie.html", "Notizie", "notizie"]]
+    .concat(conFoto ? [["foto.html", "Foto", "foto"]] : [])
     .concat(squadre.map((s) => [`squadra.html?id=${s.id}`, s.nome, s.id]))
     .concat([["societa.html", "Società", "societa"]]);
   const header = document.querySelector("header");
@@ -131,16 +132,29 @@ function instagram(url) {
 
 async function avvia() {
   const pagina = document.body.dataset.page;
-  const [dati, news, stato] = await Promise.all([carica("squadre"), carica("news"), carica("stato")]);
+  const [dati, news, stato, album] = await Promise.all([carica("squadre"), carica("news"), carica("stato"), carica("foto")]);
+  const foto = album?.foto || [];
   const squadre = dati?.squadre || [];
   const soc = dati?.societa || {};
-  layout(pagina === "squadra" ? new URLSearchParams(location.search).get("id") : pagina, squadre);
+  layout(pagina === "squadra" ? new URLSearchParams(location.search).get("id") : pagina, squadre, foto.length > 0);
   footer(stato, soc, squadre);
   const $ = (id) => document.getElementById(id);
 
   if (pagina === "home") renderHome(squadre, news || []);
 
   if (pagina === "notizie") listaNews($("news"), news || []);
+
+  if (pagina === "foto") {
+    $("galleria").innerHTML = foto.length ? galleria(foto) : `<p class="vuoto">Le foto arriveranno presto. Nel frattempo le trovi su Instagram.</p>`;
+    attivaLightbox($("galleria"), foto);
+  }
+
+  if (pagina === "home" && foto.length) {
+    const sez = $("foto-home");
+    sez.hidden = false;
+    sez.querySelector(".galleria").innerHTML = galleria(foto.slice(0, 6));
+    attivaLightbox(sez, foto.slice(0, 6));
+  }
 
   if (pagina === "squadra") {
     const id = new URLSearchParams(location.search).get("id");
@@ -172,6 +186,41 @@ async function avvia() {
     $("squadre").innerHTML = `<h2>Le nostre squadre</h2><ul>${squadre.map((s) => `<li><a href="squadra.html?id=${s.id}">${esc(s.nome)}</a>: ${esc(s.campionato)}</li>`).join("")}</ul>`;
     $("ig").innerHTML = instagram(soc.instagram || "https://www.instagram.com/biasola_rivalta_calcio/");
   }
+}
+
+function galleria(foto) {
+  return foto.map((f, i) => `<button class="foto" data-i="${i}" aria-label="Apri foto: ${esc(f.didascalia || "")}">
+      <img src="${esc(f.miniatura || f.src)}" alt="${esc(f.didascalia || "Foto Biasola Rivalta Calcio")}" loading="lazy">
+      ${f.didascalia ? `<span>${esc(f.didascalia)}</span>` : ""}</button>`).join("");
+}
+
+function attivaLightbox(contenitore, foto) {
+  let dlg = document.getElementById("lightbox");
+  if (!dlg) {
+    dlg = document.createElement("dialog");
+    dlg.id = "lightbox";
+    dlg.innerHTML = `<button class="lb-chiudi" aria-label="Chiudi">×</button><button class="lb-prec" aria-label="Foto precedente">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-succ" aria-label="Foto successiva">›</button>`;
+    document.body.append(dlg);
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  }
+  let i = 0;
+  const mostra = (n) => {
+    i = (n + foto.length) % foto.length;
+    const f = foto[i];
+    dlg.querySelector("img").src = f.src;
+    dlg.querySelector("img").alt = f.didascalia || "";
+    dlg.querySelector("figcaption").innerHTML = [esc(f.didascalia), f.data ? dataIt(f.data) : "", f.link ? `<a href="${esc(f.link)}" target="_blank" rel="noopener">Vedi su Instagram</a>` : ""].filter(Boolean).join(" · ");
+  };
+  contenitore.addEventListener("click", (e) => {
+    const b = e.target.closest(".foto");
+    if (!b) return;
+    dlg.querySelector(".lb-chiudi").onclick = () => dlg.close();
+    dlg.querySelector(".lb-prec").onclick = () => mostra(i - 1);
+    dlg.querySelector(".lb-succ").onclick = () => mostra(i + 1);
+    dlg.onkeydown = (ev) => { if (ev.key === "ArrowLeft") mostra(i - 1); if (ev.key === "ArrowRight") mostra(i + 1); };
+    mostra(Number(b.dataset.i));
+    dlg.showModal();
+  });
 }
 
 function giorniA(iso) {
