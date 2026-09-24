@@ -1,0 +1,105 @@
+{
+ "aggiornato": "2026-09-24T20:30:00+00:00",
+ "societa": {
+  "nome": "Biasola Rivalta Calcio",
+  "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
+  "fondazione": 2023,
+  "colori": "Granata, arancione e nero",
+  "sede": "Via San Rigo 2, San Rigo (RE)",
+  "campo": "Campo Parrocchiale, Via Ghiarda 5, Rivalta (RE)",
+  "presidente": "Leonardo Pederini",
+  "instagram": "https://www.instagram.com/biasola_rivalta_calcio/"
+ },
+ "squadre": [
+  {
+   "id": "prima-squadra",
+   "nome": "Prima Squadra",
+   "campionato": "Terza Categoria Reggio Emilia, Girone A",
+   "allenatore": "Alex Bertolini",
+   "da_confermare": null,
+   "partite": [
+    {
+     "giornata": 1,
+     "data": "2026-09-13",
+     "casa": "Bosco",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": "2-1",
+     "esito": "P"
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-20",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Amici di Davide",
+     "risultato": "2-1",
+     "esito": "V"
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-04",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Collagna",
+     "risultato": null,
+     "esito": null
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "casa": "Felina",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null
+    },
+    {
+     "giornata": 6,
+     "data": "2026-10-18",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Salvaterra",
+     "risultato": null,
+     "esito": null
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-25",
+     "casa": "Eagles Virtus Ancora",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-28",
+     "casa": "Pol. Biasola-Rivalta",
+     "ospite": "Levizzano",
+     "risultato": null,
+     "esito": null
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-01",
+     "casa": "Coviolo",
+     "ospite": "Pol. Biasola-Rivalta",
+     "risultato": null,
+     "esito": null
+    }
+   ],
+   "classifica": [],
+   "link": [
+    "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
+    "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
+   ]
+  },
+  {
+   "id": "juniores",
+   "nome": "Juniores Under 19",
+   "campionato": "Juniores Under 19 Provinciale Reggio Emilia",
+   "allenatore": null,
+   "da_confermare": true,
+   "partite": [],
+   "classifica": [],
+   "link": [
+    "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
+   ]
+  }
+ ]
+}

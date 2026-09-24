@@ -1,0 +1,48 @@
+{
+  "societa": {
+    "nome": "Biasola Rivalta Calcio",
+    "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
+    "fondazione": 2023,
+    "colori": "Granata, arancione e nero",
+    "sede": "Via San Rigo 2, San Rigo (RE)",
+    "campo": "Campo Parrocchiale, Via Ghiarda 5, Rivalta (RE)",
+    "presidente": "Leonardo Pederini",
+    "instagram": "https://www.instagram.com/biasola_rivalta_calcio/"
+  },
+  "parole_chiave": ["biasola"],
+  "squadre": [
+    {
+      "id": "prima-squadra",
+      "nome": "Prima Squadra",
+      "campionato": "Terza Categoria Reggio Emilia, Girone A",
+      "allenatore": "Alex Bertolini",
+      "figc_sezione": "TERZA CATEGORIA",
+      "romagnasport": {
+        "calendario": "https://www.romagnasport.com/calendario.php?gir=399&anno=2026&id_sport=1",
+        "classifica": "https://www.romagnasport.com/tuttocalcio/classifica.php?gir=399&anno=2026"
+      },
+      "pagine_news": [
+        "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
+        "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
+      ],
+      "ricerche_campionato": ["\"terza categoria\" reggio emilia calcio"]
+    },
+    {
+      "id": "juniores",
+      "nome": "Juniores Under 19",
+      "campionato": "Juniores Under 19 Provinciale Reggio Emilia",
+      "da_confermare": true,
+      "figc_sezione": "JUNIORES",
+      "pagine_news": [
+        "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
+      ],
+      "ricerche_campionato": []
+    }
+  ],
+  "fonti_generali": {
+    "figc_comunicati": "https://www.figcreggioemilia.it/comunicati",
+    "google_news": ["\"Biasola\" calcio", "\"Biasola Rivalta\""],
+    "rss": ["https://solodilettanti.it/?s=biasola&feed=rss2"],
+    "pagine_news": ["https://www.calcioreggiano.com/"]
+  }
+}
