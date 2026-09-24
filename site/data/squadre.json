@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-24T20:30:00+00:00",
+ "aggiornato": "2026-09-24T20:37:36+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -83,7 +83,229 @@
      "esito": null
     }
    ],
-   "classifica": [],
+   "classifica": [
+    {
+     "squadra": "1 Eagles Virtus Ancora",
+     "punti": 6,
+     "giocate": 2,
+     "valori": [
+      6,
+      2,
+      2,
+      0,
+      0,
+      8,
+      1,
+      7
+     ],
+     "noi": false,
+     "pos": 1
+    },
+    {
+     "squadra": "2 Coviolo",
+     "punti": 6,
+     "giocate": 2,
+     "valori": [
+      6,
+      2,
+      2,
+      0,
+      0,
+      6,
+      0,
+      6
+     ],
+     "noi": false,
+     "pos": 2
+    },
+    {
+     "squadra": "3 Folese",
+     "punti": 6,
+     "giocate": 2,
+     "valori": [
+      6,
+      2,
+      2,
+      0,
+      0,
+      3,
+      0,
+      3
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
+     "squadra": "4 Montefiorino",
+     "punti": 6,
+     "giocate": 2,
+     "valori": [
+      6,
+      2,
+      2,
+      0,
+      0,
+      3,
+      0,
+      3
+     ],
+     "noi": false,
+     "pos": 4
+    },
+    {
+     "squadra": "5 Felina",
+     "punti": 3,
+     "giocate": 1,
+     "valori": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      2,
+      1,
+      1
+     ],
+     "noi": false,
+     "pos": 5
+    },
+    {
+     "squadra": "6 Pol. Biasola-Rivalta",
+     "punti": 3,
+     "giocate": 2,
+     "valori": [
+      3,
+      2,
+      1,
+      0,
+      1,
+      3,
+      3,
+      0
+     ],
+     "noi": true,
+     "pos": 6
+    },
+    {
+     "squadra": "7 Bosco",
+     "punti": 3,
+     "giocate": 2,
+     "valori": [
+      3,
+      2,
+      1,
+      0,
+      1,
+      2,
+      4,
+      -2
+     ],
+     "noi": false,
+     "pos": 7
+    },
+    {
+     "squadra": "8 Salvaterra",
+     "punti": 1,
+     "giocate": 2,
+     "valori": [
+      1,
+      2,
+      0,
+      1,
+      1,
+      1,
+      5,
+      -4
+     ],
+     "noi": false,
+     "pos": 8
+    },
+    {
+     "squadra": "9 Levizzano",
+     "punti": 1,
+     "giocate": 2,
+     "valori": [
+      1,
+      2,
+      0,
+      1,
+      1,
+      2,
+      3,
+      -1
+     ],
+     "noi": false,
+     "pos": 9
+    },
+    {
+     "squadra": "10 Real Casina 04 U21",
+     "punti": 0,
+     "giocate": 1,
+     "valori": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      2,
+      -2
+     ],
+     "noi": false,
+     "pos": 10
+    },
+    {
+     "squadra": "11 Amici di Davide",
+     "punti": 0,
+     "giocate": 2,
+     "valori": [
+      0,
+      2,
+      0,
+      0,
+      2,
+      1,
+      3,
+      -2
+     ],
+     "noi": false,
+     "pos": 11
+    },
+    {
+     "squadra": "12 Collagna",
+     "punti": 0,
+     "giocate": 2,
+     "valori": [
+      0,
+      2,
+      0,
+      0,
+      2,
+      0,
+      5,
+      -5
+     ],
+     "noi": false,
+     "pos": 12
+    },
+    {
+     "squadra": "13 Saxum United",
+     "punti": 0,
+     "giocate": 2,
+     "valori": [
+      0,
+      2,
+      0,
+      0,
+      2,
+      1,
+      5,
+      -4
+     ],
+     "noi": false,
+     "pos": 13
+    }
+   ],
    "link": [
     "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
     "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
