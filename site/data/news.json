@@ -1,5 +1,194 @@
 [
  {
+  "id": "636a7fd8a0e8",
+  "titolo": "Comunicato Ufficiale n. 17 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7619/CU17.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:42:55+00:00",
+  "trovata": "2026-09-24T20:42:55+00:00",
+  "estratto": "BIASOLA-RIVALTA RIVALTA PARROCCHIALE — RIVALTA VIA GHIARDA 5/B · BIASOLA-RIVALTA REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2 · REGGIO UNITED REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2 16:00",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA RIVALTA PARROCCHIALE — RIVALTA VIA GHIARDA 5/B"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "REGGIO UNITED REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2 16:00"
+   },
+   {
+    "sezione": "PULCINI",
+    "testo": "BIASOLA-RIVALTA AMICI DI DAVIDE RIVALTA PARROCCHIALE 20/09/26 15:30 2A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "FIDES BIASOLA-RIVALTA REGGIO EMILIA MELATO 19/09/26 15:30 2A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED SAMMARTINESE A.S.D. REGGIO EMILIA BIASOLA 19/09/26 16:00 2A"
+   }
+  ]
+ },
+ {
+  "id": "d7bd73ee7f40",
+  "titolo": "Comunicato Ufficiale n. 19 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7639/CU19.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:42:53+00:00",
+  "trovata": "2026-09-24T20:42:53+00:00",
+  "estratto": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA 0 - 3 · BERTOLOTTI LEONARDO (BIASOLA-RIVALTA) D ARCANGELO VALENTINO (BIASOLA-RIVALTA) · KONDAKCIU MARIEL (BIASOLA-RIVALTA) GIRASOLE MATTIA (BOSCO)",
+  "squadra": "juniores",
+  "righe": [
+   {
+    "sezione": "ESORDIENTI",
+    "testo": "INVICTA GAVASSETO A.S.D. BIASOLA-RIVALTA 0 - 3"
+   },
+   {
+    "sezione": "ESORDIENTI",
+    "testo": "BERTOLOTTI LEONARDO (BIASOLA-RIVALTA) D ARCANGELO VALENTINO (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "ESORDIENTI",
+    "testo": "KONDAKCIU MARIEL (BIASOLA-RIVALTA) GIRASOLE MATTIA (BOSCO)"
+   },
+   {
+    "sezione": "ESORDIENTI",
+    "testo": "BOSCO BIASOLA-RIVALTA BOSCO DI SCANDIANO COMUNA 13/09/26 15:30 1A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA INVICTA GAVASSETO A.S.D. REGGIO EMILIA BIASOLA 12/09/26 15:00 1A"
+   }
+  ]
+ },
+ {
+  "id": "22f2602ccc67",
+  "titolo": "Comunicato Ufficiale n. 20 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/comunicati/2026/7649/CU20.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:42:51+00:00",
+  "trovata": "2026-09-24T20:42:51+00:00",
+  "estratto": "BOSCO BIASOLA-RIVALTA 2 - 1 · 12/09/26 1/A BIASOLA-RIVALTA INVICTA GAVASSETO A.S.D. 4 - 5 · RUGGERI LORENZO (AUDACE A.S.D.) KONDAKCIU MARIEL (BIASOLA-RIVALTA)",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BOSCO BIASOLA-RIVALTA 2 - 1"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "12/09/26 1/A BIASOLA-RIVALTA INVICTA GAVASSETO A.S.D. 4 - 5"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "RUGGERI LORENZO (AUDACE A.S.D.) KONDAKCIU MARIEL (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "CIAGLIA ALEX (BIASOLA-RIVALTA) BOSCHINI GIOVANNI (BORZANESE"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "SAXUM UNITED A.R.L. BIASOLA-RIVALTA RIVALTA PARROCCHIALE 26/09/26 15:00 3A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA SAN FAUSTINO REGGIO EMILIA BIASOLA 28/09/26 20:00 3A"
+   }
+  ]
+ },
+ {
+  "id": "35bc372d9877",
+  "titolo": "Comunicato Ufficiale n. 21 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7663/CU21.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:42:50+00:00",
+  "trovata": "2026-09-24T20:42:50+00:00",
+  "estratto": "il Campo Comunale “Biasola” di San Rigo (RE), Via San RIgo · FALKGALILEO REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2 · BIASOLA-RIVALTA AMICI DI DAVIDE RIVALTA PARROCCHIALE 20/09/26 15:30 2A",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "il Campo Comunale “Biasola” di San Rigo (RE), Via San RIgo"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FALKGALILEO REGGIO EMILIA BIASOLA — REGGIO EMILIA VIA S.RIGO 2"
+   },
+   {
+    "sezione": "PULCINI",
+    "testo": "BIASOLA-RIVALTA AMICI DI DAVIDE RIVALTA PARROCCHIALE 20/09/26 15:30 2A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "FIDES BIASOLA-RIVALTA REGGIO EMILIA MELATO 19/09/26 15:30 2A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED SAMMARTINESE A.S.D. REGGIO EMILIA BIASOLA 19/09/26 16:00 2A"
+   }
+  ]
+ },
+ {
+  "id": "e467334d9edc",
+  "titolo": "Comunicato Ufficiale n. 22 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7676/CU22.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-24T20:42:48+00:00",
+  "trovata": "2026-09-24T20:42:48+00:00",
+  "estratto": "20/09/26 2/A BIASOLA-RIVALTA AMICI DI DAVIDE 2 - 1 · FIDES BIASOLA-RIVALTA 1 - 1 · BERTONI ALEX (BIASOLA-RIVALTA) ARDUCA DANIELE (CADELBOSCO A.S.D.)",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "20/09/26 2/A BIASOLA-RIVALTA AMICI DI DAVIDE 2 - 1"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FIDES BIASOLA-RIVALTA 1 - 1"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BERTONI ALEX (BIASOLA-RIVALTA) ARDUCA DANIELE (CADELBOSCO A.S.D.)"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "CATTANI THOMAS (BIASOLA-RIVALTA) CIARLONE DAVIDE (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "COSTETTI EDOARDO (BIASOLA-RIVALTA) SCIALO LUIGI (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FRANCOIS ARSENE (BIASOLA-RIVALTA) MICELISOPO ANDREA (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA COLLAGNA RIVALTA PARROCCHIALE 4/10/26 15:30 4A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 3/10/26 15:00 4A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED ROLO FABBRICO REGGIO EMILIA BIASOLA 3/10/26 16:00 4A"
+   }
+  ]
+ },
+ {
   "id": "6f851760a6a6",
   "titolo": "Terza categoria: si riparte per vincere",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8003",
@@ -55,39 +244,6 @@
   "squadra": null
  },
  {
-  "id": "beac4949c289",
-  "titolo": "Scheda squadra Biasola Rivalta",
-  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR0t4UDg1OVptYzZpRUNGQVFGMjJyb1RXRS1Gd1h5WFZVSnRVSDJ3MFRuSGo1STR5U2ZpbGQyV0tVaDJBMTM3VlowUHlUd1NSZTZBSXVqTVZRWHZkRnpkMDVYbmk1T3daaVRyN3pfWEE2ai1LUGJDYzNyalc0WWlwU1hmUFNMeFZ1MVVFRDFJbWVBeW9IS3l0SVFRaGtlVmlBeWZlem9CcS1RRnlYdEl1N2tn?oc=5",
-  "fonte": "Tuttocampo",
-  "tipo": "societa",
-  "data": "2026-08-25T07:43:09+00:00",
-  "trovata": "2026-09-24T20:41:23+00:00",
-  "estratto": "Scheda squadra Biasola Rivalta Tuttocampo",
-  "squadra": null
- },
- {
-  "id": "0917a641ca08",
-  "titolo": "MERCATO: GLI ULTIMI MOVIMENTI DAL CAMPIONATO DI SERIE D FINO ALLA TERZA CATEGORIA",
-  "link": "https://solodilettanti.it/mercato-gli-ultimi-movimenti-dal-campionato-di-serie-d-fino-alla-terza-categoria-3/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2026-06-26T12:03:53+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "In Serie D il Cittadella Modena ha ufficializzato l’acquisto del portiere, classe 2007, Raffaele Mantini. Dopo un decennio trascorso nel settore giovanile del Sassuolo, nell’ultima stagione si è messo in evidenza con la maglia della Correggese con 21 presenze. In Eccellenza il Rolo Fabbrico ha ingag",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "1018da81f065",
-  "titolo": "MERCATO: ANDREA PAPPAIANNI ALLA MIRANDOLESE E IL PORTIERE PATRICK AUREGLI CERCA SQUADRA",
-  "link": "https://solodilettanti.it/mercato-andrea-pappaianni-alla-mirandolese-e-il-portiere-patrick-auregli-cerca-squadra/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2026-06-16T13:25:59+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "In Eccellenza nuovi arrivi al Campagnola: Nicholas Mussi, esterno classe 2004 dal Bibbiano San Polo e Andrea Ognibene, centrocampista classe 2007, dalla Juniores Nazionale della Correggese. Confermati Erik Catellani, terzino classe 2006, Tommaso Marzi, difensore, Aurea Nicolò, centrocampista e il po",
-  "squadra": "juniores"
- },
- {
   "id": "b6b51ce9ff65",
   "titolo": "CALCIO MERCATO: ZITO RINFORZA L’ATTACCO DEL ROLO E ALLA BIASOLA SE NE VA MISTER BARONCINI",
   "link": "https://solodilettanti.it/calcio-mercato-zito-rinforza-lattacco-del-rolo-e-alla-biasola-se-ne-va-mister-baroncini/",
@@ -97,83 +253,6 @@
   "trovata": "2026-09-24T20:37:08+00:00",
   "estratto": "In Eccellenza il Rolo rinforza il reparto avanzato con l’arrivo dallo Sporting Scandiano del classe 2000, Riccardo Zito (nella foto di Guido Rinaldi ai tempi dell’Arcetana), ex di Real Formigine, Sasso Marconi, Castelfranco e Castelvetro. Scendendo nelle categorie inferiori il Guastalla ha preso l’a",
   "squadra": null
- },
- {
-  "id": "e435e6584d6e",
-  "titolo": "CALCIO MERCATO: MARCO IOTTI NUOVO MISTER DEL LUZZARA. LE ULTIME NOVITA’ FINO ALLA TERZA CATEGORIA.",
-  "link": "https://solodilettanti.it/calcio-mercato-marco-iotti-nuovo-mister-del-luzzara-le-ultime-novita-fino-alla-terza-categoria/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-12-15T17:46:58+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Nel girone D di Serie D il Sant’Angelo ha ingaggiato l’esterno offensivo Nicolò Montalbano, classe 2004 e in arrivo dal Gozzano. La Pistoiese comunica di aver trovato l’accordo per la risoluzione consensuale dei contratti di Jacopo Ricco e Davide Gallitelli. Il Corticella ha comunicato le seguenti u",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "a6400d6b8de1",
-  "titolo": "CALCIO TERZA CATEGORIA: IL PROGRAMMA ODIERNO DELLA DECIMA GIORNATA DI ANDATA",
-  "link": "https://solodilettanti.it/calcio-terza-categoria-il-programma-odierno-della-decima-giornata-di-andata-2/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-11-12T09:02:34+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Il programma odierno con arbitri della decima giornata di andata dei gironi modenesi e reggiani del campionato di Terza Categoria. ORE 14.30 MODENA GIRONE A ATHLETIC PALAFITTA – CIMONE: Brunel Herve Nya Tchouate di Modena ATHLETIC SOLIGNANO – REAL MODENA MONTALE: David Wamba Kenfack di Modena C.R.P.",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "93c0a0e7be17",
-  "titolo": "CALCIO TERZA CATEGORIA: IL PROGRAMMA ODIERNO DELLA NONA GIORNATA DI ANDATA",
-  "link": "https://solodilettanti.it/calcio-terza-categoria-il-programma-odierno-della-nona-giornata-di-andata-2/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-11-05T09:56:21+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Il programma odierno della nona giornata di andata dei gironi modenesi e reggiani del campionato di Terza Categoria. ORE 14.30 MODENA GIRONE A CIMONE – MADONNA DI SOTTO: Rocco Cagnazzo di Modena LEVIZZANO RANGONE – ACADEMY TERRE DI CASTELLI: Mattia Barbolini di Modena MAGRETA – MARANESE: David Wamba",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "fc9b9a542610",
-  "titolo": "CALCIO TERZA CATEGORIA: IL PROGRAMMA ODIERNO DELLA SETTIMA GIORNATA DI ANDATA",
-  "link": "https://solodilettanti.it/calcio-terza-categoria-il-programma-odierno-della-settima-giornata-di-andata/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-10-29T07:49:21+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Il programma odierno con arbitri della settima giornata di andata dei gironi modenesi e reggiani del campionato di Terza Categoria. ORE 14.30 MODENA GIRONE A CIMONE – C.R.P. PIETRO BORTOLOTTI (comunale di Sestola): Francesco Di Maio di Modena LEVIZZANO RANGONE – POLISPORTIVA MONTEFIORINO: Larios Vid",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "107eb58da058",
-  "titolo": "CALCIO: IL PROGRAMMA ODIERNO DEGLI ANTICIPI DEI CAMPIONATI DI SECONDA E TERZA CATEGORIA",
-  "link": "https://solodilettanti.it/calcio-il-programma-odierno-degli-anticipi-dei-campionati-di-seconda-e-terza-categoria/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-10-28T09:13:36+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Il programma odierno degli anticipi della settima giornata di andata dei campionati di Seconda e Terza Categoria della squadre modenesi e reggiane. ORE 15 SECONDA CATEGORIA GIRONE B CAMPEGINESE – BUSSETO: Alessio Argiro’ di Parma GIRONE D ATLETICO BIBBIANO CANOSSA – REAL CASINA: Lorenzo Montagna di ",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "6dc00ab685e6",
-  "titolo": "CALCIO TERZA CATEGORIA: IL PROGRAMMA ODIERNO DELLA SESTA GIORNATA DI ANDATA",
-  "link": "https://solodilettanti.it/calcio-terza-categoria-il-programma-odierno-della-sesta-giornata-di-andata-2/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-10-22T07:44:59+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Il programma odierno con arbitri della sesta giornata di andata dei gironi modenesi e reggiani del campionato di Terza Categoria. ORE 15.30 MODENA GIRONE A ATHLETIC SOLIGNANO – MADONNA DI SOTTO 1 – 4 giocata ieri C.R.P. PIETRO BORTOLOTTI – ATHLETIC PALAFITTA: Fabrizio Ferrari di Modena EAGLES VIRTUS",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "d49ca533eb52",
-  "titolo": "IL PUNTO DALLA PRIMA ALLA TERZA CATEGORIA: CASALGRANDE, CORLO, CAMPOGALLIANO E SPORTING CLUB S.ILARIO HANNO FATTO IL PIENO",
-  "link": "https://solodilettanti.it/il-punto-dalla-prima-alla-terza-categoria-casalgrande-corlo-campogalliano-e-sporting-club-s-ilario-hanno-fatto-il-pieno/",
-  "fonte": "solodilettanti.it",
-  "tipo": "campionato",
-  "data": "2023-10-17T10:05:19+00:00",
-  "trovata": "2026-09-24T20:41:25+00:00",
-  "estratto": "Dalla Prima Categoria alla Terza ci sono squadre modenesi e reggiane che dopo cinque giornate viaggiano a punteggio pieno e chi non ha ancora centrato i tre punti. In Prima nel girone D la retrocessa Casalgrande di mister Davide Pavesi (foto) le ha vinte tutte, mentre la Consolata finora le ha perse",
-  "squadra": "prima-squadra"
  },
  {
   "id": "f3927f5fbcf3",
@@ -195,17 +274,6 @@
   "data": "2023-08-22T07:00:00+00:00",
   "trovata": "2026-09-24T20:37:07+00:00",
   "estratto": "CALCIO: L’INTERVISTA A LEONARDO PEDERINI PRESIDENTE E ALLENATORE DELLA JUNIORES DELLA BIASOLA RIVALTA solodilettanti.it",
-  "squadra": null
- },
- {
-  "id": "d4269f8f1b0c",
-  "titolo": "Un successo il calcetto multiculturale a Biasola: rappresentati in campo 15 paesi",
-  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZFlfZUZxT21rUmJmODBmQlJhcG5KV3JiRnlCa242Y3VNdXo5SUxBMzZCaGlWcGpTbnZaeFJxbGk2VzAwWnA4Y1pXakxzRlU2a2ttemc2RmE3WU5jUkF0UVM1X21HYUxQdTVwR1lVZmtzV0ZBOVluQ2tPcUprQzUydXlpZHNXWlJxdk5LTEZtWUw2QUMydXhNMFNqMW8xZFE?oc=5",
-  "fonte": "Next Stop Reggio",
-  "tipo": "societa",
-  "data": "2018-07-02T07:00:00+00:00",
-  "trovata": "2026-09-24T20:37:07+00:00",
-  "estratto": "Un successo il calcetto multiculturale a Biasola: rappresentati in campo 15 paesi Next Stop Reggio",
   "squadra": null
  }
 ]
