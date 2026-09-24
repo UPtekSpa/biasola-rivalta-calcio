@@ -1,28 +1,24 @@
-name: Scarica logo
+name: Sonda foto
 on:
   push:
-    branches: [logo]
+    branches: [sonda-foto]
 permissions:
   contents: write
 jobs:
-  logo:
+  sonda:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: |
           mkdir -p out
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
-          get() { curl -sSL -A "$UA" -o "out/$1" "$2" -w "$1 %{http_code} %{content_type} %{size_download}\n" || true; }
-          get romagnasport.gif "https://www.romagnasport.com/immagini/logo/15705-biasola.gif"
-          get calcioreggiano_logo "https://www.calcioreggiano.com/mycms/download/logosquadre.aspx?idsquadra=1075&tipo=dettaglio"
-          get calcioreggiano_logo_pannello "https://www.calcioreggiano.com/mycms/download/logosquadre.aspx?idsquadra=1075&tipo=pannello"
-          get romagnasport_squadra.jpg "https://www.romagnasport.com/public/watermark/calcio/stagione_2026_2027/3a-re_120/girone-a_399/biasiola-rivalta_15705/squadra_s_w50.jpg"
-          get instagram.html "https://www.instagram.com/biasola_rivalta_calcio/"
-          get tuttocampo.html "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda"
-          og=$(grep -o 'property="og:image" content="[^"]*"' out/instagram.html | head -1 | sed 's/.*content="//;s/"$//;s/&amp;/\&/g')
-          [ -n "$og" ] && get instagram_profilo.jpg "$og"
-          ls -la out > out/elenco.txt
+          get() { curl -sSL -A "$UA" "${@:3}" -o "out/$1" "$2" -w "$1 %{http_code} %{content_type} %{size_download}\n" >> out/elenco.txt || echo "$1 errore" >> out/elenco.txt; }
+          get ig_embed.html "https://www.instagram.com/biasola_rivalta_calcio/embed/"
+          get ig_api.json "https://i.instagram.com/api/v1/users/web_profile_info/?username=biasola_rivalta_calcio" -H "x-ig-app-id: 936619743392459"
+          get ig_www_api.json "https://www.instagram.com/api/v1/users/web_profile_info/?username=biasola_rivalta_calcio" -H "x-ig-app-id: 936619743392459"
+          get cr_gallery.html "https://www.calcioreggiano.com/photogallery/dettaglio.aspx?idgallery=18357"
+          get cr_squadra.html "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
       - run: |
           git config user.name biasola-bot
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add out && git commit -qm "Loghi scaricati" && git push origin HEAD:logo
+          git add out && git commit -qm "Sonda foto" && git push origin HEAD:sonda-foto
