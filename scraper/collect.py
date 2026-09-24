@@ -128,22 +128,60 @@ def google_news(query):
     return parse_rss(fetch(url))
 
 
-def collect_rss_queries(cfg, keywords):
+def strip_source(title, source):
+    """Google News aggiunge " - Fonte" in coda al titolo: la fonte è già mostrata a parte."""
+    if source and title.endswith(" - " + source):
+        return title[: -len(source) - 3]
+    return title
+
+
+def cita_squadra(title, squadre_girone):
+    t = " " + re.sub(r"[^a-z0-9]+", " ", title.lower()) + " "
+    return any(f" {n} " in t for n in squadre_girone)
+
+
+def collect_rss_queries(cfg, keywords, girone):
+    """girone: {id squadra: [nomi normalizzati delle avversarie]} per filtrare le news di campionato."""
     items = []
     for q in cfg["fonti_generali"]["google_news"]:
         for e in google_news(q):
             if mentions(e["title"] + " " + e["desc"], keywords):
-                items.append(item(e["title"], e["link"], e["source"], "societa", e["date"], e["desc"]))
+                items.append(item(strip_source(e["title"], e["source"]), e["link"], e["source"],
+                                  "societa", e["date"], e["desc"]))
     for sq in cfg["squadre"]:
         for q in sq.get("ricerche_campionato", []):
             for e in google_news(q + " when:30d"):
-                tipo = "societa" if mentions(e["title"], keywords) else "campionato"
-                items.append(item(e["title"], e["link"], e["source"], tipo, e["date"], e["desc"], sq["id"]))
+                title = strip_source(e["title"], e["source"])
+                if title.lower().startswith("scheda"):
+                    continue  # pagine anagrafiche di Tuttocampo, non notizie
+                if mentions(title, keywords):
+                    tipo = "societa"
+                elif cita_squadra(title, girone.get(sq["id"], [])):
+                    tipo = "campionato"
+                else:
+                    continue
+                items.append(item(title, e["link"], e["source"], tipo, e["date"], e["desc"], sq["id"]))
     for url in cfg["fonti_generali"]["rss"]:
         for e in parse_rss(fetch(url)):
             if mentions(e["title"] + " " + e["desc"], keywords):
                 items.append(item(e["title"], e["link"], urlparse(url).netloc, "societa", e["date"], e["desc"]))
     return items
+
+
+def nomi_girone(info, keywords):
+    nomi = {r["squadra"] for r in info.get("classifica", [])}
+    for p in info.get("partite", []):
+        nomi.update([p["casa"], p["ospite"]])
+    out = set()
+    for n in nomi:
+        if mentions(n, keywords):
+            continue
+        n = re.sub(r"[^a-z0-9]+", " ", n.lower()).strip()
+        n = re.sub(r"\b(a s d|asd|u s|us|f c|fc|pol|ac|ssd|calcio|u21)\b", " ", n)
+        n = re.sub(r"\s+", " ", n).strip()
+        if len(n) >= 5:
+            out.add(n)
+    return sorted(out)
 
 
 # ---------------------------------------------------------------- pagine con link a notizie
@@ -292,8 +330,9 @@ def parse_classifica(html, keywords):
                 after = [int(c) for c in cells[name_idx + 1:] if re.fullmatch(r"-?\d+", c)]
                 if len(after) < 4:
                     continue
-                rows.append({"squadra": names[0], "punti": after[0], "giocate": after[1],
-                             "valori": after, "noi": mentions(names[0], keywords)})
+                nome = re.sub(r"^\d+\s*[.°)]?\s*", "", names[0])
+                rows.append({"squadra": nome, "punti": after[0], "giocate": after[1],
+                             "valori": after, "noi": mentions(nome, keywords)})
         if len(rows) > len(best):
             best = rows
     for i, r in enumerate(best, 1):
@@ -360,19 +399,13 @@ def main():
     news = load(DATA / "news.json", [])
     squadre_old = {s["id"]: s for s in load(DATA / "squadre.json", {}).get("squadre", [])}
 
-    raccolte = []
-    raccolte += run_source(stato, "Google News e RSS", lambda: collect_rss_queries(cfg, kw)) or []
-    raccolte += run_source(stato, "Comunicati FIGC Reggio Emilia", lambda: figc_comunicati(cfg, kw, stato)) or []
-    for url in cfg["fonti_generali"].get("pagine_news", []):
-        raccolte += run_source(stato, urlparse(url).netloc, lambda u=url: news_links(u, kw)) or []
-
-    squadre = []
+    squadre, raccolte = [], []
     for sq in cfg["squadre"]:
         old = squadre_old.get(sq["id"], {})
         info = {k: sq.get(k) for k in ("id", "nome", "campionato", "allenatore", "da_confermare")}
         info["partite"] = old.get("partite", [])
         info["classifica"] = old.get("classifica", [])
-        info["link"] = sq.get("pagine_news", [])
+        info["link"] = sq.get("link", [])
         rs = sq.get("romagnasport")
         if rs:
             p = run_source(stato, f"Calendario {sq['nome']}", lambda: parse_calendario(fetch(rs["calendario"]), kw))
@@ -385,6 +418,12 @@ def main():
             raccolte += run_source(stato, f"{urlparse(url).netloc} ({sq['nome']})",
                                    lambda u=url, s=sq["id"]: news_links(u, kw, s)) or []
         squadre.append(info)
+
+    girone = {i["id"]: nomi_girone(i, kw) for i in squadre}
+    raccolte += run_source(stato, "Google News e RSS", lambda: collect_rss_queries(cfg, kw, girone)) or []
+    raccolte += run_source(stato, "Comunicati FIGC Reggio Emilia", lambda: figc_comunicati(cfg, kw, stato)) or []
+    for url in cfg["fonti_generali"].get("pagine_news", []):
+        raccolte += run_source(stato, urlparse(url).netloc, lambda u=url: news_links(u, kw)) or []
 
     news = merge_news(news, raccolte)
     stato["ultimo_aggiornamento"] = now_iso()

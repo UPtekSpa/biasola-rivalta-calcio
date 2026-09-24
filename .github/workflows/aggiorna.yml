@@ -6,11 +6,6 @@ on:
     - cron: "0 17 * * *"  # 19:00
     - cron: "0 21 * * 0"  # domenica 23:00, dopo le partite
   workflow_dispatch:
-    inputs:
-      snapshot:
-        description: "Salva l'HTML scaricato nel branch 'sonde' (per adattare i parser)"
-        type: boolean
-        default: false
   push:
     branches: [main]
     paths: ["site/**", "config.json", "scraper/**", ".github/workflows/aggiorna.yml"]
@@ -37,7 +32,7 @@ jobs:
       - run: pip install -r scraper/requirements.txt
 
       - name: Raccogli news, risultati e classifiche
-        run: python scraper/collect.py ${{ inputs.snapshot && '--snapshot sonde' || '' }}
+        run: python scraper/collect.py --snapshot sonde
 
       - name: Salva i dati raccolti
         run: |
@@ -50,8 +45,8 @@ jobs:
             git push origin HEAD:main
           fi
 
-      - name: Pubblica le pagine scaricate nel branch sonde
-        if: ${{ inputs.snapshot }}
+      - name: Salva le pagine scaricate nel branch sonde (per controllare i parser)
+        continue-on-error: true
         run: |
           cd sonde
           git init -q -b sonde
