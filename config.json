@@ -23,15 +23,15 @@
         "calendario": "https://www.romagnasport.com/calendario.php?gir=399&anno=2026&id_sport=1",
         "classifica": "https://www.romagnasport.com/tuttocalcio/classifica.php?gir=399&anno=2026"
       },
-      "ricerche_campionato": [
-        "\"terza categoria\" reggio emilia calcio"
-      ],
       "link": [
         "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
         "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
       ],
-      "pagine_news": [
-        "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
+      "pagine_news": [],
+      "parole_campionato": [
+        "terza categoria",
+        "3a categoria",
+        "3^ categoria"
       ]
     },
     {
@@ -40,11 +40,14 @@
       "campionato": "Juniores Under 19 Provinciale Reggio Emilia",
       "da_confermare": true,
       "figc_sezione": "JUNIORES",
-      "ricerche_campionato": [],
       "link": [
         "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
       ],
-      "pagine_news": []
+      "pagine_news": [],
+      "parole_campionato": [
+        "juniores",
+        "under 19"
+      ]
     }
   ],
   "fonti_generali": {
@@ -54,10 +57,12 @@
       "\"Biasola Rivalta\""
     ],
     "rss": [
-      "https://solodilettanti.it/?s=biasola&feed=rss2"
+      "https://solodilettanti.it/?s=biasola&feed=rss2",
+      "https://solodilettanti.it/feed/"
     ],
     "pagine_news": [
-      "https://www.calcioreggiano.com/"
+      "https://www.calcioreggiano.com/",
+      "https://www.calcioreggiano.com/news/news.aspx"
     ]
   }
 }

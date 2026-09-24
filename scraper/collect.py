@@ -140,37 +140,35 @@ def cita_squadra(title, squadre_girone):
     return any(f" {n} " in t for n in squadre_girone)
 
 
-def collect_rss_queries(cfg, keywords, girone):
-    """girone: {id squadra: [nomi normalizzati delle avversarie]} per filtrare le news di campionato."""
+def classifica_news(title, text, cfg, keywords, girone):
+    """Decide se una notizia riguarda la società o un suo campionato: (tipo, squadra) o None."""
+    if mentions(title + " " + text, keywords):
+        return "societa", None
+    full = title + " " + text
+    for sq in cfg["squadre"]:
+        if mentions(full, sq.get("parole_campionato", [])) or cita_squadra(full, girone.get(sq["id"], [])):
+            return "campionato", sq["id"]
+    return None
+
+
+def collect_rss(cfg, keywords, girone):
     items = []
     for q in cfg["fonti_generali"]["google_news"]:
         for e in google_news(q):
             if mentions(e["title"] + " " + e["desc"], keywords):
                 items.append(item(strip_source(e["title"], e["source"]), e["link"], e["source"],
                                   "societa", e["date"], e["desc"]))
-    for sq in cfg["squadre"]:
-        for q in sq.get("ricerche_campionato", []):
-            for e in google_news(q + " when:30d"):
-                title = strip_source(e["title"], e["source"])
-                if title.lower().startswith("scheda"):
-                    continue  # pagine anagrafiche di Tuttocampo, non notizie
-                if mentions(title, keywords):
-                    tipo = "societa"
-                elif cita_squadra(title, girone.get(sq["id"], [])):
-                    tipo = "campionato"
-                else:
-                    continue
-                items.append(item(title, e["link"], e["source"], tipo, e["date"], e["desc"], sq["id"]))
     for url in cfg["fonti_generali"]["rss"]:
         for e in parse_rss(fetch(url)):
-            if mentions(e["title"] + " " + e["desc"], keywords):
-                items.append(item(e["title"], e["link"], urlparse(url).netloc, "societa", e["date"], e["desc"]))
+            c = classifica_news(e["title"], e["desc"], cfg, keywords, girone)
+            if c:
+                items.append(item(e["title"], e["link"], urlparse(url).netloc, c[0], e["date"], e["desc"], c[1]))
     return items
 
 
 def nomi_girone(info, keywords):
     nomi = {r["squadra"] for r in info.get("classifica", [])}
-    for p in info.get("partite", []):
+    for p in info.get("girone", []) or info.get("partite", []):
         nomi.update([p["casa"], p["ospite"]])
     out = set()
     for n in nomi:
@@ -186,20 +184,28 @@ def nomi_girone(info, keywords):
 
 # ---------------------------------------------------------------- pagine con link a notizie
 
-def news_links(page_url, keywords, squadra=None):
-    """Link a notizie in una pagina HTML il cui titolo cita la società."""
+def news_links(page_url, cfg, keywords, girone, squadra=None):
+    """Articoli linkati da una pagina HTML (titolo e sommario possono essere link separati)."""
     soup = BeautifulSoup(fetch(page_url), "html.parser")
     host = urlparse(page_url).netloc.replace("www.", "")
-    out = []
+    testi = {}
     for a in soup.find_all("a", href=True):
-        text = clean(a.get_text(" ")) or clean(a.get("title"))
         href = urljoin(page_url, a["href"])
-        if len(text) < 15 or href.rstrip("/") == page_url.rstrip("/"):
+        if not re.search(r"/news/[^?]*dettaglio|/news/\d|/\d{4}/\d{2}/\d{2}/", href, re.I):
             continue
-        if not re.search(r"news|notizi|articol|dettaglio", href, re.I):
+        t = clean(a.get_text(" ")) or clean(a.get("title"))
+        if t and t not in testi.setdefault(href, []):
+            testi[href].append(t)
+    out = []
+    for href, parti in testi.items():
+        titolo = max(parti[:2], key=lambda t: sum(ch.isupper() for ch in t))
+        estratto = " ".join(t for t in parti if t != titolo)
+        if len(titolo) < 12:
             continue
-        if mentions(text, keywords):
-            out.append(item(text, href, host, "societa", squadra=squadra))
+        c = classifica_news(titolo, estratto, cfg, keywords, girone)
+        if c:
+            out.append(item(titolo.capitalize() if titolo.isupper() else titolo, href, host,
+                            c[0], estratto=estratto, squadra=c[1] or squadra))
     return out
 
 
@@ -212,30 +218,24 @@ SEZIONI = ["TERZA CATEGORIA", "SECONDA CATEGORIA", "JUNIORES", "ALLIEVI",
 def figc_comunicati(cfg, keywords, stato, max_nuovi=6):
     base = cfg["fonti_generali"]["figc_comunicati"]
     soup = BeautifulSoup(fetch(base), "html.parser")
-    ids = {}
+    cu = {}
     for a in soup.find_all("a", href=True):
-        m = re.search(r"announcement\?id=(\d+)", a["href"])
+        m = re.search(r"/files/(?:announcements|comunicati)/\d{4}/(\d+)/CU(\d+)\.pdf$", a["href"], re.I)
         if m:
-            ids[int(m.group(1))] = clean(a.get_text(" "))
+            cu[int(m.group(1))] = (int(m.group(2)), urljoin(base, a["href"]))
     visti = set(stato.get("figc_visti", []))
-    nuovi = sorted((i for i in ids if i not in visti), reverse=True)[:max_nuovi]
+    nuovi = sorted((i for i in cu if i not in visti), reverse=True)[:max_nuovi]
     sezione_squadra = {sq["figc_sezione"]: sq["id"] for sq in cfg["squadre"] if sq.get("figc_sezione")}
     items = []
     for cid in nuovi:
-        page_url = urljoin(base, f"/frontend/announcement?id={cid}")
-        psoup = BeautifulSoup(fetch(page_url), "html.parser")
-        pdf = next((urljoin(page_url, a["href"]) for a in psoup.find_all("a", href=True)
-                    if a["href"].lower().endswith(".pdf")), None)
-        titolo_cu = ids[cid] or clean(psoup.title.get_text() if psoup.title else f"Comunicato {cid}")
-        visti.add(cid)
-        if not pdf:
-            continue
+        numero, pdf = cu[cid]
         righe = pdf_mentions(fetch(pdf, binary=True), keywords)
+        visti.add(cid)
         if not righe:
             continue
         squadre = {sezione_squadra.get(r["sezione"]) for r in righe} - {None}
         items.append(item(
-            f"FIGC Reggio Emilia, {titolo_cu}: la Biasola nel comunicato",
+            f"Comunicato Ufficiale n. {numero} FIGC Reggio Emilia: le righe sulla Biasola",
             pdf, "figcreggioemilia.it", "ufficiale",
             estratto=" · ".join(r["testo"] for r in righe[:3]),
             squadra=squadre.pop() if len(squadre) == 1 else None,
@@ -277,42 +277,41 @@ def table_rows(html):
             yield cells
 
 
+def parse_data(text):
+    d = DATE_RE.search(text or "")
+    if not d:
+        return None
+    g, m, y = d.groups()
+    y = int(y) + (2000 if len(y) == 2 else 0)
+    return f"{y:04d}-{int(m):02d}-{int(g):02d}"
+
+
 def parse_calendario(html, keywords):
-    partite, giornata = [], None
-    for cells in table_rows(html):
-        joined = " ".join(cells)
-        m = re.search(r"(\d{1,2})\s*[ªa°]?\s*giornata", joined, re.I)
-        if m and not mentions(joined, keywords):
-            giornata = int(m.group(1))
-        if not mentions(joined, keywords):
+    """Calendario di RomagnaSport: righe .info-calendario con giornata/data o due squadre e risultato.
+    Restituisce tutte le partite del girone; 'noi' segna quelle della Biasola."""
+    soup = BeautifulSoup(html, "html.parser")
+    partite, giornata, data = [], None, None
+    for row in soup.select(".info-calendario"):
+        testo = clean(row.get_text(" "))
+        squadre = [clean(a.get_text(" ")) for a in row.find_all("a") if "squadra.php" in a.get("href", "")]
+        if len(squadre) < 2:
+            m = re.search(r"(\d{1,2})\s*a\s+giornata", testo, re.I)
+            if m:
+                giornata = int(m.group(1))
+            data = parse_data(testo) or data
             continue
-        d = DATE_RE.search(joined)
-        data = None
-        if d:
-            g, mth, y = d.groups()
-            y = int(y) + (2000 if len(y) == 2 else 0)
-            data = f"{y:04d}-{int(mth):02d}-{int(g):02d}"
-        risultato = next((c for c in cells if SCORE_RE.match(c)), None)
-        squadre_cella = [c for c in cells if re.search(r"[A-Za-z]{3}", c)
-                         and not DATE_RE.search(c) and "giornata" not in c.lower()
-                         and c.upper() not in ("N.G.", "NG", "RINV.")]
-        if len(squadre_cella) < 2:
-            parts = re.split(r"\s+(?:-|vs)\s+", squadre_cella[0]) if squadre_cella else []
-            squadre_cella = parts if len(parts) == 2 else squadre_cella
-        if len(squadre_cella) < 2:
-            continue
-        casa, ospite = squadre_cella[0], squadre_cella[1]
-        gf = gs = None
-        if risultato:
-            a, b = map(int, SCORE_RE.match(risultato).groups())
+        casa, ospite = squadre[:2]
+        m = re.search(r"\b(\d{1,2})\s*-\s*(\d{1,2})\b", testo)
+        risultato = f"{m.group(1)}-{m.group(2)}" if m else None
+        noi = mentions(casa + " " + ospite, keywords)
+        esito = None
+        if risultato and noi:
+            a, b = int(m.group(1)), int(m.group(2))
             gf, gs = (a, b) if mentions(casa, keywords) else (b, a)
-        partite.append({
-            "giornata": giornata, "data": data, "casa": casa, "ospite": ospite,
-            "risultato": risultato.replace(" ", "") if risultato else None,
-            "esito": None if gf is None else ("V" if gf > gs else "P" if gf < gs else "N"),
-        })
-    uniq = {(p["data"], p["casa"], p["ospite"]): p for p in partite}
-    return sorted(uniq.values(), key=lambda p: (p["data"] or "9999", p["giornata"] or 0))
+            esito = "V" if gf > gs else "P" if gf < gs else "N"
+        partite.append({"giornata": giornata, "data": parse_data(testo) or data, "casa": casa,
+                        "ospite": ospite, "risultato": risultato, "esito": esito, "noi": noi})
+    return partite
 
 
 def parse_classifica(html, keywords):
@@ -405,25 +404,27 @@ def main():
         info = {k: sq.get(k) for k in ("id", "nome", "campionato", "allenatore", "da_confermare")}
         info["partite"] = old.get("partite", [])
         info["classifica"] = old.get("classifica", [])
+        info["girone"] = old.get("girone", [])
         info["link"] = sq.get("link", [])
         rs = sq.get("romagnasport")
         if rs:
             p = run_source(stato, f"Calendario {sq['nome']}", lambda: parse_calendario(fetch(rs["calendario"]), kw))
             if p:
-                info["partite"] = p
+                info["partite"] = [x for x in p if x["noi"]]
+                info["girone"] = p
             c = run_source(stato, f"Classifica {sq['nome']}", lambda: parse_classifica(fetch(rs["classifica"]), kw))
             if c:
                 info["classifica"] = c
-        for url in sq.get("pagine_news", []):
-            raccolte += run_source(stato, f"{urlparse(url).netloc} ({sq['nome']})",
-                                   lambda u=url, s=sq["id"]: news_links(u, kw, s)) or []
         squadre.append(info)
 
     girone = {i["id"]: nomi_girone(i, kw) for i in squadre}
-    raccolte += run_source(stato, "Google News e RSS", lambda: collect_rss_queries(cfg, kw, girone)) or []
+    raccolte += run_source(stato, "Google News e RSS", lambda: collect_rss(cfg, kw, girone)) or []
     raccolte += run_source(stato, "Comunicati FIGC Reggio Emilia", lambda: figc_comunicati(cfg, kw, stato)) or []
-    for url in cfg["fonti_generali"].get("pagine_news", []):
-        raccolte += run_source(stato, urlparse(url).netloc, lambda u=url: news_links(u, kw)) or []
+    pagine = [(u, None) for u in cfg["fonti_generali"].get("pagine_news", [])]
+    pagine += [(u, sq["id"]) for sq in cfg["squadre"] for u in sq.get("pagine_news", [])]
+    for url, sid in pagine:
+        raccolte += run_source(stato, url.split("//")[1][:60],
+                               lambda u=url, s=sid: news_links(u, cfg, kw, girone, s)) or []
 
     news = merge_news(news, raccolte)
     stato["ultimo_aggiornamento"] = now_iso()

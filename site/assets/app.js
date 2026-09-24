@@ -86,8 +86,19 @@ function ultimaProssima(partite) {
 
 function classificaTab(cl) {
   if (!cl?.length) return `<p class="vuoto">Classifica non ancora disponibile.</p>`;
-  return `<div class="table-wrap"><table><thead><tr><th class="n">#</th><th>Squadra</th><th class="n">Pt</th><th class="n">G</th></tr></thead><tbody>
-    ${cl.map((r) => `<tr class="${r.noi || noi(r.squadra) ? "noi" : ""}"><td class="n">${r.pos}</td><td>${esc(r.squadra)}</td><td class="n">${r.punti}</td><td class="n">${r.giocate}</td></tr>`).join("")}
+  const v = (r, i) => r.valori?.[i] ?? "";
+  return `<div class="table-wrap"><table><thead><tr><th class="n">#</th><th>Squadra</th><th class="n">Pt</th><th class="n">G</th><th class="n">V</th><th class="n">N</th><th class="n">P</th><th class="n">DR</th></tr></thead><tbody>
+    ${cl.map((r) => `<tr class="${r.noi || noi(r.squadra) ? "noi" : ""}"><td class="n">${r.pos}</td><td>${esc(r.squadra)}</td><td class="n"><b>${r.punti}</b></td><td class="n">${r.giocate}</td><td class="n">${v(r, 2)}</td><td class="n">${v(r, 3)}</td><td class="n">${v(r, 4)}</td><td class="n">${v(r, 7)}</td></tr>`).join("")}
+  </tbody></table></div>`;
+}
+
+function giornataTab(girone) {
+  const giocate = (girone || []).filter((p) => p.risultato && p.giornata);
+  if (!giocate.length) return "";
+  const g = Math.max(...giocate.map((p) => p.giornata));
+  const righe = girone.filter((p) => p.giornata === g);
+  return `<h2>Risultati ${g}ª giornata</h2><div class="table-wrap"><table><tbody>
+    ${righe.map((p) => `<tr class="${p.noi ? "noi" : ""}"><td>${esc(p.casa)}</td><td class="n"><b>${esc(p.risultato || "-")}</b></td><td>${esc(p.ospite)}</td></tr>`).join("")}
   </tbody></table></div>`;
 }
 
@@ -119,6 +130,9 @@ async function avvia() {
         ${prossima ? `<div class="prossima">${partitaBox(prossima, "Prossima partita")}</div>` : ""}
         ${!ultima && !prossima ? `<p class="vuoto">Partite non ancora disponibili.</p>` : ""}`;
       $("classifica").innerHTML = `<h2>Classifica</h2><p class="vuoto" style="margin-top:-6px">${esc(prima.campionato)}</p>${classificaTab(prima.classifica)}`;
+      const gt = giornataTab(prima.girone);
+      $("giornata").innerHTML = gt;
+      $("giornata").hidden = !gt;
     }
     $("squadre").innerHTML = squadre.map((s) => `<a class="squadra-card" href="squadra.html?id=${s.id}"><b>${esc(s.nome)}</b><span>${esc(s.campionato)}</span>${s.da_confermare ? `<div class="avviso">Stagione in corso da confermare</div>` : ""}</a>`).join("");
     $("ig").innerHTML = instagram(soc.instagram || "https://www.instagram.com/biasola_rivalta_calcio/");
@@ -136,6 +150,9 @@ async function avvia() {
     $("partite").innerHTML = `<h2>Partite</h2>${partitaBox(ultima, "Ultima partita")}${prossima ? `<div class="prossima">${partitaBox(prossima, "Prossima partita")}</div>` : ""}`;
     $("classifica").innerHTML = `<h2>Classifica</h2>${classificaTab(s.classifica)}`;
     $("calendario").innerHTML = `<h2>Calendario e risultati</h2>${calendarioTab(s.partite)}`;
+    const gt = giornataTab(s.girone);
+    $("giornata").innerHTML = gt;
+    $("giornata").hidden = !gt;
     const mie = (news || []).filter((n) => n.squadra === s.id || (!n.squadra && n.tipo === "societa" && s === squadre[0]));
     listaNews($("news"), mie);
     $("fonti").innerHTML = `<h2>Approfondisci</h2><ul>${(s.link || []).map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(new URL(u).hostname.replace("www.", ""))}</a></li>`).join("")}</ul>`;
