@@ -1,5 +1,30 @@
 [
  {
+  "id": "8ffcc432ccf8",
+  "titolo": "Comunicato Ufficiale n. 23 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7690/CU23.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-25T20:20:01+00:00",
+  "trovata": "2026-09-25T20:20:01+00:00",
+  "estratto": "SAXUM UNITED A.R.L. BIASOLA-RIVALTA RIVALTA PARROCCHIALE 26/09/26 15:00 3A · BIASOLA-RIVALTA SAN FAUSTINO REGGIO EMILIA BIASOLA 28/09/26 20:00 3A · FALKGALILEO BOIARDO MAER REGGIO EMILIA BIASOLA 27/09/26 10:30 3A",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "SAXUM UNITED A.R.L. BIASOLA-RIVALTA RIVALTA PARROCCHIALE 26/09/26 15:00 3A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA SAN FAUSTINO REGGIO EMILIA BIASOLA 28/09/26 20:00 3A"
+   },
+   {
+    "sezione": "ALLIEVI",
+    "testo": "FALKGALILEO BOIARDO MAER REGGIO EMILIA BIASOLA 27/09/26 10:30 3A"
+   }
+  ]
+ },
+ {
   "id": "df921096700f",
   "titolo": "Comunicato Ufficiale n. 4 FIGC Reggio Emilia: le righe sulla Biasola",
   "link": "https://www.figcreggioemilia.it/files/announcements/2026/7486/CU04.pdf",
