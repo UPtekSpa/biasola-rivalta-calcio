@@ -45,6 +45,18 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Collega il dominio se il DNS è pronto
+        run: |
+          DOMINIO=www.biasolacalcio.it
+          risposta=$(dig +short "$DOMINIO" CNAME || true)
+          echo "$(date -u +%FT%TZ) $DOMINIO CNAME: ${risposta:-nessuna risposta}" | tee sonde/dns.txt 2>/dev/null || true
+          if echo "$risposta" | grep -qi "uptekspa.github.io"; then
+            echo "$DOMINIO" > site/CNAME
+            echo "Dominio collegato"
+          else
+            echo "DNS non ancora pronto: il sito resta su github.io"
+          fi
+
       - name: Salva le pagine scaricate nel branch sonde (per controllare i parser)
         continue-on-error: true
         run: |
