@@ -1,4 +1,4 @@
-name: Sonda foto
+name: Sonda CSI
 on:
   push:
     branches: [sonda-foto]
@@ -13,11 +13,7 @@ jobs:
           mkdir -p out
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
           get() { curl -sSL -A "$UA" "${@:3}" -o "out/$1" "$2" -w "$1 %{http_code} %{content_type} %{size_download}\n" >> out/elenco.txt || echo "$1 errore" >> out/elenco.txt; }
-          get ig_embed.html "https://www.instagram.com/biasola_rivalta_calcio/embed/"
-          get ig_api.json "https://i.instagram.com/api/v1/users/web_profile_info/?username=biasola_rivalta_calcio" -H "x-ig-app-id: 936619743392459"
-          get ig_www_api.json "https://www.instagram.com/api/v1/users/web_profile_info/?username=biasola_rivalta_calcio" -H "x-ig-app-id: 936619743392459"
-          get cr_gallery.html "https://www.calcioreggiano.com/photogallery/dettaglio.aspx?idgallery=18357"
-          get cr_squadra.html "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
+          get csi_girone_b.html "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
       - run: |
           git config user.name biasola-bot
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
