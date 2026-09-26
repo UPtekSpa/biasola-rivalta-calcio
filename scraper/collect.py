@@ -216,7 +216,7 @@ SEZIONI = ["TERZA CATEGORIA", "SECONDA CATEGORIA", "JUNIORES", "ALLIEVI",
            "GIOVANISSIMI", "ESORDIENTI", "PULCINI", "CALCIO A 5", "FEMMINILE"]
 
 
-def figc_comunicati(cfg, keywords, stato, max_nuovi=6):
+def figc_comunicati(cfg, keywords, stato, max_nuovi=15):
     base = cfg["fonti_generali"]["figc_comunicati"]
     soup = BeautifulSoup(fetch(base), "html.parser")
     cu = {}
@@ -230,14 +230,14 @@ def figc_comunicati(cfg, keywords, stato, max_nuovi=6):
     items = []
     for cid in nuovi:
         numero, pdf = cu[cid]
-        righe = pdf_mentions(fetch(pdf, binary=True), keywords)
+        righe, data = pdf_mentions(fetch(pdf, binary=True), keywords)
         visti.add(cid)
         if not righe:
             continue
         squadre = {sezione_squadra.get(r["sezione"]) for r in righe} - {None}
         items.append(item(
             f"Comunicato Ufficiale n. {numero} FIGC Reggio Emilia: le righe sulla Biasola",
-            pdf, "figcreggioemilia.it", "ufficiale",
+            pdf, "figcreggioemilia.it", "ufficiale", data,
             estratto=" · ".join(r["testo"] for r in righe[:3]),
             squadra=squadre.pop() if len(squadre) == 1 else None,
             righe=righe[:20],
@@ -251,6 +251,9 @@ def pdf_mentions(pdf_bytes, keywords):
 
     reader = PdfReader(io.BytesIO(pdf_bytes))
     sezione, out = None, []
+    prima = reader.pages[0].extract_text() or "" if reader.pages else ""
+    m = re.search(r"\bDEL\s+(\d{1,2})/(\d{1,2})/(\d{4})", prima, re.I)
+    data = f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}T12:00:00+00:00" if m else None
     for page in reader.pages:
         for line in (page.extract_text() or "").splitlines():
             line = clean(line)
@@ -260,7 +263,7 @@ def pdf_mentions(pdf_bytes, keywords):
                     sezione = s
             if mentions(line, keywords) and len(line) >= 15:
                 out.append({"sezione": sezione, "testo": line})
-    return out
+    return out, data
 
 
 # ---------------------------------------------------------------- calendario e classifica
