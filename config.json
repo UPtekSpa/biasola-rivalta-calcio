@@ -47,6 +47,18 @@
         "juniores",
         "under 19"
       ]
+    },
+    {
+      "id": "under-18-csi",
+      "nome": "Under 18 CSI",
+      "campionato": "CSI Reggio Emilia, Under 18 Girone B",
+      "link": [
+        "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
+      ],
+      "pagine_news": [],
+      "parole_campionato": [
+        "under 18 csi"
+      ]
     }
   ],
   "fonti_generali": {

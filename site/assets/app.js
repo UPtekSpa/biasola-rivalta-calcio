@@ -170,9 +170,9 @@ async function avvia() {
     const gt = giornataTab(s.girone);
     $("giornata").innerHTML = gt;
     $("giornata").hidden = !gt;
-    const mie = (news || []).filter((n) => n.squadra === s.id || n.tipo === "ufficiale" || (!n.squadra && n.tipo === "societa" && s === squadre[0]));
+    const mie = (news || []).filter((n) => n.squadra === s.id || (n.tipo === "ufficiale" && !/csi/i.test(s.id)) || (!n.squadra && n.tipo === "societa" && s === squadre[0]));
     listaNews($("news"), mie);
-    $("fonti").innerHTML = `<h2>Approfondisci</h2><ul>${(s.link || []).map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(new URL(u).hostname.replace("www.", ""))}</a></li>`).join("")}</ul>`;
+    $("fonti").innerHTML = `<h2>Approfondisci</h2>${s.nota ? `<p class="vuoto">${esc(s.nota)}</p>` : ""}<ul>${(s.link || []).map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(new URL(u).hostname.replace("www.", "").replace("live.centrosportivoitaliano.it", "Portale CSI"))}</a></li>`).join("")}</ul>`;
   }
 
   if (pagina === "societa") {
@@ -287,7 +287,7 @@ function renderHome(squadre, news) {
   $("giornata").innerHTML = gt || `<h2>Risultati</h2><p class="vuoto">I risultati arriveranno con il prossimo aggiornamento.</p>`;
 
   $("squadre").innerHTML = squadre.map((s, i) => `
-    <a class="squadra-grande" href="squadra.html?id=${s.id}"><span class="num">${{ "prima-squadra": "1ª", juniores: "U19" }[s.id] || ""}</span>
+    <a class="squadra-grande" href="squadra.html?id=${s.id}"><span class="num">${{ "prima-squadra": "1ª", juniores: "U19", "under-18-csi": "U18" }[s.id] || ""}</span>
       <b>${esc(s.nome)}</b><span>${esc(s.campionato)}</span><em>Partite e classifica →</em></a>`).join("");
 }
 

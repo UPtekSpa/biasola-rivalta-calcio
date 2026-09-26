@@ -456,6 +456,7 @@ def main():
     for sq in cfg["squadre"]:
         old = squadre_old.get(sq["id"], {})
         info = {k: sq.get(k) for k in ("id", "nome", "campionato", "allenatore", "da_confermare")}
+        info["nota"] = old.get("nota")
         info["partite"] = old.get("partite", [])
         info["classifica"] = old.get("classifica", [])
         info["girone"] = old.get("girone", [])
