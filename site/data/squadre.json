@@ -1937,6 +1937,66 @@
      "risultato": null,
      "esito": null,
      "noi": true
+    },
+    {
+     "giornata": 4,
+     "data": "2026-11-01",
+     "ora": "10:30",
+     "casa": "Pol. Dil. Biasola",
+     "ospite": "United Albinea",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 5,
+     "data": "2026-11-01",
+     "ora": "10:00",
+     "casa": "U.S. Fides",
+     "ospite": "Pol. Dil. Biasola",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 6,
+     "data": "2026-11-08",
+     "ora": "10:30",
+     "casa": "Pol. Dil. Biasola",
+     "ospite": "San Martino",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 7,
+     "data": "2026-11-18",
+     "ora": "19:00",
+     "casa": "Progetto Intesa All Camp",
+     "ospite": "Pol. Dil. Biasola",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 8,
+     "data": "2026-11-23",
+     "ora": "20:00",
+     "casa": "Virtus Bagnolo",
+     "ospite": "Pol. Dil. Biasola",
+     "risultato": null,
+     "esito": null,
+     "noi": true
+    },
+    {
+     "giornata": 9,
+     "data": "2026-11-30",
+     "ora": "19:00",
+     "casa": "Monari Nasi San Damaso",
+     "ospite": "Pol. Dil. Biasola",
+     "risultato": null,
+     "esito": null,
+     "noi": true
     }
    ],
    "classifica": [],
