@@ -1,4 +1,4 @@
-name: Sonda CSI
+name: Sonda CSI browser
 on:
   push:
     branches: [sonda-foto]
@@ -9,12 +9,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
       - run: |
           mkdir -p out
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
-          get() { curl -sSL -A "$UA" "${@:3}" -o "out/$1" "$2" -w "$1 %{http_code} %{content_type} %{size_download}\n" >> out/elenco.txt || echo "$1 errore" >> out/elenco.txt; }
-          get csi_girone_b.html "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
+          cat > sonda.py <<'PY'
+          import asyncio
+          from playwright.async_api import async_playwright
+          URL = "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
+          async def main():
+              async with async_playwright() as p:
+                  b = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+                  ctx = await b.new_context(locale="it-IT", user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36")
+                  page = await ctx.new_page()
+                  await page.goto(URL, wait_until="domcontentloaded", timeout=60000)
+                  for i in range(12):
+                      await page.wait_for_timeout(5000)
+                      t = await page.title()
+                      print(i, t)
+                      if "moment" not in t.lower():
+                          break
+                  open("out/csi_browser.html", "w").write(await page.content())
+                  await page.screenshot(path="out/csi.png", full_page=True)
+                  await b.close()
+          asyncio.run(main())
+          PY
+          python sonda.py | tee out/log.txt
       - run: |
           git config user.name biasola-bot
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add out && git commit -qm "Sonda foto" && git push origin HEAD:sonda-foto
+          git add out && git commit -qm "Sonda CSI browser" && git push origin HEAD:sonda-foto
