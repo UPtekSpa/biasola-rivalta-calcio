@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-26T11:55:02+00:00",
+ "aggiornato": "2026-09-26T12:09:07+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -17,6 +17,7 @@
    "campionato": "Terza Categoria Reggio Emilia, Girone A",
    "allenatore": "Alex Bertolini",
    "da_confermare": null,
+   "nota": null,
    "partite": [
     {
      "giornata": 1,
@@ -45,8 +46,8 @@
      "data": "2026-09-26",
      "casa": "Saxum United",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:00",
      "campo": "Rivalta Parrocchiale"
@@ -313,6 +314,23 @@
      "pos": 4
     },
     {
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 4,
+     "giocate": 3,
+     "valori": [
+      4,
+      3,
+      1,
+      1,
+      1,
+      3,
+      3,
+      0
+     ],
+     "noi": true,
+     "pos": 5
+    },
+    {
      "squadra": "Felina",
      "punti": 3,
      "giocate": 1,
@@ -327,23 +345,6 @@
       1
      ],
      "noi": false,
-     "pos": 5
-    },
-    {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 3,
-     "giocate": 2,
-     "valori": [
-      3,
-      2,
-      1,
-      0,
-      1,
-      3,
-      3,
-      0
-     ],
-     "noi": true,
      "pos": 6
     },
     {
@@ -398,6 +399,23 @@
      "pos": 9
     },
     {
+     "squadra": "Saxum United",
+     "punti": 1,
+     "giocate": 3,
+     "valori": [
+      1,
+      3,
+      0,
+      1,
+      2,
+      1,
+      5,
+      -4
+     ],
+     "noi": false,
+     "pos": 10
+    },
+    {
      "squadra": "Real Casina 04 U21",
      "punti": 0,
      "giocate": 1,
@@ -412,7 +430,7 @@
       -2
      ],
      "noi": false,
-     "pos": 10
+     "pos": 11
     },
     {
      "squadra": "Amici di Davide",
@@ -429,7 +447,7 @@
       -2
      ],
      "noi": false,
-     "pos": 11
+     "pos": 12
     },
     {
      "squadra": "Collagna",
@@ -444,23 +462,6 @@
       0,
       5,
       -5
-     ],
-     "noi": false,
-     "pos": 12
-    },
-    {
-     "squadra": "Saxum United",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
-      1,
-      5,
-      -4
      ],
      "noi": false,
      "pos": 13
@@ -620,8 +621,8 @@
      "data": "2026-09-26",
      "casa": "Saxum United",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:00",
      "campo": "Rivalta Parrocchiale"
@@ -1891,6 +1892,7 @@
    "campionato": "Juniores Under 19 Provinciale Reggio Emilia",
    "allenatore": null,
    "da_confermare": null,
+   "nota": null,
    "partite": [],
    "classifica": [],
    "girone": [],
@@ -1904,6 +1906,7 @@
    "campionato": "CSI Reggio Emilia, Under 18 Girone B",
    "allenatore": null,
    "da_confermare": null,
+   "nota": "Calendario completo, risultati e classifica sul portale CSI.",
    "partite": [
     {
      "giornata": 1,
@@ -1940,8 +1943,7 @@
    "girone": [],
    "link": [
     "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
-   ],
-   "nota": "Calendario completo, risultati e classifica sul portale CSI."
+   ]
   }
  ]
 }
