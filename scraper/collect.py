@@ -24,6 +24,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from urllib.parse import quote_plus, urljoin, urlparse
 
 import requests
@@ -418,6 +419,48 @@ def orari_ufficiali(squadra, news):
                         p["campo"] = campo.title()
 
 
+def togli_non_giocate(squadra, adesso=None):
+    """RomagnaSport a volte mette 0-0 alle partite non ancora giocate e lo conta in classifica.
+    Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana): prima si toglie
+    dalla partita e dalla classifica."""
+    adesso = adesso or datetime.now(ZoneInfo("Europe/Rome")).replace(tzinfo=None)
+    righe = {r["squadra"]: r for r in squadra.get("classifica") or []}
+    tolte = False
+    viste = set()
+    for p in (squadra.get("girone") or []) + (squadra.get("partite") or []):
+        if not p.get("risultato") or not p.get("data"):
+            continue
+        inizio = datetime.fromisoformat(f"{p['data']}T{p.get('ora') or '15:00'}")
+        if inizio + timedelta(hours=2) <= adesso:
+            continue
+        chiave = (p["giornata"], p["casa"], p["ospite"])
+        gol = re.match(r"(\d+)\D+(\d+)", p["risultato"])
+        if gol and chiave not in viste:
+            viste.add(chiave)
+            gc, go = map(int, gol.groups())
+            for nome, fatti, subiti in ((p["casa"], gc, go), (p["ospite"], go, gc)):
+                r = righe.get(nome)
+                if not r or r["valori"][1] <= 0:
+                    continue
+                v = r["valori"]
+                esito = 2 if fatti > subiti else 3 if fatti == subiti else 4
+                v[0] -= {2: 3, 3: 1, 4: 0}[esito]
+                v[1] -= 1
+                v[esito] -= 1
+                v[5] -= fatti
+                v[6] -= subiti
+                v[7] = v[5] - v[6]
+                r["punti"], r["giocate"] = v[0], v[1]
+                tolte = True
+        p["risultato"] = None
+        p["esito"] = None
+    if tolte:
+        ordine = sorted(righe.values(), key=lambda r: (-r["valori"][0], -r["valori"][7], -r["valori"][5]))
+        for i, r in enumerate(ordine, 1):
+            r["pos"] = i
+        squadra["classifica"] = ordine
+
+
 def merge_news(old, new):
     old = [n for n in old if attuale(n)]
     new = [n for n in new if attuale(n)]
@@ -484,6 +527,7 @@ def main():
     news = merge_news(news, raccolte)
     for info in squadre:
         orari_ufficiali(info, news)
+        togli_non_giocate(info)
     stato["ultimo_aggiornamento"] = now_iso()
     save(DATA / "news.json", news)
     save(DATA / "squadre.json", {"aggiornato": now_iso(), "societa": cfg["societa"], "squadre": squadre})
