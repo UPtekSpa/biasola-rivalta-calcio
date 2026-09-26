@@ -29,7 +29,7 @@ jobs:
                       await page.wait_for_timeout(5000)
                       t = await page.title()
                       print(i, t)
-                      if "moment" not in t.lower():
+                      if "moment" not in t.lower() and "quasi" not in t.lower():
                           break
                   open("out/csi_browser.html", "w").write(await page.content())
                   await page.screenshot(path="out/csi.png", full_page=True)
