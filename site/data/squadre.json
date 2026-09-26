@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-26T12:20:55+00:00",
+ "aggiornato": "2026-09-26T17:26:51+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -46,8 +46,8 @@
      "data": "2026-09-26",
      "casa": "Saxum United",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "2-1",
+     "esito": "P",
      "noi": true,
      "ora": "15:00",
      "campo": "Rivalta Parrocchiale"
@@ -331,23 +331,6 @@
      "pos": 5
     },
     {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 3,
-     "giocate": 2,
-     "valori": [
-      3,
-      2,
-      1,
-      0,
-      1,
-      3,
-      3,
-      0
-     ],
-     "noi": true,
-     "pos": 6
-    },
-    {
      "squadra": "Bosco",
      "punti": 3,
      "giocate": 2,
@@ -362,21 +345,38 @@
       -2
      ],
      "noi": false,
+     "pos": 6
+    },
+    {
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 3,
+     "giocate": 3,
+     "valori": [
+      3,
+      3,
+      1,
+      0,
+      2,
+      4,
+      5,
+      -1
+     ],
+     "noi": true,
      "pos": 7
     },
     {
-     "squadra": "Levizzano",
-     "punti": 1,
-     "giocate": 2,
+     "squadra": "Saxum United",
+     "punti": 3,
+     "giocate": 3,
      "valori": [
+      3,
+      3,
       1,
-      2,
       0,
-      1,
-      1,
       2,
       3,
-      -1
+      6,
+      -3
      ],
      "noi": false,
      "pos": 8
@@ -399,18 +399,18 @@
      "pos": 9
     },
     {
-     "squadra": "Amici di Davide",
-     "punti": 0,
+     "squadra": "Levizzano",
+     "punti": 1,
      "giocate": 2,
      "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
       1,
+      2,
+      0,
+      1,
+      1,
+      2,
       3,
-      -2
+      -1
      ],
      "noi": false,
      "pos": 10
@@ -433,7 +433,7 @@
      "pos": 11
     },
     {
-     "squadra": "Saxum United",
+     "squadra": "Amici di Davide",
      "punti": 0,
      "giocate": 2,
      "valori": [
@@ -443,8 +443,8 @@
       0,
       2,
       1,
-      5,
-      -4
+      3,
+      -2
      ],
      "noi": false,
      "pos": 12
@@ -621,8 +621,8 @@
      "data": "2026-09-26",
      "casa": "Saxum United",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "2-1",
+     "esito": "P",
      "noi": true,
      "ora": "15:00",
      "campo": "Rivalta Parrocchiale"
