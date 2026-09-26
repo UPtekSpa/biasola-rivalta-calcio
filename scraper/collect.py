@@ -383,6 +383,41 @@ def attuale(n):
     return True
 
 
+PROGRAMMA_RE = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{2})\s+(\d{1,2}:\d{2})\s+(\d{1,2})\s*([AR])\b")
+
+
+def orari_ufficiali(squadra, news):
+    """Corregge data e ora delle partite con il programma gare dei comunicati FIGC,
+    che è la fonte ufficiale (RomagnaSport a volte riporta solo la domenica)."""
+    partite = squadra.get("partite") or []
+    if not partite:
+        return
+    per_gamba = max((p["giornata"] or 0) for p in partite + squadra.get("girone", [])) // 2 or 13
+    comunicati = sorted((n for n in news if n["tipo"] == "ufficiale"), key=lambda n: n.get("data") or "")
+    for n in comunicati:  # i più recenti per ultimi, così vincono
+        for r in n.get("righe", []):
+            m = PROGRAMMA_RE.search(r["testo"])
+            if not m:
+                continue
+            g, mese, anno, ora, num, gamba = m.groups()
+            giornata = int(num) + (per_gamba if gamba == "R" else 0)
+            testo = r["testo"].upper()
+            for p in partite:
+                avversario = p["ospite"] if mentions(p["casa"], ["biasola"]) else p["casa"]
+                parola = re.sub(r"[^A-Z0-9 ]", " ", avversario.upper()).split()
+                if p["giornata"] == giornata and parola and parola[0] in testo:
+                    p["data"] = f"20{anno}-{int(mese):02d}-{int(g):02d}"
+                    p["ora"] = ora
+                    prima_del_campo = testo[:m.start()]
+                    if mentions(p["casa"], ["biasola"]):  # in casa: il campo segue il nome dell'avversario
+                        taglio = prima_del_campo.rfind(parola[-1]) + len(parola[-1]) if parola[-1] in prima_del_campo else -1
+                    else:  # in trasferta: il campo segue il nostro nome
+                        taglio = prima_del_campo.rfind("BIASOLA-RIVALTA") + len("BIASOLA-RIVALTA") if "BIASOLA-RIVALTA" in prima_del_campo else -1
+                    campo = prima_del_campo[taglio:].strip() if taglio > 0 else ""
+                    if campo:
+                        p["campo"] = campo.title()
+
+
 def merge_news(old, new):
     old = [n for n in old if attuale(n)]
     new = [n for n in new if attuale(n)]
@@ -446,6 +481,8 @@ def main():
                                lambda u=url, s=sid: news_links(u, cfg, kw, girone, s)) or []
 
     news = merge_news(news, raccolte)
+    for info in squadre:
+        orari_ufficiali(info, news)
     stato["ultimo_aggiornamento"] = now_iso()
     save(DATA / "news.json", news)
     save(DATA / "squadre.json", {"aggiornato": now_iso(), "societa": cfg["societa"], "squadre": squadre})

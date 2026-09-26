@@ -91,7 +91,7 @@ function partitaBox(p, etichetta) {
   if (!p) return "";
   return `<div class="label">${etichetta}</div>
     <div class="match"><div class="sq">${esc(p.casa)}</div><div class="score">${p.risultato ? esc(p.risultato) : "vs"}</div><div class="sq">${esc(p.ospite)}</div></div>
-    <div class="match-info">${p.giornata ? `${p.giornata}ª giornata · ` : ""}${dataIt(p.data)}</div>`;
+    <div class="match-info">${p.giornata ? `${p.giornata}ª giornata · ` : ""}${dataIt(p.data)}${p.ora ? ` · ore ${esc(p.ora)}` : ""}${p.campo ? `<br>${esc(p.campo)}` : ""}</div>`;
 }
 
 function ultimaProssima(partite) {
@@ -122,7 +122,7 @@ function giornataTab(girone) {
 function calendarioTab(partite) {
   if (!partite?.length) return `<p class="vuoto">Calendario non ancora disponibile.</p>`;
   return `<div class="table-wrap"><table><thead><tr><th>G.</th><th>Data</th><th>Partita</th><th class="n">Ris.</th><th></th></tr></thead><tbody>
-    ${partite.map((p) => `<tr><td>${p.giornata ?? ""}</td><td>${dataIt(p.data)}</td><td>${esc(p.casa)} – ${esc(p.ospite)}</td><td class="n">${esc(p.risultato || "")}</td><td>${p.esito ? `<span class="esito ${p.esito}">${p.esito}</span>` : ""}</td></tr>`).join("")}
+    ${partite.map((p) => `<tr><td>${p.giornata ?? ""}</td><td>${dataIt(p.data)}${p.ora ? ` <small>${esc(p.ora)}</small>` : ""}</td><td>${esc(p.casa)} – ${esc(p.ospite)}</td><td class="n">${esc(p.risultato || "")}</td><td>${p.esito ? `<span class="esito ${p.esito}">${p.esito}</span>` : ""}</td></tr>`).join("")}
   </tbody></table></div>`;
 }
 
@@ -239,7 +239,7 @@ function renderHome(squadre, news) {
   const p = prossima || ultima;
   if (p) {
     hero += `<div class="mh-squadre"><b class="${noi(p.casa) ? "noi" : ""}">${esc(p.casa)}</b><span class="mh-vs">${p.risultato ? esc(p.risultato) : "VS"}</span><b class="${noi(p.ospite) ? "noi" : ""}">${esc(p.ospite)}</b></div>
-      <div class="mh-quando">${esc(prima.campionato)}${p.giornata ? ` · ${p.giornata}ª giornata` : ""}<br>${p.data ? new Date(p.data + "T12:00:00").toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" }) : ""}</div>`;
+      <div class="mh-quando">${esc(prima.campionato)}${p.giornata ? ` · ${p.giornata}ª giornata` : ""}<br>${p.data ? new Date(p.data + "T12:00:00").toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" }) : ""}${p.ora ? ` · ore ${esc(p.ora)}` : ""}${p.campo ? `<br>${esc(p.campo)}` : ""}</div>`;
     if (prossima?.data) {
       const g = giorniA(prossima.data);
       hero += g <= 0
