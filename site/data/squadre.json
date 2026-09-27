@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-27T10:22:44+00:00",
+ "aggiornato": "2026-09-27T18:15:34+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -247,40 +247,40 @@
    "classifica": [
     {
      "squadra": "Eagles Virtus Ancora",
-     "punti": 6,
-     "giocate": 2,
+     "punti": 9,
+     "giocate": 3,
      "valori": [
-      6,
-      2,
-      2,
+      9,
+      3,
+      3,
       0,
       0,
-      8,
+      13,
       1,
-      7
+      12
      ],
      "noi": false,
      "pos": 1
     },
     {
      "squadra": "Coviolo",
-     "punti": 6,
-     "giocate": 2,
+     "punti": 9,
+     "giocate": 3,
      "valori": [
-      6,
-      2,
-      2,
+      9,
+      3,
+      3,
       0,
       0,
-      6,
+      8,
       0,
-      6
+      8
      ],
      "noi": false,
      "pos": 2
     },
     {
-     "squadra": "Folese",
+     "squadra": "Felina",
      "punti": 6,
      "giocate": 2,
      "valori": [
@@ -289,9 +289,9 @@
       2,
       0,
       0,
-      3,
-      0,
-      3
+      6,
+      2,
+      4
      ],
      "noi": false,
      "pos": 3
@@ -299,50 +299,50 @@
     {
      "squadra": "Montefiorino",
      "punti": 6,
-     "giocate": 2,
+     "giocate": 3,
      "valori": [
       6,
-      2,
-      2,
-      0,
-      0,
       3,
+      2,
       0,
-      3
+      1,
+      6,
+      4,
+      2
      ],
      "noi": false,
      "pos": 4
     },
     {
-     "squadra": "Felina",
-     "punti": 3,
-     "giocate": 1,
+     "squadra": "Bosco",
+     "punti": 6,
+     "giocate": 3,
      "valori": [
+      6,
       3,
-      1,
-      1,
-      0,
-      0,
       2,
+      0,
       1,
-      1
+      4,
+      4,
+      0
      ],
      "noi": false,
      "pos": 5
     },
     {
-     "squadra": "Bosco",
-     "punti": 3,
-     "giocate": 2,
+     "squadra": "Folese",
+     "punti": 6,
+     "giocate": 3,
      "valori": [
+      6,
       3,
       2,
-      1,
       0,
       1,
-      2,
       4,
-      -2
+      4,
+      0
      ],
      "noi": false,
      "pos": 6
@@ -382,52 +382,52 @@
      "pos": 8
     },
     {
-     "squadra": "Salvaterra",
-     "punti": 1,
-     "giocate": 2,
+     "squadra": "Collagna",
+     "punti": 3,
+     "giocate": 3,
      "valori": [
+      3,
+      3,
       1,
-      2,
       0,
-      1,
-      1,
-      1,
-      5,
+      2,
+      4,
+      8,
       -4
      ],
      "noi": false,
      "pos": 9
     },
     {
-     "squadra": "Levizzano",
+     "squadra": "Salvaterra",
      "punti": 1,
-     "giocate": 2,
+     "giocate": 3,
      "valori": [
       1,
-      2,
+      3,
       0,
       1,
-      1,
       2,
-      3,
-      -1
+      1,
+      7,
+      -6
      ],
      "noi": false,
      "pos": 10
     },
     {
-     "squadra": "Real Casina 04 U21",
-     "punti": 0,
-     "giocate": 1,
+     "squadra": "Levizzano",
+     "punti": 1,
+     "giocate": 3,
      "valori": [
+      1,
+      3,
       0,
       1,
-      0,
-      0,
-      1,
-      0,
       2,
-      -2
+      2,
+      8,
+      -6
      ],
      "noi": false,
      "pos": 11
@@ -450,7 +450,7 @@
      "pos": 12
     },
     {
-     "squadra": "Collagna",
+     "squadra": "Real Casina 04 U21",
      "punti": 0,
      "giocate": 2,
      "valori": [
@@ -460,8 +460,8 @@
       0,
       2,
       0,
-      5,
-      -5
+      4,
+      -4
      ],
      "noi": false,
      "pos": 13
@@ -585,7 +585,7 @@
      "data": "2026-09-27",
      "casa": "Bosco",
      "ospite": "Real Casina 04 U21",
-     "risultato": null,
+     "risultato": "2-0",
      "esito": null,
      "noi": false
     },
@@ -594,7 +594,7 @@
      "data": "2026-09-27",
      "casa": "Collagna",
      "ospite": "Montefiorino",
-     "risultato": null,
+     "risultato": "4-3",
      "esito": null,
      "noi": false
     },
@@ -603,7 +603,7 @@
      "data": "2026-09-27",
      "casa": "Felina",
      "ospite": "Folese",
-     "risultato": null,
+     "risultato": "4-1",
      "esito": null,
      "noi": false
     },
@@ -612,7 +612,7 @@
      "data": "2026-09-27",
      "casa": "Salvaterra",
      "ospite": "Coviolo",
-     "risultato": null,
+     "risultato": "0-2",
      "esito": null,
      "noi": false
     },
@@ -632,7 +632,7 @@
      "data": "2026-09-27",
      "casa": "Levizzano",
      "ospite": "Eagles Virtus Ancora",
-     "risultato": null,
+     "risultato": "0-5",
      "esito": null,
      "noi": false
     },
