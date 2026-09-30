@@ -1,5 +1,37 @@
 [
  {
+  "id": "22dcacf25229",
+  "titolo": "PRIMA CATEGORIA: PAOLO LODI RIZZINI E’ IL NUOVO ALLENATORE DELLO UNITED ALBINEA",
+  "link": "https://solodilettanti.it/prima-categoria-paolo-lodi-rizzini-e-il-nuovo-allenatore-dello-united-albinea/",
+  "fonte": "solodilettanti.it",
+  "tipo": "campionato",
+  "data": "2026-09-30T18:50:49+00:00",
+  "trovata": "2026-09-30T21:19:36+00:00",
+  "estratto": "Paolo Lodi Rizzini (nella foto a destra) è il nuovo allenatore dello United Albinea, girone C di Prima Categoria, dopo il divorzio con Enrico Frigieri, e arriva dopo l’importante esperienza alla guida del Castellarano, culminata nella stagione appena conclusa con la promozione in Eccellenza che poi ",
+  "squadra": "under-18-csi"
+ },
+ {
+  "id": "b71497a510f5",
+  "titolo": "Comunicato Ufficiale n. 24 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7707/CU24.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-09-30T12:00:00+00:00",
+  "trovata": "2026-09-30T21:19:38+00:00",
+  "estratto": "FELINA BIASOLA-RIVALTA FELINA ZANELLI 11/10/26 15:30 5A · BIASOLA-RIVALTA A.C. CARPINETI REGGIO EMILIA BIASOLA 10/10/26 15:00 5A",
+  "squadra": "juniores",
+  "righe": [
+   {
+    "sezione": "PULCINI",
+    "testo": "FELINA BIASOLA-RIVALTA FELINA ZANELLI 11/10/26 15:30 5A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA A.C. CARPINETI REGGIO EMILIA BIASOLA 10/10/26 15:00 5A"
+   }
+  ]
+ },
+ {
   "id": "055daaf608f8",
   "titolo": "PANCHINE CALDE: SALTANO ENRICO FRIGIERI ALLO UNITED ALBINEA E LUCA BELLETTI ALLA BARCACCIA",
   "link": "https://solodilettanti.it/panchine-calde-saltano-enrico-frigieri-allo-united-albienea-e-luca-belletti-alla-barcaccia/",
@@ -394,6 +426,17 @@
     "testo": "POLISPORTIVA BIASOLA"
    }
   ]
+ },
+ {
+  "id": "f69cba15029e",
+  "titolo": "Polisportiva Gatta vs Biasola, il tabellino",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEtBRlJaT09kNzVKcUpTYTNGcFhuelhHRGZDQlNBRFlUcjJiXy13dTFGOUplal9PNDhOT045SUIwSlZURlg1cXI4UWREVld4UlVpMVNFV3NVRnd4c3NDTm1nUWRCM0Z4U2swcjRxMVd2U2thQmxYQ2lfaVd3Z25tMDk2bGZLY2RWUnBOWkF3SVNQVGI2ckpvWUh1NGpNb1nSAaMBQVVfeXFMT2lFQkhiUU03Z1NBUkVQR2JsWEt3NENydU1wbUZENU5nOG9ndXNSRjRER1NiOUVWV21ib0xrOWN1dU5OSktQTjZRVndXemFxSWZkWWxXdUNVR2xrS29qSm94S0FHaC1nWU1ob0g5Q1kyemNxSTkwYXlRTnQ0RTdKUWhoWEUzeEU5c3ozVHhOZWpiVjZLMjlGTlc5RG9BSlFtSERYSQ?oc=5",
+  "fonte": "Tuttocampo",
+  "tipo": "societa",
+  "data": "2026-04-26T07:00:00+00:00",
+  "trovata": "2026-09-30T21:19:33+00:00",
+  "estratto": "Polisportiva Gatta vs Biasola, il tabellino Tuttocampo",
+  "squadra": null
  },
  {
   "id": "b6b51ce9ff65",

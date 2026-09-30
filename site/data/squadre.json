@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-30T10:56:38+00:00",
+ "aggiornato": "2026-09-30T21:19:40+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -65,12 +65,14 @@
     },
     {
      "giornata": 5,
-     "data": "2026-10-10",
+     "data": "2026-10-11",
      "casa": "Felina",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "15:30",
+     "campo": "Felina Zanelli"
     },
     {
      "giornata": 6,
@@ -712,12 +714,14 @@
     },
     {
      "giornata": 5,
-     "data": "2026-10-10",
+     "data": "2026-10-11",
      "casa": "Felina",
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "15:30",
+     "campo": "Felina Zanelli"
     },
     {
      "giornata": 5,
