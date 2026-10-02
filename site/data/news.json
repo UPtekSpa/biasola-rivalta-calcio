@@ -1,5 +1,30 @@
 [
  {
+  "id": "0b404a6ba24f",
+  "titolo": "Comunicato Ufficiale n. 26 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7722/CU26.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-10-02T12:00:00+00:00",
+  "trovata": "2026-10-02T21:13:47+00:00",
+  "estratto": "BIASOLA-RIVALTA COLLAGNA RIVALTA PARROCCHIALE 4/10/26 15:30 4A · REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 3/10/26 15:00 4A · REGGIO UNITED ROLO FABBRICO REGGIO EMILIA BIASOLA 3/10/26 16:00 4A",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA COLLAGNA RIVALTA PARROCCHIALE 4/10/26 15:30 4A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 3/10/26 15:00 4A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED ROLO FABBRICO REGGIO EMILIA BIASOLA 3/10/26 16:00 4A"
+   }
+  ]
+ },
+ {
   "id": "4bedf5c7ac30",
   "titolo": "Comunicato Ufficiale n. 25 FIGC Reggio Emilia: le righe sulla Biasola",
   "link": "https://www.figcreggioemilia.it/files/announcements/2026/7712/CU25.pdf",
