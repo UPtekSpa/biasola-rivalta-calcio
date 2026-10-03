@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-03T19:44:52+00:00",
+ "aggiornato": "2026-10-03T19:54:16+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -1897,7 +1897,68 @@
    "allenatore": null,
    "da_confermare": null,
    "nota": null,
-   "partite": [],
+   "partite": [
+    {
+     "giornata": 1,
+     "data": "2026-09-12",
+     "ora": "15:00",
+     "casa": "Biasola-Rivalta",
+     "ospite": "Invicta Gavasseto A.S.D.",
+     "risultato": "4-5",
+     "esito": "P",
+     "noi": true,
+     "fonte": "figc",
+     "campo": ". Reggio Emilia Biasola"
+    },
+    {
+     "giornata": 2,
+     "data": "2026-09-19",
+     "ora": "15:30",
+     "casa": "Fides",
+     "ospite": "Biasola-Rivalta",
+     "risultato": "1-1",
+     "esito": "N",
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Reggio Emilia Melato"
+    },
+    {
+     "giornata": 3,
+     "data": "2026-09-28",
+     "ora": "20:00",
+     "casa": "Biasola-Rivalta",
+     "ospite": "San Faustino",
+     "risultato": "3-3",
+     "esito": "N",
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Reggio Emilia Biasola"
+    },
+    {
+     "giornata": 4,
+     "data": "2026-10-03",
+     "ora": "15:00",
+     "casa": "Real Casina 04",
+     "ospite": "Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Casina Castignola"
+    },
+    {
+     "giornata": 5,
+     "data": "2026-10-10",
+     "ora": "15:00",
+     "casa": "Biasola-Rivalta",
+     "ospite": "A.C. Carpineti",
+     "risultato": null,
+     "esito": null,
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Reggio Emilia Biasola"
+    }
+   ],
    "classifica": [],
    "girone": [],
    "link": [
