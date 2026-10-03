@@ -2,36 +2,36 @@
  "fonti": {
   "Calendario Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-02T21:13:41+00:00",
+   "quando": "2026-10-03T10:13:05+00:00",
    "elementi": 156
   },
   "Classifica Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-02T21:13:42+00:00",
+   "quando": "2026-10-03T10:13:05+00:00",
    "elementi": 13
   },
   "Google News e RSS": {
-   "ok": true,
-   "quando": "2026-10-02T21:13:45+00:00",
-   "elementi": 19
+   "ok": false,
+   "quando": "2026-10-03T10:13:42+00:00",
+   "errore": "HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Biasola%22+calcio&hl=it&gl=IT&ceid=IT:it"
   },
   "Comunicati FIGC Reggio Emilia": {
    "ok": true,
-   "quando": "2026-10-02T21:13:47+00:00",
-   "elementi": 1
+   "quando": "2026-10-03T10:13:44+00:00",
+   "elementi": 0
   },
   "www.calcioreggiano.com/": {
    "ok": true,
-   "quando": "2026-10-02T21:13:48+00:00",
+   "quando": "2026-10-03T10:13:45+00:00",
    "elementi": 1
   },
   "www.calcioreggiano.com/news/news.aspx": {
    "ok": true,
-   "quando": "2026-10-02T21:13:49+00:00",
+   "quando": "2026-10-03T10:13:46+00:00",
    "elementi": 2
   }
  },
- "ultimo_aggiornamento": "2026-10-02T21:13:49+00:00",
+ "ultimo_aggiornamento": "2026-10-03T10:13:46+00:00",
  "figc_visti": [
   7458,
   7467,
