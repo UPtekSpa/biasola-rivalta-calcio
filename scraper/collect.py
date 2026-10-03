@@ -391,7 +391,7 @@ def orari_ufficiali(squadra, news):
     """Corregge data e ora delle partite con il programma gare dei comunicati FIGC,
     che è la fonte ufficiale (RomagnaSport a volte riporta solo la domenica)."""
     partite = squadra.get("partite") or []
-    if not partite:
+    if not partite or "csi" in squadra["id"]:  # i comunicati FIGC non riguardano i campionati CSI
         return
     per_gamba = max((p["giornata"] or 0) for p in partite + squadra.get("girone", [])) // 2 or 13
     comunicati = sorted((n for n in news if n["tipo"] == "ufficiale"), key=lambda n: n.get("data") or "")
