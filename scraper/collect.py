@@ -419,6 +419,74 @@ def orari_ufficiali(squadra, news):
                         p["campo"] = campo.title()
 
 
+NOI_FIGC = "BIASOLA-RIVALTA"
+CAMPI_CASA = ("REGGIO EMILIA BIASOLA", "RIVALTA PARROCCHIALE")
+RISULTATO_RE = re.compile(r"^(?:\d{1,2}/\d{1,2}/\d{2}\s+\d{1,2}/[AR]\s+)?(.+?)\s+(\d{1,2})\s*-\s*(\d{1,2})$")
+
+
+def partite_da_comunicati(squadra, altre, news):
+    """Calendario e risultati di una squadra FIGC senza altre fonti (la Juniores), presi dal
+    programma gare e dai risultati dei comunicati. Le etichette di sezione dei PDF non sono
+    affidabili: si scartano le righe che corrispondono alle partite delle altre squadre."""
+    if squadra.get("partite") and any(p.get("fonte") != "figc" for p in squadra["partite"]):
+        return
+
+    def avversario_di(p):
+        return p["ospite"] if mentions(p["casa"], ["biasola"]) else p["casa"]
+
+    def parola(nome):
+        return (re.sub(r"[^A-Z0-9 ]", " ", nome.upper()).split() or [""])[0]
+
+    def delle_altre(giornata, testo):
+        return any(p["giornata"] == giornata and parola(avversario_di(p)) in testo
+                   for a in altre for p in a.get("partite") or [])
+
+    partite = {}
+    comunicati = sorted((n for n in news if n["tipo"] == "ufficiale"), key=lambda n: n.get("data") or "")
+    for n in comunicati:
+        for r in n.get("righe", []):
+            testo = r["testo"].upper()
+            m = PROGRAMMA_RE.search(testo)
+            if not m or NOI_FIGC not in testo or m.group(6) != "A":
+                continue
+            g, mese, anno, ora, num, _ = m.groups()
+            giornata = int(num)
+            if delle_altre(giornata, testo):
+                continue
+            prima = clean(testo[:m.start()])
+            if prima.startswith(NOI_FIGC):
+                avv = clean(prima[len(NOI_FIGC):])
+                for campo in CAMPI_CASA:
+                    if avv.endswith(campo):
+                        avv = clean(avv[:-len(campo)])
+                casa, ospite = NOI_FIGC, avv
+            else:
+                casa, ospite = clean(prima.split(NOI_FIGC)[0]), NOI_FIGC
+            vecchia = partite.get(giornata, {})
+            partite[giornata] = {"giornata": giornata, "data": f"20{anno}-{int(mese):02d}-{int(g):02d}", "ora": ora,
+                                 "casa": casa.title().replace("Biasola-Rivalta", "Biasola-Rivalta"),
+                                 "ospite": ospite.title(), "risultato": vecchia.get("risultato"),
+                                 "esito": vecchia.get("esito"), "noi": True, "fonte": "figc"}
+    for n in comunicati:
+        for r in n.get("righe", []):
+            m = RISULTATO_RE.match(clean(r["testo"].upper()))
+            if not m or NOI_FIGC not in m.group(1):
+                continue
+            squadre_riga, gc, go = m.group(1), int(m.group(2)), int(m.group(3))
+            for p in partite.values():
+                avv = (p["ospite"] if p["casa"].upper() == NOI_FIGC else p["casa"]).upper()
+                if not avv or avv.split()[0] not in squadre_riga or (n.get("data") or "")[:10] < p["data"]:
+                    continue
+                in_casa = squadre_riga.startswith(NOI_FIGC)
+                if in_casa != (p["casa"].upper() == NOI_FIGC):
+                    continue
+                gf, gs = (gc, go) if in_casa else (go, gc)
+                p["risultato"] = f"{gc}-{go}"
+                p["esito"] = "V" if gf > gs else "P" if gf < gs else "N"
+    if partite:
+        squadra["partite"] = sorted(partite.values(), key=lambda p: p["giornata"])
+
+
 def togli_non_giocate(squadra, adesso=None):
     """RomagnaSport a volte mette 0-0 alle partite non ancora giocate e lo conta in classifica.
     Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana): prima si toglie
@@ -525,6 +593,9 @@ def main():
                                lambda u=url, s=sid: news_links(u, cfg, kw, girone, s)) or []
 
     news = merge_news(news, raccolte)
+    for sq, info in zip(cfg["squadre"], squadre):
+        if sq.get("figc_sezione") and not sq.get("romagnasport"):
+            partite_da_comunicati(info, [i for i in squadre if i is not info and "csi" not in i["id"]], news)
     for info in squadre:
         orari_ufficiali(info, news)
         togli_non_giocate(info)
