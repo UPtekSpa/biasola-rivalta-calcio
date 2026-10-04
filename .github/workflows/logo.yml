@@ -1,4 +1,4 @@
-name: Sonda Juniores
+name: Sonda widget
 on:
   push:
     branches: [sonda-foto]
@@ -13,9 +13,8 @@ jobs:
           mkdir -p out
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
           get() { curl -sSL -A "$UA" -o "out/$1" -w "$1 %{http_code}\n" "$2" | tee -a out/log.txt || true; }
-          get cr_squadra.html "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
-          get tc_jun_scheda.html "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
-          get tc_jun_classifica.html "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Classifica"
+          get w_classifica.html "https://www.tuttocampo.it/WidgetV2/Classifica/89a8b39e-87aa-484f-9b9c-f0276dde3c32"
+          curl -sS -A "$UA" -e "https://www.biasolacalcio.it/" -o out/w_classifica_ref.html -w "w_ref %{http_code}\n" "https://www.tuttocampo.it/WidgetV2/Classifica/89a8b39e-87aa-484f-9b9c-f0276dde3c32" | tee -a out/log.txt || true
           grep -oiE 'href="[^"]*(squadra|campionato|classifica|giornata|calendario)[^"]*"' out/cr_squadra.html | sort -u | head -80 > out/cr_links.txt || true
       - run: |
           cd out
