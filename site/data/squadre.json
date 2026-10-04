@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-04T16:53:52+00:00",
+ "aggiornato": "2026-10-04T17:14:10+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -1941,8 +1941,8 @@
      "ora": "15:00",
      "casa": "Real Casina 04",
      "ospite": "Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "2-1",
+     "esito": "P",
      "noi": true,
      "fonte": "figc",
      "campo": "Casina Castignola"
@@ -1960,7 +1960,212 @@
      "campo": "Reggio Emilia Biasola"
     }
    ],
-   "classifica": [],
+   "classifica": [
+    {
+     "squadra": "Masone",
+     "punti": 9,
+     "giocate": 4,
+     "valori": [
+      9,
+      4,
+      3,
+      0,
+      1,
+      15,
+      5,
+      10
+     ],
+     "noi": false,
+     "pos": 1
+    },
+    {
+     "squadra": "Casalgrande",
+     "punti": 9,
+     "giocate": 4,
+     "valori": [
+      9,
+      4,
+      3,
+      0,
+      1,
+      13,
+      7,
+      6
+     ],
+     "noi": false,
+     "pos": 2
+    },
+    {
+     "squadra": "Real Casina 04",
+     "punti": 9,
+     "giocate": 4,
+     "valori": [
+      9,
+      4,
+      3,
+      0,
+      1,
+      9,
+      11,
+      -2
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
+     "squadra": "Daino S.C.",
+     "punti": 8,
+     "giocate": 4,
+     "valori": [
+      8,
+      4,
+      2,
+      2,
+      0,
+      6,
+      4,
+      2
+     ],
+     "noi": false,
+     "pos": 4
+    },
+    {
+     "squadra": "Borzanese 4 Castelli",
+     "punti": 7,
+     "giocate": 4,
+     "valori": [
+      7,
+      4,
+      2,
+      1,
+      1,
+      13,
+      8,
+      5
+     ],
+     "noi": false,
+     "pos": 5
+    },
+    {
+     "squadra": "A.C. Carpineti",
+     "punti": 7,
+     "giocate": 4,
+     "valori": [
+      7,
+      4,
+      2,
+      1,
+      1,
+      9,
+      9,
+      0
+     ],
+     "noi": false,
+     "pos": 6
+    },
+    {
+     "squadra": "Invicta Gavasseto",
+     "punti": 6,
+     "giocate": 4,
+     "valori": [
+      6,
+      4,
+      2,
+      0,
+      2,
+      15,
+      15,
+      0
+     ],
+     "noi": false,
+     "pos": 7
+    },
+    {
+     "squadra": "San Faustino",
+     "punti": 4,
+     "giocate": 4,
+     "valori": [
+      4,
+      4,
+      1,
+      1,
+      2,
+      8,
+      10,
+      -2
+     ],
+     "noi": false,
+     "pos": 8
+    },
+    {
+     "squadra": "Saxum United",
+     "punti": 3,
+     "giocate": 4,
+     "valori": [
+      3,
+      4,
+      1,
+      0,
+      3,
+      8,
+      14,
+      -6
+     ],
+     "noi": false,
+     "pos": 9
+    },
+    {
+     "squadra": "Biasola-Rivalta",
+     "punti": 2,
+     "giocate": 4,
+     "valori": [
+      2,
+      4,
+      0,
+      2,
+      2,
+      9,
+      11,
+      -2
+     ],
+     "noi": true,
+     "pos": 10
+    },
+    {
+     "squadra": "Fides",
+     "punti": 2,
+     "giocate": 4,
+     "valori": [
+      2,
+      4,
+      0,
+      2,
+      2,
+      5,
+      11,
+      -6
+     ],
+     "noi": false,
+     "pos": 11
+    },
+    {
+     "squadra": "Boma Fellegara",
+     "punti": 1,
+     "giocate": 4,
+     "valori": [
+      1,
+      4,
+      0,
+      1,
+      3,
+      5,
+      10,
+      -5
+     ],
+     "noi": false,
+     "pos": 12
+    }
+   ],
    "girone": [],
    "link": [
     "https://www.tuttocampo.it/EmiliaRomagna/JunioresProvincialiU19/GironeAProvincialiReggioEmilia/Squadra/Biasola/1199973/Scheda"
