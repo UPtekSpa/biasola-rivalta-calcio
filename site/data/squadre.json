@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-04T16:35:10+00:00",
+ "aggiornato": "2026-10-04T16:52:27+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -249,37 +249,88 @@
    "classifica": [
     {
      "squadra": "Eagles Virtus Ancora",
-     "punti": 9,
-     "giocate": 3,
+     "punti": 12,
+     "giocate": 4,
      "valori": [
-      9,
-      3,
-      3,
+      12,
+      4,
+      4,
       0,
       0,
-      13,
+      16,
       1,
-      12
+      15
      ],
      "noi": false,
      "pos": 1
     },
     {
      "squadra": "Coviolo",
-     "punti": 9,
-     "giocate": 3,
+     "punti": 12,
+     "giocate": 4,
      "valori": [
+      12,
+      4,
+      4,
+      0,
+      0,
       9,
-      3,
-      3,
       0,
-      0,
-      8,
-      0,
-      8
+      9
      ],
      "noi": false,
      "pos": 2
+    },
+    {
+     "squadra": "Montefiorino",
+     "punti": 9,
+     "giocate": 4,
+     "valori": [
+      9,
+      4,
+      3,
+      0,
+      1,
+      8,
+      5,
+      3
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
+     "squadra": "Felina",
+     "punti": 6,
+     "giocate": 3,
+     "valori": [
+      6,
+      3,
+      2,
+      0,
+      1,
+      6,
+      5,
+      1
+     ],
+     "noi": false,
+     "pos": 4
+    },
+    {
+     "squadra": "Bosco",
+     "punti": 6,
+     "giocate": 4,
+     "valori": [
+      6,
+      4,
+      2,
+      0,
+      2,
+      5,
+      6,
+      -1
+     ],
+     "noi": false,
+     "pos": 5
     },
     {
      "squadra": "Pol. Biasola-Rivalta",
@@ -296,57 +347,6 @@
       4
      ],
      "noi": true,
-     "pos": 3
-    },
-    {
-     "squadra": "Felina",
-     "punti": 6,
-     "giocate": 2,
-     "valori": [
-      6,
-      2,
-      2,
-      0,
-      0,
-      6,
-      2,
-      4
-     ],
-     "noi": false,
-     "pos": 4
-    },
-    {
-     "squadra": "Montefiorino",
-     "punti": 6,
-     "giocate": 3,
-     "valori": [
-      6,
-      3,
-      2,
-      0,
-      1,
-      6,
-      4,
-      2
-     ],
-     "noi": false,
-     "pos": 5
-    },
-    {
-     "squadra": "Bosco",
-     "punti": 6,
-     "giocate": 3,
-     "valori": [
-      6,
-      3,
-      2,
-      0,
-      1,
-      4,
-      4,
-      0
-     ],
-     "noi": false,
      "pos": 6
     },
     {
@@ -384,7 +384,7 @@
      "pos": 8
     },
     {
-     "squadra": "Saxum United",
+     "squadra": "Amici di Davide",
      "punti": 3,
      "giocate": 3,
      "valori": [
@@ -394,11 +394,28 @@
       0,
       2,
       3,
-      6,
-      -3
+      4,
+      -1
      ],
      "noi": false,
      "pos": 9
+    },
+    {
+     "squadra": "Saxum United",
+     "punti": 3,
+     "giocate": 4,
+     "valori": [
+      3,
+      4,
+      1,
+      0,
+      3,
+      3,
+      7,
+      -4
+     ],
+     "noi": false,
+     "pos": 10
     },
     {
      "squadra": "Collagna",
@@ -415,7 +432,7 @@
       -9
      ],
      "noi": false,
-     "pos": 10
+     "pos": 11
     },
     {
      "squadra": "Levizzano",
@@ -432,38 +449,21 @@
       -6
      ],
      "noi": false,
-     "pos": 11
-    },
-    {
-     "squadra": "Amici di Davide",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
-      1,
-      3,
-      -2
-     ],
-     "noi": false,
      "pos": 12
     },
     {
      "squadra": "Real Casina 04 U21",
      "punti": 0,
-     "giocate": 2,
+     "giocate": 3,
      "valori": [
       0,
-      2,
+      3,
       0,
       0,
-      2,
-      0,
-      4,
-      -4
+      3,
+      1,
+      6,
+      -5
      ],
      "noi": false,
      "pos": 13
@@ -654,7 +654,7 @@
      "data": "2026-10-04",
      "casa": "Coviolo",
      "ospite": "Saxum United",
-     "risultato": null,
+     "risultato": "1-0",
      "esito": null,
      "noi": false
     },
@@ -663,7 +663,7 @@
      "data": "2026-10-04",
      "casa": "Eagles Virtus Ancora",
      "ospite": "Felina",
-     "risultato": null,
+     "risultato": "3-0",
      "esito": null,
      "noi": false
     },
@@ -681,7 +681,7 @@
      "data": "2026-10-04",
      "casa": "Montefiorino",
      "ospite": "Bosco",
-     "risultato": null,
+     "risultato": "2-1",
      "esito": null,
      "noi": false
     },
@@ -690,7 +690,7 @@
      "data": "2026-10-04",
      "casa": "Real Casina 04 U21",
      "ospite": "Amici di Davide",
-     "risultato": null,
+     "risultato": "1-2",
      "esito": null,
      "noi": false
     },
