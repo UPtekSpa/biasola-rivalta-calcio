@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-04T13:45:43+00:00",
+ "aggiornato": "2026-10-04T16:05:36+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -57,8 +57,8 @@
      "data": "2026-10-04",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Collagna",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:30",
      "campo": "Rivalta Parrocchiale"
@@ -249,13 +249,13 @@
    "classifica": [
     {
      "squadra": "Eagles Virtus Ancora",
-     "punti": 9,
-     "giocate": 3,
+     "punti": 10,
+     "giocate": 4,
      "valori": [
-      9,
+      10,
+      4,
       3,
-      3,
-      0,
+      1,
       0,
       13,
       1,
@@ -266,13 +266,13 @@
     },
     {
      "squadra": "Coviolo",
-     "punti": 9,
-     "giocate": 3,
+     "punti": 10,
+     "giocate": 4,
      "valori": [
-      9,
+      10,
+      4,
       3,
-      3,
-      0,
+      1,
       0,
       8,
       0,
@@ -283,13 +283,13 @@
     },
     {
      "squadra": "Felina",
-     "punti": 6,
-     "giocate": 2,
+     "punti": 7,
+     "giocate": 3,
      "valori": [
-      6,
+      7,
+      3,
       2,
-      2,
-      0,
+      1,
       0,
       6,
       2,
@@ -300,13 +300,13 @@
     },
     {
      "squadra": "Montefiorino",
-     "punti": 6,
-     "giocate": 3,
+     "punti": 7,
+     "giocate": 4,
      "valori": [
-      6,
-      3,
+      7,
+      4,
       2,
-      0,
+      1,
       1,
       6,
       4,
@@ -317,13 +317,13 @@
     },
     {
      "squadra": "Bosco",
-     "punti": 6,
-     "giocate": 3,
+     "punti": 7,
+     "giocate": 4,
      "valori": [
-      6,
-      3,
+      7,
+      4,
       2,
-      0,
+      1,
       1,
       4,
       4,
@@ -335,29 +335,29 @@
     {
      "squadra": "Folese",
      "punti": 6,
-     "giocate": 3,
+     "giocate": 4,
      "valori": [
       6,
-      3,
+      4,
       2,
       0,
-      1,
+      2,
       4,
-      4,
-      0
+      5,
+      -1
      ],
      "noi": false,
      "pos": 6
     },
     {
      "squadra": "Pol. Biasola-Rivalta",
-     "punti": 3,
-     "giocate": 3,
+     "punti": 4,
+     "giocate": 4,
      "valori": [
-      3,
-      3,
+      4,
+      4,
       1,
-      0,
+      1,
       2,
       4,
       5,
@@ -368,13 +368,13 @@
     },
     {
      "squadra": "Saxum United",
-     "punti": 3,
-     "giocate": 3,
+     "punti": 4,
+     "giocate": 4,
      "valori": [
-      3,
-      3,
+      4,
+      4,
       1,
-      0,
+      1,
       2,
       3,
       6,
@@ -385,13 +385,13 @@
     },
     {
      "squadra": "Collagna",
-     "punti": 3,
-     "giocate": 3,
+     "punti": 4,
+     "giocate": 4,
      "valori": [
-      3,
-      3,
+      4,
+      4,
       1,
-      0,
+      1,
       2,
       4,
       8,
@@ -399,6 +399,57 @@
      ],
      "noi": false,
      "pos": 9
+    },
+    {
+     "squadra": "Salvaterra",
+     "punti": 4,
+     "giocate": 4,
+     "valori": [
+      4,
+      4,
+      1,
+      1,
+      2,
+      2,
+      7,
+      -5
+     ],
+     "noi": false,
+     "pos": 10
+    },
+    {
+     "squadra": "Amici di Davide",
+     "punti": 1,
+     "giocate": 3,
+     "valori": [
+      1,
+      3,
+      0,
+      1,
+      2,
+      1,
+      3,
+      -2
+     ],
+     "noi": false,
+     "pos": 11
+    },
+    {
+     "squadra": "Real Casina 04 U21",
+     "punti": 1,
+     "giocate": 3,
+     "valori": [
+      1,
+      3,
+      0,
+      1,
+      2,
+      0,
+      4,
+      -4
+     ],
+     "noi": false,
+     "pos": 12
     },
     {
      "squadra": "Levizzano",
@@ -413,57 +464,6 @@
       2,
       8,
       -6
-     ],
-     "noi": false,
-     "pos": 10
-    },
-    {
-     "squadra": "Salvaterra",
-     "punti": 1,
-     "giocate": 3,
-     "valori": [
-      1,
-      3,
-      0,
-      1,
-      2,
-      1,
-      7,
-      -6
-     ],
-     "noi": false,
-     "pos": 11
-    },
-    {
-     "squadra": "Amici di Davide",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
-      1,
-      3,
-      -2
-     ],
-     "noi": false,
-     "pos": 12
-    },
-    {
-     "squadra": "Real Casina 04 U21",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
-      0,
-      4,
-      -4
      ],
      "noi": false,
      "pos": 13
@@ -643,8 +643,8 @@
      "data": "2026-10-04",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Collagna",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:30",
      "campo": "Rivalta Parrocchiale"
@@ -654,7 +654,7 @@
      "data": "2026-10-04",
      "casa": "Coviolo",
      "ospite": "Saxum United",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
@@ -663,7 +663,7 @@
      "data": "2026-10-04",
      "casa": "Eagles Virtus Ancora",
      "ospite": "Felina",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
@@ -672,7 +672,7 @@
      "data": "2026-10-04",
      "casa": "Folese",
      "ospite": "Salvaterra",
-     "risultato": null,
+     "risultato": "0-1",
      "esito": null,
      "noi": false
     },
@@ -681,7 +681,7 @@
      "data": "2026-10-04",
      "casa": "Montefiorino",
      "ospite": "Bosco",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
@@ -690,7 +690,7 @@
      "data": "2026-10-04",
      "casa": "Real Casina 04 U21",
      "ospite": "Amici di Davide",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
@@ -1888,7 +1888,8 @@
    "link": [
     "https://www.tuttocampo.it/EmiliaRomagna/TerzaCategoria/GironeAReggioEmilia/Squadra/Biasola/1199233/Scheda",
     "https://www.calcioreggiano.com/squadre/squadra.aspx?idsquadra=1075"
-   ]
+   ],
+   "widget": null
   },
   {
    "id": "juniores",
@@ -2069,7 +2070,8 @@
    "girone": [],
    "link": [
     "https://live.centrosportivoitaliano.it/26/Calcio-a-11/Emilia-Romagna/Reggio-Emilia/C36124/?j=NEU9REhGJjRGPVBOWSY0Rz1HSkVGSCY0SD1GTEdLS0kmNEk9VHY0MTByIE8mNEw9REhGJjQyPWU="
-   ]
+   ],
+   "widget": null
   }
  ]
 }
