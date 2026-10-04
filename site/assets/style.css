@@ -263,5 +263,6 @@ footer.ricco { max-width: none; margin: 0; padding: 0; border: 0; background: va
 #foto-home .galleria { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 600px) { #foto-home .galleria { grid-template-columns: repeat(2, 1fr); } }
 
-.widget-tc { width: 100%; max-width: 500px; border: 0; display: block; margin: 0 auto; }
+.widget-tc-box { overflow-x: auto; }
+.widget-tc { width: 500px; max-width: none; border: 0; display: block; margin: 0 auto; }
 .widget-fonte { font-size: .8rem; text-align: right; margin-top: 4px; }

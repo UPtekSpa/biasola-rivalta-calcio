@@ -102,7 +102,7 @@ function ultimaProssima(partite) {
 }
 
 function widgetTc(tipo, id, altezza) {
-  return `<iframe class="widget-tc" src="https://www.tuttocampo.it/WidgetV2/${tipo}/${encodeURIComponent(id)}" height="${altezza}" scrolling="no" frameborder="0" loading="lazy" title="${tipo} da Tuttocampo"></iframe><p class="vuoto widget-fonte">Dati: Tuttocampo.it</p>`;
+  return `<div class="widget-tc-box"><iframe class="widget-tc" src="https://www.tuttocampo.it/WidgetV2/${tipo}/${encodeURIComponent(id)}" width="500" height="${altezza}" scrolling="no" frameborder="0" loading="lazy" title="${tipo} da Tuttocampo"></iframe></div><p class="vuoto widget-fonte">Dati: Tuttocampo.it</p>`;
 }
 
 function classificaTab(cl) {
