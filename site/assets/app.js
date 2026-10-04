@@ -101,6 +101,10 @@ function ultimaProssima(partite) {
   return [giocate.at(-1), future[0]];
 }
 
+function widgetTc(tipo, id, altezza) {
+  return `<iframe class="widget-tc" src="https://www.tuttocampo.it/WidgetV2/${tipo}/${encodeURIComponent(id)}" height="${altezza}" scrolling="no" frameborder="0" loading="lazy" title="${tipo} da Tuttocampo"></iframe><p class="vuoto widget-fonte">Dati: Tuttocampo.it</p>`;
+}
+
 function classificaTab(cl) {
   if (!cl?.length) return `<p class="vuoto">Classifica non ancora disponibile.</p>`;
   const v = (r, i) => r.valori?.[i] ?? "";
@@ -166,6 +170,13 @@ async function avvia() {
     const [ultima, prossima] = ultimaProssima(s.partite || []);
     $("partite").innerHTML = `<h2>Partite</h2>${partitaBox(ultima, "Ultima partita")}${prossima ? `<div class="prossima">${partitaBox(prossima, "Prossima partita")}</div>` : ""}`;
     $("classifica").innerHTML = `<h2>Classifica</h2>${classificaTab(s.classifica)}`;
+    if (s.widget) {
+      $("classifica").hidden = !(s.classifica || []).length;
+      const extra = document.createElement("section");
+      extra.className = "card";
+      extra.innerHTML = `<h2>Classifica</h2>${widgetTc("Classifica", s.widget, 800)}<h2 style="margin-top:18px">Risultati del girone</h2>${widgetTc("Risultati", s.widget, 600)}<h2 style="margin-top:18px">Marcatori</h2>${widgetTc("Marcatori", s.widget, 700)}`;
+      $("calendario").after(extra);
+    }
     $("calendario").innerHTML = `<h2>Calendario e risultati</h2>${calendarioTab(s.partite)}`;
     const gt = giornataTab(s.girone);
     $("giornata").innerHTML = gt;

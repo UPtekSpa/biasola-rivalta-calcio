@@ -572,6 +572,7 @@ def main():
         info["classifica"] = old.get("classifica", [])
         info["girone"] = old.get("girone", [])
         info["link"] = sq.get("link", [])
+        info["widget"] = sq.get("tuttocampo_widget")
         rs = sq.get("romagnasport")
         if rs:
             p = run_source(stato, f"Calendario {sq['nome']}", lambda: parse_calendario(fetch(rs["calendario"]), kw))
