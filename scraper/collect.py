@@ -487,9 +487,41 @@ def partite_da_comunicati(squadra, altre, news):
         squadra["partite"] = sorted(partite.values(), key=lambda p: p["giornata"])
 
 
+def conta_in_classifica(righe, casa, ospite, risultato, segno):
+    """Aggiunge (segno=1) o toglie (segno=-1) una partita dalle righe della classifica."""
+    gol = re.match(r"(\d+)\D+(\d+)", risultato or "")
+    if not gol:
+        return False
+    gc, go = map(int, gol.groups())
+    cambiato = False
+    for nome, fatti, subiti in ((casa, gc, go), (ospite, go, gc)):
+        r = righe.get(nome)
+        if not r or (segno < 0 and r["valori"][1] <= 0):
+            continue
+        v = r["valori"]
+        esito = 2 if fatti > subiti else 3 if fatti == subiti else 4
+        v[0] += segno * {2: 3, 3: 1, 4: 0}[esito]
+        v[1] += segno
+        v[esito] += segno
+        v[5] += segno * fatti
+        v[6] += segno * subiti
+        v[7] = v[5] - v[6]
+        r["punti"], r["giocate"] = v[0], v[1]
+        cambiato = True
+    return cambiato
+
+
+def riordina(squadra, righe):
+    ordine = sorted(righe.values(), key=lambda r: (-r["valori"][0], -r["valori"][7], -r["valori"][5]))
+    for i, r in enumerate(ordine, 1):
+        r["pos"] = i
+    squadra["classifica"] = ordine
+
+
 def togli_non_giocate(squadra, adesso=None):
-    """RomagnaSport a volte mette 0-0 alle partite non ancora giocate e lo conta in classifica.
-    Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana): prima si toglie
+    """RomagnaSport mette 0-0 alle partite non ancora giocate (o non ancora inserite) e lo conta
+    in classifica. Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana); uno 0-0
+    vale solo dal giorno dopo, quando RomagnaSport ha inserito i risultati veri. Prima si toglie
     dalla partita e dalla classifica."""
     adesso = adesso or datetime.now(ZoneInfo("Europe/Rome")).replace(tzinfo=None)
     righe = {r["squadra"]: r for r in squadra.get("classifica") or []}
@@ -499,34 +531,42 @@ def togli_non_giocate(squadra, adesso=None):
         if not p.get("risultato") or not p.get("data"):
             continue
         inizio = datetime.fromisoformat(f"{p['data']}T{p.get('ora') or '15:00'}")
-        if inizio + timedelta(hours=2) <= adesso:
+        segnaposto = re.sub(r"\s", "", p["risultato"]) == "0-0" and p["data"] >= adesso.date().isoformat()
+        if inizio + timedelta(hours=2) <= adesso and not segnaposto:
             continue
         chiave = (p["giornata"], p["casa"], p["ospite"])
-        gol = re.match(r"(\d+)\D+(\d+)", p["risultato"])
-        if gol and chiave not in viste:
+        if chiave not in viste:
             viste.add(chiave)
-            gc, go = map(int, gol.groups())
-            for nome, fatti, subiti in ((p["casa"], gc, go), (p["ospite"], go, gc)):
-                r = righe.get(nome)
-                if not r or r["valori"][1] <= 0:
-                    continue
-                v = r["valori"]
-                esito = 2 if fatti > subiti else 3 if fatti == subiti else 4
-                v[0] -= {2: 3, 3: 1, 4: 0}[esito]
-                v[1] -= 1
-                v[esito] -= 1
-                v[5] -= fatti
-                v[6] -= subiti
-                v[7] = v[5] - v[6]
-                r["punti"], r["giocate"] = v[0], v[1]
-                tolte = True
+            tolte |= conta_in_classifica(righe, p["casa"], p["ospite"], p["risultato"], -1)
         p["risultato"] = None
         p["esito"] = None
     if tolte:
-        ordine = sorted(righe.values(), key=lambda r: (-r["valori"][0], -r["valori"][7], -r["valori"][5]))
-        for i, r in enumerate(ordine, 1):
-            r["pos"] = i
-        squadra["classifica"] = ordine
+        riordina(squadra, righe)
+
+
+def risultati_manuali(squadra, manuali):
+    """Risultati inseriti a mano (config: risultati_manuali, giornata -> "casa-ospite") per le
+    partite della Biasola: sostituiscono quello della fonte, anche in classifica."""
+    if not manuali:
+        return
+    righe = {r["squadra"]: r for r in squadra.get("classifica") or []}
+    cambiato = False
+    for giornata, risultato in manuali.items():
+        voci = [p for p in (squadra.get("partite") or []) + (squadra.get("girone") or [])
+                if p.get("noi") and str(p["giornata"]) == str(giornata)]
+        if not voci or voci[0].get("risultato") == risultato:
+            continue
+        p = voci[0]
+        if p.get("risultato"):
+            conta_in_classifica(righe, p["casa"], p["ospite"], p["risultato"], -1)
+        cambiato |= conta_in_classifica(righe, p["casa"], p["ospite"], risultato, 1)
+        a, b = map(int, re.findall(r"\d+", risultato)[:2])
+        gf, gs = (a, b) if mentions(p["casa"], ["biasola"]) else (b, a)
+        for v in voci:
+            v["risultato"] = risultato
+            v["esito"] = "V" if gf > gs else "P" if gf < gs else "N"
+    if cambiato:
+        riordina(squadra, righe)
 
 
 def merge_news(old, new):
@@ -600,6 +640,8 @@ def main():
     for info in squadre:
         orari_ufficiali(info, news)
         togli_non_giocate(info)
+    for sq, info in zip(cfg["squadre"], squadre):
+        risultati_manuali(info, sq.get("risultati_manuali"))
     stato["ultimo_aggiornamento"] = now_iso()
     save(DATA / "news.json", news)
     save(DATA / "squadre.json", {"aggiornato": now_iso(), "societa": cfg["societa"], "squadre": squadre})
