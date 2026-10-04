@@ -551,9 +551,15 @@ def risultati_manuali(squadra, manuali):
         return
     righe = {r["squadra"]: r for r in squadra.get("classifica") or []}
     cambiato = False
-    for giornata, risultato in manuali.items():
+    voci_manuali = []
+    for chiave, risultato in manuali.items():
+        # "4" = partita della Biasola alla 4a giornata; "4 Coviolo" = partita del girone con quella squadra in casa
+        giornata, _, casa = chiave.partition(" ")
+        voci_manuali.append((giornata, casa.lower(), risultato))
+    for giornata, casa, risultato in voci_manuali:
         voci = [p for p in (squadra.get("partite") or []) + (squadra.get("girone") or [])
-                if p.get("noi") and str(p["giornata"]) == str(giornata)]
+                if str(p["giornata"]) == giornata
+                and (p["casa"].lower().startswith(casa) if casa else p.get("noi"))]
         if not voci or voci[0].get("risultato") == risultato:
             continue
         p = voci[0]
@@ -564,7 +570,7 @@ def risultati_manuali(squadra, manuali):
         gf, gs = (a, b) if mentions(p["casa"], ["biasola"]) else (b, a)
         for v in voci:
             v["risultato"] = risultato
-            v["esito"] = "V" if gf > gs else "P" if gf < gs else "N"
+            v["esito"] = ("V" if gf > gs else "P" if gf < gs else "N") if v.get("noi") else None
     if cambiato:
         riordina(squadra, righe)
 
