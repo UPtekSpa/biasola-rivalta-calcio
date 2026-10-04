@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-04T16:52:27+00:00",
+ "aggiornato": "2026-10-04T16:53:52+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -299,6 +299,23 @@
      "pos": 3
     },
     {
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 6,
+     "giocate": 4,
+     "valori": [
+      6,
+      4,
+      2,
+      0,
+      2,
+      9,
+      5,
+      4
+     ],
+     "noi": true,
+     "pos": 4
+    },
+    {
      "squadra": "Felina",
      "punti": 6,
      "giocate": 3,
@@ -313,7 +330,7 @@
       1
      ],
      "noi": false,
-     "pos": 4
+     "pos": 5
     },
     {
      "squadra": "Bosco",
@@ -330,23 +347,6 @@
       -1
      ],
      "noi": false,
-     "pos": 5
-    },
-    {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 6,
-     "giocate": 4,
-     "valori": [
-      6,
-      4,
-      2,
-      0,
-      2,
-      9,
-      5,
-      4
-     ],
-     "noi": true,
      "pos": 6
     },
     {
