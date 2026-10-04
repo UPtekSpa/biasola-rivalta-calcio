@@ -518,6 +518,22 @@ def riordina(squadra, righe):
     squadra["classifica"] = ordine
 
 
+def classifica_da_girone(squadra):
+    """Ricalcola la classifica dai risultati del girone: RomagnaSport a volte aggiorna i risultati
+    prima della classifica, che resta a metà. Solo se il girone ha tutte le squadre."""
+    girone = squadra.get("girone") or []
+    righe = {r["squadra"]: r for r in squadra.get("classifica") or []}
+    if not girone or not righe or not {n for p in girone for n in (p["casa"], p["ospite"])} >= set(righe):
+        return
+    for r in righe.values():
+        r["valori"] = [0] * 8
+        r["punti"] = r["giocate"] = 0
+    for p in girone:
+        if p.get("risultato"):
+            conta_in_classifica(righe, p["casa"], p["ospite"], p["risultato"], 1)
+    riordina(squadra, righe)
+
+
 def togli_non_giocate(squadra, adesso=None):
     """RomagnaSport mette 0-0 alle partite non ancora giocate (o non ancora inserite) e lo conta
     in classifica. Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana); uno 0-0
@@ -648,6 +664,7 @@ def main():
         togli_non_giocate(info)
     for sq, info in zip(cfg["squadre"], squadre):
         risultati_manuali(info, sq.get("risultati_manuali"))
+        classifica_da_girone(info)
     stato["ultimo_aggiornamento"] = now_iso()
     save(DATA / "news.json", news)
     save(DATA / "squadre.json", {"aggiornato": now_iso(), "societa": cfg["societa"], "squadre": squadre})
