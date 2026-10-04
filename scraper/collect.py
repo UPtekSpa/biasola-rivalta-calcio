@@ -534,6 +534,21 @@ def classifica_da_girone(squadra):
     riordina(squadra, righe)
 
 
+def classifica_manuale(squadra, righe):
+    """Classifica inserita a mano (config: classifica_manuale, righe "Squadra Pti G V N P GF GS")
+    per i campionati senza una fonte leggibile. Vale solo se la fonte non ne ha una."""
+    if not righe or squadra.get("classifica"):
+        return
+    tabella = {}
+    for riga in righe:
+        nome, numeri = re.match(r"(.+?)((?:\s+\d+){7})$", riga).groups()
+        v = [int(n) for n in numeri.split()]
+        v.append(v[5] - v[6])
+        tabella[nome] = {"squadra": nome, "punti": v[0], "giocate": v[1], "valori": v,
+                         "noi": mentions(nome, ["biasola"])}
+    riordina(squadra, tabella)
+
+
 def togli_non_giocate(squadra, adesso=None):
     """RomagnaSport mette 0-0 alle partite non ancora giocate (o non ancora inserite) e lo conta
     in classifica. Un risultato vale solo a partita finita (inizio + 2 ore, ora italiana); uno 0-0
@@ -665,6 +680,7 @@ def main():
     for sq, info in zip(cfg["squadre"], squadre):
         risultati_manuali(info, sq.get("risultati_manuali"))
         classifica_da_girone(info)
+        classifica_manuale(info, sq.get("classifica_manuale"))
     stato["ultimo_aggiornamento"] = now_iso()
     save(DATA / "news.json", news)
     save(DATA / "squadre.json", {"aggiornato": now_iso(), "societa": cfg["societa"], "squadre": squadre})

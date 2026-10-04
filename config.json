@@ -55,7 +55,22 @@
         "juniores",
         "under 19"
       ],
-      "tuttocampo_widget": "89a8b39e-87aa-484f-9b9c-f0276dde3c32"
+      "tuttocampo_widget": "89a8b39e-87aa-484f-9b9c-f0276dde3c32",
+      "risultati_manuali": {"4": "2-1"},
+      "classifica_manuale": [
+        "Masone 9 4 3 0 1 15 5",
+        "Casalgrande 9 4 3 0 1 13 7",
+        "Real Casina 04 9 4 3 0 1 9 11",
+        "Daino S.C. 8 4 2 2 0 6 4",
+        "Borzanese 4 Castelli 7 4 2 1 1 13 8",
+        "A.C. Carpineti 7 4 2 1 1 9 9",
+        "Invicta Gavasseto 6 4 2 0 2 15 15",
+        "San Faustino 4 4 1 1 2 8 10",
+        "Saxum United 3 4 1 0 3 8 14",
+        "Biasola-Rivalta 2 4 0 2 2 9 11",
+        "Fides 2 4 0 2 2 5 11",
+        "Boma Fellegara 1 4 0 1 3 5 10"
+      ]
     },
     {
       "id": "under-18-csi",
