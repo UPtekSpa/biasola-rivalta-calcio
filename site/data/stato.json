@@ -2,36 +2,36 @@
  "fonti": {
   "Calendario Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-04T23:51:48+00:00",
+   "quando": "2026-10-05T10:27:09+00:00",
    "elementi": 156
   },
   "Classifica Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-04T23:51:49+00:00",
+   "quando": "2026-10-05T10:27:10+00:00",
    "elementi": 13
   },
   "Google News e RSS": {
-   "ok": false,
-   "quando": "2026-10-04T23:53:33+00:00",
-   "errore": "ConnectTimeout: HTTPSConnectionPool(host='solodilettanti.it', port=443): Max retries exceeded with url: /?s=biasola&feed=rss2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='solodilettanti.it', port=443) at 0x7f9482263bc0>, 'Connection to solodilettanti.it timed out. (connect timeout=30)'))"
+   "ok": true,
+   "quando": "2026-10-05T10:27:12+00:00",
+   "elementi": 22
   },
   "Comunicati FIGC Reggio Emilia": {
    "ok": true,
-   "quando": "2026-10-04T23:53:33+00:00",
+   "quando": "2026-10-05T10:27:13+00:00",
    "elementi": 0
   },
   "www.calcioreggiano.com/": {
    "ok": true,
-   "quando": "2026-10-04T23:53:34+00:00",
+   "quando": "2026-10-05T10:27:15+00:00",
    "elementi": 1
   },
   "www.calcioreggiano.com/news/news.aspx": {
    "ok": true,
-   "quando": "2026-10-04T23:53:35+00:00",
+   "quando": "2026-10-05T10:27:16+00:00",
    "elementi": 2
   }
  },
- "ultimo_aggiornamento": "2026-10-04T23:53:35+00:00",
+ "ultimo_aggiornamento": "2026-10-05T10:27:16+00:00",
  "figc_visti": [
   7458,
   7467,
