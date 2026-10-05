@@ -2274,6 +2274,23 @@
    "classifica": [
     {
      "pos": 1,
+     "squadra": "San Martino",
+     "punti": 3,
+     "giocate": 1,
+     "valori": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      2,
+      1,
+      1
+     ],
+     "noi": false
+    },
+    {
+     "pos": 2,
      "squadra": "United Albinea",
      "punti": 1,
      "giocate": 1,
@@ -2290,7 +2307,7 @@
      "noi": false
     },
     {
-     "pos": 2,
+     "pos": 3,
      "squadra": "U.S. Fides",
      "punti": 1,
      "giocate": 1,
@@ -2307,41 +2324,7 @@
      "noi": false
     },
     {
-     "pos": 3,
-     "squadra": "Athletic Club Carpineti",
-     "punti": 0,
-     "giocate": 0,
-     "valori": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-     ],
-     "noi": false
-    },
-    {
      "pos": 4,
-     "squadra": "Pol. Dil. Biasola",
-     "punti": 0,
-     "giocate": 0,
-     "valori": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-     ],
-     "noi": true
-    },
-    {
-     "pos": 5,
      "squadra": "Progetto Intesa All Camp",
      "punti": 0,
      "giocate": 0,
@@ -2358,7 +2341,7 @@
      "noi": false
     },
     {
-     "pos": 6,
+     "pos": 5,
      "squadra": "Virtus Bagnolo",
      "punti": 0,
      "giocate": 0,
@@ -2375,8 +2358,8 @@
      "noi": false
     },
     {
-     "pos": 7,
-     "squadra": "San Martino",
+     "pos": 6,
+     "squadra": "Pol. Dil. Biasola",
      "punti": 0,
      "giocate": 0,
      "valori": [
@@ -2389,10 +2372,10 @@
       0,
       0
      ],
-     "noi": false
+     "noi": true
     },
     {
-     "pos": 8,
+     "pos": 7,
      "squadra": "Eagles Virtus Ancora",
      "punti": 0,
      "giocate": 0,
@@ -2409,7 +2392,7 @@
      "noi": false
     },
     {
-     "pos": 9,
+     "pos": 8,
      "squadra": "Cabassi Union Carpi",
      "punti": 0,
      "giocate": 0,
@@ -2426,7 +2409,7 @@
      "noi": false
     },
     {
-     "pos": 10,
+     "pos": 9,
      "squadra": "Monari Nasi San Damaso",
      "punti": 0,
      "giocate": 0,
@@ -2439,6 +2422,23 @@
       0,
       0,
       0
+     ],
+     "noi": false
+    },
+    {
+     "pos": 10,
+     "squadra": "Athletic Club Carpineti",
+     "punti": 0,
+     "giocate": 1,
+     "valori": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      2,
+      -1
      ],
      "noi": false
     }
