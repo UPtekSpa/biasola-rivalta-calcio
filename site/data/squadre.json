@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-05T10:27:16+00:00",
+ "aggiornato": "2026-10-05T12:03:49+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -1963,17 +1963,17 @@
    "classifica": [
     {
      "squadra": "Real Casina 04",
-     "punti": 21,
-     "giocate": 8,
+     "punti": 24,
+     "giocate": 9,
      "valori": [
-      21,
+      24,
+      9,
       8,
-      7,
       0,
       1,
-      17,
-      15,
-      2
+      19,
+      16,
+      3
      ],
      "noi": false,
      "pos": 1
@@ -2115,23 +2115,6 @@
      "pos": 9
     },
     {
-     "squadra": "Biasola-Rivalta",
-     "punti": 2,
-     "giocate": 8,
-     "valori": [
-      2,
-      8,
-      0,
-      2,
-      6,
-      13,
-      19,
-      -6
-     ],
-     "noi": true,
-     "pos": 10
-    },
-    {
      "squadra": "Fides",
      "punti": 2,
      "giocate": 4,
@@ -2146,6 +2129,23 @@
       -6
      ],
      "noi": false,
+     "pos": 10
+    },
+    {
+     "squadra": "Biasola-Rivalta",
+     "punti": 2,
+     "giocate": 9,
+     "valori": [
+      2,
+      9,
+      0,
+      2,
+      7,
+      14,
+      21,
+      -7
+     ],
+     "noi": true,
      "pos": 11
     },
     {
