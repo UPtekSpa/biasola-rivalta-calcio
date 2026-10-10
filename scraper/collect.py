@@ -536,8 +536,9 @@ def classifica_da_girone(squadra):
 
 def classifica_manuale(squadra, righe):
     """Classifica inserita a mano (config: classifica_manuale, righe "Squadra Pti G V N P GF GS")
-    per i campionati senza una fonte leggibile. Vale solo se la fonte non ne ha una."""
-    if not righe or squadra.get("classifica"):
+    per i campionati senza una fonte leggibile. Sostituisce sempre quella dell'aggiornamento
+    precedente, che altrimenti si sporcherebbe con i risultati manuali contati a ogni giro."""
+    if not righe:
         return
     tabella = {}
     for riga in righe:
