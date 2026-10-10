@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-10T16:43:40+00:00",
+ "aggiornato": "2026-10-10T16:44:40+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -1982,21 +1982,72 @@
    ],
    "classifica": [
     {
-     "squadra": "Real Casina 04",
-     "punti": 42,
-     "giocate": 15,
+     "squadra": "Masone",
+     "punti": 12,
+     "giocate": 5,
      "valori": [
-      42,
-      15,
-      14,
+      12,
+      5,
+      4,
       0,
       1,
-      31,
-      22,
-      9
+      17,
+      6,
+      11
      ],
      "noi": false,
      "pos": 1
+    },
+    {
+     "squadra": "Real Casina 04",
+     "punti": 12,
+     "giocate": 5,
+     "valori": [
+      12,
+      5,
+      4,
+      0,
+      1,
+      12,
+      12,
+      0
+     ],
+     "noi": false,
+     "pos": 2
+    },
+    {
+     "squadra": "Daino S.C.",
+     "punti": 11,
+     "giocate": 5,
+     "valori": [
+      11,
+      5,
+      3,
+      2,
+      0,
+      9,
+      5,
+      4
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
+     "squadra": "Casalgrande",
+     "punti": 10,
+     "giocate": 5,
+     "valori": [
+      10,
+      5,
+      3,
+      1,
+      1,
+      15,
+      9,
+      6
+     ],
+     "noi": false,
+     "pos": 4
     },
     {
      "squadra": "A.C. Carpineti",
@@ -2013,72 +2064,21 @@
       2
      ],
      "noi": false,
-     "pos": 2
-    },
-    {
-     "squadra": "Masone",
-     "punti": 9,
-     "giocate": 4,
-     "valori": [
-      9,
-      4,
-      3,
-      0,
-      1,
-      15,
-      5,
-      10
-     ],
-     "noi": false,
-     "pos": 3
-    },
-    {
-     "squadra": "Casalgrande",
-     "punti": 9,
-     "giocate": 4,
-     "valori": [
-      9,
-      4,
-      3,
-      0,
-      1,
-      13,
-      7,
-      6
-     ],
-     "noi": false,
-     "pos": 4
-    },
-    {
-     "squadra": "Daino S.C.",
-     "punti": 8,
-     "giocate": 4,
-     "valori": [
-      8,
-      4,
-      2,
-      2,
-      0,
-      6,
-      4,
-      2
-     ],
-     "noi": false,
      "pos": 5
     },
     {
      "squadra": "Borzanese 4 Castelli",
      "punti": 7,
-     "giocate": 4,
+     "giocate": 5,
      "valori": [
       7,
-      4,
+      5,
       2,
       1,
-      1,
-      13,
-      8,
-      5
+      2,
+      14,
+      11,
+      3
      ],
      "noi": false,
      "pos": 6
@@ -2086,67 +2086,67 @@
     {
      "squadra": "Invicta Gavasseto",
      "punti": 6,
-     "giocate": 4,
+     "giocate": 5,
      "valori": [
       6,
-      4,
+      5,
       2,
       0,
-      2,
-      15,
-      15,
-      0
+      3,
+      16,
+      18,
+      -2
      ],
      "noi": false,
      "pos": 7
     },
     {
-     "squadra": "San Faustino",
-     "punti": 4,
-     "giocate": 4,
+     "squadra": "Fides",
+     "punti": 5,
+     "giocate": 5,
      "valori": [
-      4,
-      4,
-      1,
+      5,
+      5,
       1,
       2,
-      8,
-      10,
+      2,
+      11,
+      13,
       -2
      ],
      "noi": false,
      "pos": 8
     },
     {
-     "squadra": "Saxum United",
-     "punti": 3,
-     "giocate": 4,
+     "squadra": "San Faustino",
+     "punti": 4,
+     "giocate": 5,
      "valori": [
-      3,
       4,
+      5,
       1,
-      0,
+      1,
       3,
-      8,
-      14,
+      10,
+      16,
       -6
      ],
      "noi": false,
      "pos": 9
     },
     {
-     "squadra": "Fides",
-     "punti": 2,
-     "giocate": 4,
+     "squadra": "Saxum United",
+     "punti": 3,
+     "giocate": 5,
      "valori": [
-      2,
-      4,
-      0,
-      2,
-      2,
+      3,
       5,
-      11,
-      -6
+      1,
+      0,
+      4,
+      9,
+      16,
+      -7
      ],
      "noi": false,
      "pos": 10
@@ -2154,32 +2154,32 @@
     {
      "squadra": "Biasola-Rivalta",
      "punti": 2,
-     "giocate": 16,
+     "giocate": 5,
      "valori": [
       2,
-      16,
+      5,
       0,
       2,
-      14,
-      22,
-      37,
-      -15
+      3,
+      11,
+      15,
+      -4
      ],
      "noi": true,
      "pos": 11
     },
     {
      "squadra": "Boma Fellegara",
-     "punti": 1,
-     "giocate": 4,
+     "punti": 2,
+     "giocate": 5,
      "valori": [
-      1,
-      4,
-      0,
-      1,
-      3,
+      2,
       5,
-      10,
+      0,
+      2,
+      3,
+      7,
+      12,
       -5
      ],
      "noi": false,
