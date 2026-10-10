@@ -56,20 +56,23 @@
         "under 19"
       ],
       "tuttocampo_widget": "89a8b39e-87aa-484f-9b9c-f0276dde3c32",
-      "risultati_manuali": {"4": "2-1"},
+      "risultati_manuali": {
+        "4": "2-1",
+        "5": "2-4"
+      },
       "classifica_manuale": [
-        "Masone 9 4 3 0 1 15 5",
-        "Casalgrande 9 4 3 0 1 13 7",
-        "Real Casina 04 9 4 3 0 1 9 11",
-        "Daino S.C. 8 4 2 2 0 6 4",
-        "Borzanese 4 Castelli 7 4 2 1 1 13 8",
-        "A.C. Carpineti 7 4 2 1 1 9 9",
-        "Invicta Gavasseto 6 4 2 0 2 15 15",
-        "San Faustino 4 4 1 1 2 8 10",
-        "Saxum United 3 4 1 0 3 8 14",
-        "Biasola-Rivalta 2 4 0 2 2 9 11",
-        "Fides 2 4 0 2 2 5 11",
-        "Boma Fellegara 1 4 0 1 3 5 10"
+        "Masone 12 5 4 0 1 17 6",
+        "Real Casina 04 12 5 4 0 1 12 12",
+        "Daino S.C. 11 5 3 2 0 9 5",
+        "Casalgrande 10 5 3 1 1 15 9",
+        "A.C. Carpineti 10 5 3 1 1 13 11",
+        "Borzanese 4 Castelli 7 5 2 1 2 14 11",
+        "Invicta Gavasseto 6 5 2 0 3 16 18",
+        "Fides 5 5 1 2 2 11 13",
+        "San Faustino 4 5 1 1 3 10 16",
+        "Saxum United 3 5 1 0 4 9 16",
+        "Biasola-Rivalta 2 5 0 2 3 11 15",
+        "Boma Fellegara 2 5 0 2 3 7 12"
       ]
     },
     {
