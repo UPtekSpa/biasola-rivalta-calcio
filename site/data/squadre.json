@@ -2216,8 +2216,8 @@
      "ora": "10:30",
      "casa": "Cabassi Union Carpi",
      "ospite": "Pol. Dil. Biasola",
-     "risultato": null,
-     "esito": null,
+     "risultato": "3-1",
+     "esito": "P",
      "noi": true
     },
     {
@@ -2294,20 +2294,20 @@
    "classifica": [
     {
      "pos": 1,
-     "squadra": "Pol. Dil. Biasola",
-     "punti": 3,
-     "giocate": 1,
+     "squadra": "Cabassi Union Carpi",
+     "punti": 6,
+     "giocate": 2,
      "valori": [
-      3,
+      6,
+      2,
+      2,
+      0,
+      0,
+      5,
       1,
-      1,
-      0,
-      0,
-      3,
-      0,
-      3
+      4
      ],
-     "noi": true
+     "noi": false
     },
     {
      "pos": 2,
@@ -2328,20 +2328,20 @@
     },
     {
      "pos": 3,
-     "squadra": "Cabassi Union Carpi",
+     "squadra": "Pol. Dil. Biasola",
      "punti": 3,
-     "giocate": 1,
+     "giocate": 2,
      "valori": [
       3,
-      1,
-      1,
-      0,
-      0,
       2,
+      1,
       0,
-      2
+      1,
+      4,
+      3,
+      1
      ],
-     "noi": false
+     "noi": true
     },
     {
      "pos": 4,
