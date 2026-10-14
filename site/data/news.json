@@ -1,5 +1,61 @@
 [
  {
+  "id": "9d3f055c9462",
+  "titolo": "Vittoria in rimonta per il rubiera calcio, il casina cala il tris, montecavolo e san faustino non deludono - seconda categoria, girone d",
+  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8029",
+  "fonte": "calcioreggiano.com",
+  "tipo": "campionato",
+  "data": "2026-10-14T17:53:33+00:00",
+  "trovata": "2026-10-14T17:53:33+00:00",
+  "estratto": "Lo zoom sulla quinta giornata del campionato di Seconda Categoria, Girone D",
+  "squadra": "juniores"
+ },
+ {
+  "id": "3efbb109b9eb",
+  "titolo": "Comunicato Ufficiale n. 29 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7760/CU29.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-10-14T12:00:00+00:00",
+  "trovata": "2026-10-14T17:53:31+00:00",
+  "estratto": "FELINA BIASOLA-RIVALTA 2 - 3 · 10/10/26 5/A BIASOLA-RIVALTA A.C. CARPINETI 2 - 4 · ZUCCHINELLI FEDERICO (ASD LE FOLGORI) KONDAKCIU MARIEL (BIASOLA-RIVALTA)",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FELINA BIASOLA-RIVALTA 2 - 3"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "10/10/26 5/A BIASOLA-RIVALTA A.C. CARPINETI 2 - 4"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "ZUCCHINELLI FEDERICO (ASD LE FOLGORI) KONDAKCIU MARIEL (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "(BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "ZANNETTI LORENZO (BIASOLA-RIVALTA) CASELLI CRISTIANGABRIEL (BOMA FELLEGARA)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "EAGLES VIRTUS ANCORA ASD BIASOLA-RIVALTA SASSUOLO DON BOCEDI 25/10/26 15:30 7A"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "BIASOLA-RIVALTA U.S. LEVIZZANO ASD REGGIO EMILIA BIASOLA 28/10/26 21:00 8A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA BOMA FELLEGARA REGGIO EMILIA BIASOLA 24/10/26 15:00 7A"
+   }
+  ]
+ },
+ {
   "id": "f44b86da7d66",
   "titolo": "ZOCCA: PER I 75 ANNI DELLA SOCIETA’ E’ STATO INAUGURATO IL NUOVO CAMPO IN SINTETICO",
   "link": "https://solodilettanti.it/zocca-per-i-75-anni-della-societa-e-stato-inaugurato-il-nuovo-campo-in-sintetico/",

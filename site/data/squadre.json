@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-14T09:56:24+00:00",
+ "aggiornato": "2026-10-14T17:53:33+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -92,7 +92,9 @@
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "15:30",
+     "campo": "Sassuolo Don Bocedi"
     },
     {
      "giornata": 8,
@@ -817,7 +819,9 @@
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "15:30",
+     "campo": "Sassuolo Don Bocedi"
     },
     {
      "giornata": 7,
@@ -1978,6 +1982,18 @@
      "noi": true,
      "fonte": "figc",
      "campo": "Gavassa Di Reggio Emilia"
+    },
+    {
+     "giornata": 7,
+     "data": "2026-10-24",
+     "ora": "15:00",
+     "casa": "Biasola-Rivalta",
+     "ospite": "Boma Fellegara",
+     "risultato": null,
+     "esito": null,
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Reggio Emilia Biasola"
     }
    ],
    "classifica": [
