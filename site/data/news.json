@@ -1,5 +1,45 @@
 [
  {
+  "id": "b2bf85c69ab3",
+  "titolo": "Terza categoria: tanti derby in un turno che inizia con tre anticipi",
+  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8033",
+  "fonte": "calcioreggiano.com",
+  "tipo": "campionato",
+  "data": "2026-10-16T19:50:29+00:00",
+  "trovata": "2026-10-16T19:50:29+00:00",
+  "estratto": "Vediamo le prossime partite dei tre gironi reggiani",
+  "squadra": "prima-squadra"
+ },
+ {
+  "id": "19b8322bc742",
+  "titolo": "Comunicato Ufficiale n. 30 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7775/CU30.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-10-16T12:00:00+00:00",
+  "trovata": "2026-10-16T19:50:28+00:00",
+  "estratto": "EAGLES VIRTUS ANCORA ASD BIASOLA-RIVALTA SASSUOLO DON BOCEDI 25/10/26 14:30 7A · BIASOLA-RIVALTA SALVATERRA RIVALTA PARROCCHIALE 18/10/26 15:30 6A · DAINO SANTA CROCE A.S.D. BIASOLA-RIVALTA GAVASSA DI REGGIO EMILIA 17/10/26 15:00 6A",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "EAGLES VIRTUS ANCORA ASD BIASOLA-RIVALTA SASSUOLO DON BOCEDI 25/10/26 14:30 7A"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA SALVATERRA RIVALTA PARROCCHIALE 18/10/26 15:30 6A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "DAINO SANTA CROCE A.S.D. BIASOLA-RIVALTA GAVASSA DI REGGIO EMILIA 17/10/26 15:00 6A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED GATTATICO CLUB REGGIO EMILIA BIASOLA 17/10/26 16:00 6A"
+   }
+  ]
+ },
+ {
   "id": "9d3f055c9462",
   "titolo": "Vittoria in rimonta per il rubiera calcio, il casina cala il tris, montecavolo e san faustino non deludono - seconda categoria, girone d",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8029",
