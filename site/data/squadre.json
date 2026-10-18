@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-18T09:20:53+00:00",
+ "aggiornato": "2026-10-18T19:19:13+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -79,8 +79,8 @@
      "data": "2026-10-18",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Salvaterra",
-     "risultato": null,
-     "esito": null,
+     "risultato": "1-2",
+     "esito": "P",
      "noi": true,
      "ora": "15:30",
      "campo": "Rivalta Parrocchiale"
@@ -254,6 +254,23 @@
    ],
    "classifica": [
     {
+     "squadra": "Coviolo",
+     "punti": 18,
+     "giocate": 6,
+     "valori": [
+      18,
+      6,
+      6,
+      0,
+      0,
+      14,
+      1,
+      13
+     ],
+     "noi": false,
+     "pos": 1
+    },
+    {
      "squadra": "Eagles Virtus Ancora",
      "punti": 15,
      "giocate": 5,
@@ -268,61 +285,95 @@
       16
      ],
      "noi": false,
-     "pos": 1
-    },
-    {
-     "squadra": "Coviolo",
-     "punti": 15,
-     "giocate": 5,
-     "valori": [
-      15,
-      5,
-      5,
-      0,
-      0,
-      12,
-      1,
-      11
-     ],
-     "noi": false,
      "pos": 2
     },
     {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 9,
-     "giocate": 5,
+     "squadra": "Salvaterra",
+     "punti": 10,
+     "giocate": 6,
      "valori": [
-      9,
-      5,
+      10,
+      6,
       3,
-      0,
+      1,
       2,
-      12,
-      7,
-      5
+      11,
+      9,
+      2
      ],
-     "noi": true,
+     "noi": false,
      "pos": 3
     },
     {
      "squadra": "Montefiorino",
-     "punti": 9,
-     "giocate": 5,
+     "punti": 10,
+     "giocate": 6,
      "valori": [
-      9,
-      5,
+      10,
+      6,
       3,
-      0,
+      1,
       2,
-      9,
-      12,
+      10,
+      13,
       -3
      ],
      "noi": false,
      "pos": 4
     },
     {
-     "squadra": "Salvaterra",
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 9,
+     "giocate": 6,
+     "valori": [
+      9,
+      6,
+      3,
+      0,
+      3,
+      13,
+      9,
+      4
+     ],
+     "noi": true,
+     "pos": 5
+    },
+    {
+     "squadra": "Folese",
+     "punti": 9,
+     "giocate": 6,
+     "valori": [
+      9,
+      6,
+      3,
+      0,
+      3,
+      8,
+      9,
+      -1
+     ],
+     "noi": false,
+     "pos": 6
+    },
+    {
+     "squadra": "Saxum United",
+     "punti": 7,
+     "giocate": 6,
+     "valori": [
+      7,
+      6,
+      2,
+      1,
+      3,
+      7,
+      8,
+      -1
+     ],
+     "noi": false,
+     "pos": 7
+    },
+    {
+     "squadra": "Bosco",
      "punti": 7,
      "giocate": 5,
      "valori": [
@@ -331,66 +382,32 @@
       2,
       1,
       2,
-      9,
-      8,
-      1
-     ],
-     "noi": false,
-     "pos": 5
-    },
-    {
-     "squadra": "Felina",
-     "punti": 6,
-     "giocate": 4,
-     "valori": [
-      6,
-      4,
-      2,
-      0,
-      2,
-      8,
-      8,
-      0
-     ],
-     "noi": false,
-     "pos": 6
-    },
-    {
-     "squadra": "Saxum United",
-     "punti": 6,
-     "giocate": 5,
-     "valori": [
-      6,
-      5,
-      2,
-      0,
-      3,
-      6,
       7,
-      -1
-     ],
-     "noi": false,
-     "pos": 7
-    },
-    {
-     "squadra": "Bosco",
-     "punti": 6,
-     "giocate": 4,
-     "valori": [
-      6,
-      4,
-      2,
-      0,
-      2,
-      5,
-      6,
+      8,
       -1
      ],
      "noi": false,
      "pos": 8
     },
     {
-     "squadra": "Folese",
+     "squadra": "Collagna",
+     "punti": 7,
+     "giocate": 6,
+     "valori": [
+      7,
+      6,
+      2,
+      1,
+      3,
+      9,
+      16,
+      -7
+     ],
+     "noi": false,
+     "pos": 9
+    },
+    {
+     "squadra": "Felina",
      "punti": 6,
      "giocate": 5,
      "valori": [
@@ -399,43 +416,26 @@
       2,
       0,
       3,
-      5,
-      7,
+      8,
+      10,
       -2
-     ],
-     "noi": false,
-     "pos": 9
-    },
-    {
-     "squadra": "Amici di Davide",
-     "punti": 4,
-     "giocate": 4,
-     "valori": [
-      4,
-      4,
-      1,
-      1,
-      2,
-      4,
-      5,
-      -1
      ],
      "noi": false,
      "pos": 10
     },
     {
-     "squadra": "Collagna",
-     "punti": 4,
+     "squadra": "Amici di Davide",
+     "punti": 5,
      "giocate": 5,
      "valori": [
-      4,
+      5,
       5,
       1,
-      1,
-      3,
-      5,
-      14,
-      -9
+      2,
+      2,
+      6,
+      7,
+      -1
      ],
      "noi": false,
      "pos": 11
@@ -443,16 +443,16 @@
     {
      "squadra": "Levizzano",
      "punti": 1,
-     "giocate": 4,
+     "giocate": 5,
      "valori": [
       1,
-      4,
+      5,
       0,
       1,
-      3,
-      3,
-      11,
-      -8
+      4,
+      5,
+      14,
+      -9
      ],
      "noi": false,
      "pos": 12
@@ -460,16 +460,16 @@
     {
      "squadra": "Real Casina 04 U21",
      "punti": 0,
-     "giocate": 4,
+     "giocate": 5,
      "valori": [
       0,
-      4,
+      5,
       0,
       0,
-      4,
-      1,
-      9,
-      -8
+      5,
+      3,
+      13,
+      -10
      ],
      "noi": false,
      "pos": 13
@@ -761,7 +761,7 @@
      "data": "2026-10-18",
      "casa": "Amici di Davide",
      "ospite": "Bosco",
-     "risultato": null,
+     "risultato": "2-2",
      "esito": null,
      "noi": false
     },
@@ -770,8 +770,8 @@
      "data": "2026-10-18",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Salvaterra",
-     "risultato": null,
-     "esito": null,
+     "risultato": "1-2",
+     "esito": "P",
      "noi": true,
      "ora": "15:30",
      "campo": "Rivalta Parrocchiale"
@@ -781,7 +781,7 @@
      "data": "2026-10-18",
      "casa": "Coviolo",
      "ospite": "Felina",
-     "risultato": null,
+     "risultato": "2-0",
      "esito": null,
      "noi": false
     },
@@ -790,7 +790,7 @@
      "data": "2026-10-18",
      "casa": "Folese",
      "ospite": "Levizzano",
-     "risultato": null,
+     "risultato": "3-2",
      "esito": null,
      "noi": false
     },
@@ -799,7 +799,7 @@
      "data": "2026-10-18",
      "casa": "Montefiorino",
      "ospite": "Saxum United",
-     "risultato": null,
+     "risultato": "1-1",
      "esito": null,
      "noi": false
     },
@@ -808,7 +808,7 @@
      "data": "2026-10-18",
      "casa": "Real Casina 04 U21",
      "ospite": "Collagna",
-     "risultato": null,
+     "risultato": "2-4",
      "esito": null,
      "noi": false
     },
