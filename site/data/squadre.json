@@ -2310,6 +2310,23 @@
    "classifica": [
     {
      "pos": 1,
+     "squadra": "Cabassi Union Carpi",
+     "punti": 9,
+     "giocate": 3,
+     "valori": [
+      9,
+      3,
+      3,
+      0,
+      0,
+      11,
+      4,
+      7
+     ],
+     "noi": false
+    },
+    {
+     "pos": 2,
      "squadra": "U.S. Fides",
      "punti": 7,
      "giocate": 3,
@@ -2326,7 +2343,7 @@
      "noi": false
     },
     {
-     "pos": 2,
+     "pos": 3,
      "squadra": "Athletic Club Carpineti",
      "punti": 6,
      "giocate": 3,
@@ -2343,36 +2360,19 @@
      "noi": false
     },
     {
-     "pos": 3,
+     "pos": 4,
      "squadra": "Monari Nasi San Damaso",
      "punti": 6,
-     "giocate": 2,
+     "giocate": 3,
      "valori": [
       6,
-      2,
+      3,
       2,
       0,
-      0,
-      6,
       1,
-      5
-     ],
-     "noi": false
-    },
-    {
-     "pos": 4,
-     "squadra": "Cabassi Union Carpi",
-     "punti": 6,
-     "giocate": 2,
-     "valori": [
-      6,
-      2,
-      2,
-      0,
-      0,
-      5,
-      0,
-      5
+      10,
+      7,
+      3
      ],
      "noi": false
     },
