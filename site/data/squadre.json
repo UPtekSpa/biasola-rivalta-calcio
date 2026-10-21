@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-21T09:50:46+00:00",
+ "aggiornato": "2026-10-21T20:28:57+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -114,7 +114,9 @@
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "14:30",
+     "campo": "Cella Di Re Comunale"
     },
     {
      "giornata": 10,
@@ -931,7 +933,9 @@
      "ospite": "Pol. Biasola-Rivalta",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "14:30",
+     "campo": "Cella Di Re Comunale"
     },
     {
      "giornata": 9,
@@ -1977,8 +1981,8 @@
      "ora": "15:00",
      "casa": "Daino Santa Croce A.S.D.",
      "ospite": "Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "3-1",
+     "esito": "P",
      "noi": true,
      "fonte": "figc",
      "campo": "Gavassa Di Reggio Emilia"
@@ -1994,6 +1998,18 @@
      "noi": true,
      "fonte": "figc",
      "campo": "Reggio Emilia Biasola"
+    },
+    {
+     "giornata": 8,
+     "data": "2026-10-31",
+     "ora": "15:00",
+     "casa": "Saxum United A.R.L.",
+     "ospite": "Biasola-Rivalta",
+     "risultato": null,
+     "esito": null,
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Rivalta Parrocchiale"
     }
    ],
    "classifica": [
