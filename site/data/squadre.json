@@ -2428,6 +2428,23 @@
     },
     {
      "pos": 7,
+     "squadra": "Virtus Bagnolo",
+     "punti": 3,
+     "giocate": 3,
+     "valori": [
+      3,
+      3,
+      1,
+      0,
+      2,
+      6,
+      11,
+      -5
+     ],
+     "noi": false
+    },
+    {
+     "pos": 8,
      "squadra": "Pol. Dil. Biasola",
      "punti": 3,
      "giocate": 3,
@@ -2444,7 +2461,7 @@
      "noi": true
     },
     {
-     "pos": 8,
+     "pos": 9,
      "squadra": "Progetto Intesa All Camp",
      "punti": 0,
      "giocate": 2,
@@ -2461,36 +2478,19 @@
      "noi": false
     },
     {
-     "pos": 9,
+     "pos": 10,
      "squadra": "Eagles Virtus Ancora",
      "punti": 0,
-     "giocate": 2,
+     "giocate": 3,
      "valori": [
       0,
-      2,
-      0,
-      0,
-      2,
-      0,
-      6,
-      -6
-     ],
-     "noi": false
-    },
-    {
-     "pos": 10,
-     "squadra": "Virtus Bagnolo",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
       3,
-      11,
-      -8
+      0,
+      0,
+      3,
+      0,
+      9,
+      -9
      ],
      "noi": false
     }
