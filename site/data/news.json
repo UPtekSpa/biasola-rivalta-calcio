@@ -1,5 +1,30 @@
 [
  {
+  "id": "cb2f54c1f4cc",
+  "titolo": "Comunicato Ufficiale n. 32 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7803/CU32.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-10-23T12:00:00+00:00",
+  "trovata": "2026-10-23T20:15:02+00:00",
+  "estratto": "EAGLES VIRTUS ANCORA ASD BIASOLA-RIVALTA SASSUOLO DON BOCEDI 25/10/26 14:30 7A · BIASOLA-RIVALTA U.S. LEVIZZANO ASD REGGIO EMILIA BIASOLA 28/10/26 21:00 8A · BIASOLA-RIVALTA BOMA FELLEGARA REGGIO EMILIA BIASOLA 24/10/26 15:00 7A",
+  "squadra": "juniores",
+  "righe": [
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "EAGLES VIRTUS ANCORA ASD BIASOLA-RIVALTA SASSUOLO DON BOCEDI 25/10/26 14:30 7A"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "BIASOLA-RIVALTA U.S. LEVIZZANO ASD REGGIO EMILIA BIASOLA 28/10/26 21:00 8A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA BOMA FELLEGARA REGGIO EMILIA BIASOLA 24/10/26 15:00 7A"
+   }
+  ]
+ },
+ {
   "id": "31a326c3fd73",
   "titolo": "Terza categoria: capoliste in trasferta per difendere il primato",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8044",
