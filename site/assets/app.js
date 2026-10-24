@@ -27,7 +27,7 @@ function layout(pagina, squadre, conFoto) {
   const links = [["index.html", "Home", "home"], ["notizie.html", "Notizie", "notizie"]]
     .concat(conFoto ? [["foto.html", "Foto", "foto"]] : [])
     .concat(squadre.map((s) => [`squadra.html?id=${s.id}`, s.nome, s.id]))
-    .concat([["societa.html", "Società", "societa"]]);
+    .concat([["societa.html", "Società", "societa"], ["contatti.html", "Contatti", "contatti"]]);
   const header = document.querySelector("header");
   header.innerHTML = `
     <div class="top"><div class="top-inner">
@@ -52,7 +52,7 @@ function footer(stato, soc, squadre) {
       <div><h3>Seguici</h3><ul>
         <li><a href="${esc(soc.instagram || "https://www.instagram.com/biasola_rivalta_calcio/")}" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="notizie.html">Tutte le notizie</a></li>
-        <li><a href="societa.html">La società</a></li></ul></div>
+        <li><a href="societa.html">La società</a></li><li><a href="contatti.html">Contatti</a></li></ul></div>
     </div>
     <div class="footer-legal">Notizie raccolte automaticamente dal web: i diritti restano alle fonti originali.
       ${stato ? `Ultimo aggiornamento: ${dataIt(stato.ultimo_aggiornamento, true)}.` : ""}

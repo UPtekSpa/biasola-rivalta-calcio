@@ -273,3 +273,16 @@ footer.ricco { max-width: none; margin: 0; padding: 0; border: 0; background: va
 .annuncio p { margin: 0; }
 .annuncio-testo { flex: 1 1 320px; }
 .annuncio-etichetta { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; opacity: .9; }
+
+/* Modulo contatti */
+.modulo { display: grid; gap: 14px; max-width: 640px; }
+.modulo label { display: grid; gap: 6px; font-weight: 600; font-size: .95rem; }
+.modulo label span { font-weight: 400; color: var(--muto); }
+.modulo input, .modulo select, .modulo textarea { font: inherit; font-weight: 400; color: var(--testo); background: var(--bg); border: 1px solid var(--bordo); border-radius: 10px; padding: 10px 12px; width: 100%; box-sizing: border-box; }
+.modulo input:focus, .modulo select:focus, .modulo textarea:focus { outline: 2px solid var(--arancione); outline-offset: 1px; }
+.modulo button { justify-self: start; border: 0; cursor: pointer; font: inherit; }
+.modulo button:disabled { opacity: .6; cursor: wait; }
+.modulo .nascosto { position: absolute; left: -9999px; }
+.esito { margin: 0; min-height: 1.5em; }
+.esito.ok { color: var(--verde); font-weight: 600; }
+.esito.ko { color: var(--rosso); font-weight: 600; }

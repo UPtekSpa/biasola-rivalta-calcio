@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contatti · Biasola Rivalta Calcio</title>
+<meta name="description" content="Scrivi alla Biasola Rivalta Calcio: informazioni, iscrizioni e provini.">
+<meta name="theme-color" content="#7a1f2b">
+<link rel="icon" href="assets/stemma.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="contatti">
+<header></header>
+<section class="hero"><h1>Contatti</h1><p>Informazioni, iscrizioni, provini: scrivici e ti rispondiamo appena possibile.</p></section>
+<main>
+  <section class="card">
+    <h2>Scrivici</h2>
+    <form id="contatto" class="modulo" action="https://formsubmit.co/ajax/__EMAIL__" method="POST">
+      <input type="hidden" name="_subject" value="Nuovo messaggio dal sito Biasola">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="nascosto" tabindex="-1" autocomplete="off">
+      <label>Nome e cognome<input name="Nome" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telefono <span>(facoltativo)</span><input type="tel" name="Telefono" autocomplete="tel"></label>
+      <label>Argomento
+        <select name="Argomento" id="argomento">
+          <option>Informazioni</option>
+          <option>Iscrizioni</option>
+          <option value="Provino portiere">Provino portiere (annate 2007-2010)</option>
+          <option>Altro</option>
+        </select>
+      </label>
+      <label>Messaggio<textarea name="Messaggio" rows="6" required></textarea></label>
+      <button class="btn btn-primario" type="submit">Invia messaggio</button>
+      <p class="esito" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer></footer>
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  const f = document.getElementById("contatto"), esito = f.querySelector(".esito"), btn = f.querySelector("button");
+  if (new URLSearchParams(location.search).get("argomento") === "portiere") f.argomento.value = "Provino portiere";
+  f.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    btn.disabled = true; esito.className = "esito"; esito.textContent = "Invio in corso…";
+    try {
+      const r = await fetch(f.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(f) });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok || String(d.success) !== "true") throw new Error(d.message || "errore");
+      f.reset(); esito.className = "esito ok"; esito.textContent = "Grazie! Messaggio inviato, ti risponderemo presto.";
+    } catch (err) {
+      esito.className = "esito ko"; esito.textContent = "Invio non riuscito. Riprova tra poco o scrivici su Instagram.";
+    } finally { btn.disabled = false; }
+  });
+})();
+</script>
+</body>
+</html>
