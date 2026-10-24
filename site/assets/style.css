@@ -266,3 +266,10 @@ footer.ricco { max-width: none; margin: 0; padding: 0; border: 0; background: va
 .widget-tc-box { overflow-x: auto; }
 .widget-tc { width: 500px; max-width: none; border: 0; display: block; margin: 0 auto; }
 .widget-fonte { font-size: .8rem; text-align: right; margin-top: 4px; }
+
+/* annuncio in homepage */
+.annuncio { margin: 36px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; padding: 22px 24px; border-radius: var(--radius); color: #fff; background: linear-gradient(120deg, var(--arancione) 0%, var(--granata) 70%); }
+.annuncio h2 { margin: 2px 0 6px; font-family: var(--titoli); text-transform: uppercase; letter-spacing: .03em; font-size: 1.6rem; }
+.annuncio p { margin: 0; }
+.annuncio-testo { flex: 1 1 320px; }
+.annuncio-etichetta { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; opacity: .9; }

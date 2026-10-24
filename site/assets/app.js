@@ -175,7 +175,7 @@ async function avvia() {
       const extra = document.createElement("section");
       extra.className = "card";
       extra.innerHTML = `<h2>Classifica</h2>${widgetTc("Classifica", s.widget, 800)}<h2 style="margin-top:18px">Risultati del girone</h2>${widgetTc("Risultati", s.widget, 600)}<h2 style="margin-top:18px">Marcatori</h2>${widgetTc("Marcatori", s.widget, 700)}`;
-      $("calendario").after(extra);
+      $("classifica").after(extra);
     }
     $("calendario").innerHTML = `<h2>Calendario e risultati</h2>${calendarioTab(s.partite)}`;
     const gt = giornataTab(s.girone);
