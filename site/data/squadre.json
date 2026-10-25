@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T19:28:55+00:00",
+ "aggiornato": "2026-10-25T23:03:12+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -359,13 +359,13 @@
     },
     {
      "squadra": "Saxum United",
-     "punti": 7,
-     "giocate": 6,
+     "punti": 8,
+     "giocate": 7,
      "valori": [
+      8,
       7,
-      6,
       2,
-      1,
+      2,
       3,
       7,
       8,
@@ -376,13 +376,13 @@
     },
     {
      "squadra": "Bosco",
-     "punti": 7,
-     "giocate": 5,
+     "punti": 8,
+     "giocate": 6,
      "valori": [
-      7,
-      5,
+      8,
+      6,
       2,
-      1,
+      2,
       2,
       7,
       8,
@@ -857,7 +857,7 @@
      "data": "2026-10-25",
      "casa": "Saxum United",
      "ospite": "Bosco",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
