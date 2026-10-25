@@ -2268,8 +2268,8 @@
      "ora": "10:30",
      "casa": "Pol. Dil. Biasola",
      "ospite": "United Albinea",
-     "risultato": null,
-     "esito": null,
+     "risultato": "1-6",
+     "esito": "P",
      "noi": true
     },
     {
@@ -2326,6 +2326,23 @@
    "classifica": [
     {
      "pos": 1,
+     "squadra": "U.S. Fides",
+     "punti": 10,
+     "giocate": 4,
+     "valori": [
+      10,
+      4,
+      3,
+      1,
+      0,
+      22,
+      7,
+      15
+     ],
+     "noi": false
+    },
+    {
+     "pos": 2,
      "squadra": "Cabassi Union Carpi",
      "punti": 9,
      "giocate": 3,
@@ -2342,8 +2359,8 @@
      "noi": false
     },
     {
-     "pos": 2,
-     "squadra": "U.S. Fides",
+     "pos": 3,
+     "squadra": "United Albinea",
      "punti": 7,
      "giocate": 3,
      "valori": [
@@ -2352,14 +2369,14 @@
       2,
       1,
       0,
-      13,
-      6,
-      7
+      9,
+      3,
+      6
      ],
      "noi": false
     },
     {
-     "pos": 3,
+     "pos": 4,
      "squadra": "Athletic Club Carpineti",
      "punti": 6,
      "giocate": 3,
@@ -2376,7 +2393,7 @@
      "noi": false
     },
     {
-     "pos": 4,
+     "pos": 5,
      "squadra": "Monari Nasi San Damaso",
      "punti": 6,
      "giocate": 3,
@@ -2389,23 +2406,6 @@
       10,
       7,
       3
-     ],
-     "noi": false
-    },
-    {
-     "pos": 5,
-     "squadra": "United Albinea",
-     "punti": 4,
-     "giocate": 2,
-     "valori": [
-      4,
-      2,
-      1,
-      1,
-      0,
-      3,
-      2,
-      1
      ],
      "noi": false
     },
@@ -2447,38 +2447,21 @@
      "pos": 8,
      "squadra": "Pol. Dil. Biasola",
      "punti": 3,
-     "giocate": 3,
+     "giocate": 4,
      "valori": [
       3,
-      3,
+      4,
       1,
       0,
-      2,
-      4,
-      11,
-      -7
+      3,
+      5,
+      17,
+      -12
      ],
      "noi": true
     },
     {
      "pos": 9,
-     "squadra": "Progetto Intesa All Camp",
-     "punti": 0,
-     "giocate": 2,
-     "valori": [
-      0,
-      2,
-      0,
-      0,
-      2,
-      1,
-      6,
-      -5
-     ],
-     "noi": false
-    },
-    {
-     "pos": 10,
      "squadra": "Eagles Virtus Ancora",
      "punti": 0,
      "giocate": 3,
@@ -2491,6 +2474,23 @@
       0,
       9,
       -9
+     ],
+     "noi": false
+    },
+    {
+     "pos": 10,
+     "squadra": "Progetto Intesa All Camp",
+     "punti": 0,
+     "giocate": 3,
+     "valori": [
+      0,
+      3,
+      0,
+      0,
+      3,
+      2,
+      15,
+      -13
      ],
      "noi": false
     }
