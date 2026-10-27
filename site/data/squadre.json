@@ -2326,6 +2326,23 @@
    "classifica": [
     {
      "pos": 1,
+     "squadra": "Cabassi Union Carpi",
+     "punti": 12,
+     "giocate": 4,
+     "valori": [
+      12,
+      4,
+      4,
+      0,
+      0,
+      14,
+      4,
+      10
+     ],
+     "noi": false
+    },
+    {
+     "pos": 2,
      "squadra": "U.S. Fides",
      "punti": 10,
      "giocate": 4,
@@ -2338,23 +2355,6 @@
       22,
       7,
       15
-     ],
-     "noi": false
-    },
-    {
-     "pos": 2,
-     "squadra": "Cabassi Union Carpi",
-     "punti": 9,
-     "giocate": 3,
-     "valori": [
-      9,
-      3,
-      3,
-      0,
-      0,
-      11,
-      4,
-      7
      ],
      "noi": false
     },
@@ -2464,16 +2464,16 @@
      "pos": 9,
      "squadra": "Eagles Virtus Ancora",
      "punti": 0,
-     "giocate": 3,
+     "giocate": 4,
      "valori": [
       0,
-      3,
+      4,
       0,
       0,
-      3,
+      4,
       0,
-      9,
-      -9
+      12,
+      -12
      ],
      "noi": false
     },
