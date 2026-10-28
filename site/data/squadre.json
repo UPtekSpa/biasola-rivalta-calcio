@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:00:11+00:00",
+ "aggiornato": "2026-10-28T21:33:13+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -290,6 +290,23 @@
      "pos": 2
     },
     {
+     "squadra": "Montefiorino",
+     "punti": 14,
+     "giocate": 8,
+     "valori": [
+      14,
+      8,
+      4,
+      2,
+      2,
+      14,
+      16,
+      -2
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
      "squadra": "Salvaterra",
      "punti": 13,
      "giocate": 7,
@@ -304,24 +321,24 @@
       4
      ],
      "noi": false,
-     "pos": 3
+     "pos": 4
     },
     {
-     "squadra": "Montefiorino",
-     "punti": 13,
-     "giocate": 7,
+     "squadra": "Saxum United",
+     "punti": 11,
+     "giocate": 8,
      "valori": [
-      13,
-      7,
-      4,
-      1,
+      11,
+      8,
+      3,
       2,
-      13,
-      15,
-      -2
+      3,
+      10,
+      10,
+      0
      ],
      "noi": false,
-     "pos": 4
+     "pos": 5
     },
     {
      "squadra": "Pol. Biasola-Rivalta",
@@ -338,7 +355,7 @@
       3
      ],
      "noi": true,
-     "pos": 5
+     "pos": 6
     },
     {
      "squadra": "Folese",
@@ -353,23 +370,6 @@
       8,
       10,
       -2
-     ],
-     "noi": false,
-     "pos": 6
-    },
-    {
-     "squadra": "Saxum United",
-     "punti": 8,
-     "giocate": 7,
-     "valori": [
-      8,
-      7,
-      2,
-      2,
-      3,
-      7,
-      8,
-      -1
      ],
      "noi": false,
      "pos": 7
@@ -393,16 +393,16 @@
     },
     {
      "squadra": "Felina",
-     "punti": 7,
-     "giocate": 6,
+     "punti": 8,
+     "giocate": 7,
      "valori": [
+      8,
       7,
-      6,
       2,
-      1,
+      2,
       3,
-      13,
-      15,
+      14,
+      16,
       -2
      ],
      "noi": false,
@@ -428,16 +428,16 @@
     {
      "squadra": "Amici di Davide",
      "punti": 5,
-     "giocate": 6,
+     "giocate": 7,
      "valori": [
       5,
-      6,
+      7,
       1,
       2,
-      3,
-      7,
-      10,
-      -3
+      4,
+      9,
+      13,
+      -4
      ],
      "noi": false,
      "pos": 11
@@ -875,7 +875,7 @@
      "data": "2026-10-28",
      "casa": "Amici di Davide",
      "ospite": "Saxum United",
-     "risultato": null,
+     "risultato": "2-3",
      "esito": null,
      "noi": false
     },
@@ -913,7 +913,7 @@
      "data": "2026-10-28",
      "casa": "Montefiorino",
      "ospite": "Felina",
-     "risultato": null,
+     "risultato": "1-1",
      "esito": null,
      "noi": false
     },
