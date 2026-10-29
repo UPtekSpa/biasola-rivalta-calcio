@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T21:33:13+00:00",
+ "aggiornato": "2026-10-29T08:33:50+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -101,8 +101,8 @@
      "data": "2026-10-28",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Levizzano",
-     "risultato": null,
-     "esito": null,
+     "risultato": "3-2",
+     "esito": "V",
      "noi": true,
      "ora": "21:00",
      "campo": "Asd Reggio Emilia Biasola"
@@ -257,13 +257,13 @@
    "classifica": [
     {
      "squadra": "Coviolo",
-     "punti": 21,
-     "giocate": 7,
+     "punti": 22,
+     "giocate": 8,
      "valori": [
-      21,
+      22,
+      8,
       7,
-      7,
-      0,
+      1,
       0,
       15,
       1,
@@ -274,13 +274,13 @@
     },
     {
      "squadra": "Eagles Virtus Ancora",
-     "punti": 18,
-     "giocate": 6,
+     "punti": 19,
+     "giocate": 7,
      "valori": [
-      18,
+      19,
+      7,
       6,
-      6,
-      0,
+      1,
       0,
       19,
       2,
@@ -291,17 +291,17 @@
     },
     {
      "squadra": "Montefiorino",
-     "punti": 14,
+     "punti": 16,
      "giocate": 8,
      "valori": [
-      14,
-      8,
-      4,
-      2,
-      2,
-      14,
       16,
-      -2
+      8,
+      5,
+      1,
+      2,
+      16,
+      16,
+      0
      ],
      "noi": false,
      "pos": 3
@@ -324,6 +324,40 @@
      "pos": 4
     },
     {
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 12,
+     "giocate": 8,
+     "valori": [
+      12,
+      8,
+      4,
+      0,
+      4,
+      16,
+      12,
+      4
+     ],
+     "noi": true,
+     "pos": 5
+    },
+    {
+     "squadra": "Bosco",
+     "punti": 11,
+     "giocate": 7,
+     "valori": [
+      11,
+      7,
+      3,
+      2,
+      2,
+      10,
+      8,
+      2
+     ],
+     "noi": false,
+     "pos": 6
+    },
+    {
      "squadra": "Saxum United",
      "punti": 11,
      "giocate": 8,
@@ -338,24 +372,7 @@
       0
      ],
      "noi": false,
-     "pos": 5
-    },
-    {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 9,
-     "giocate": 7,
-     "valori": [
-      9,
-      7,
-      3,
-      0,
-      4,
-      13,
-      10,
-      3
-     ],
-     "noi": true,
-     "pos": 6
+     "pos": 7
     },
     {
      "squadra": "Folese",
@@ -372,38 +389,21 @@
       -2
      ],
      "noi": false,
-     "pos": 7
-    },
-    {
-     "squadra": "Bosco",
-     "punti": 8,
-     "giocate": 6,
-     "valori": [
-      8,
-      6,
-      2,
-      2,
-      2,
-      7,
-      8,
-      -1
-     ],
-     "noi": false,
      "pos": 8
     },
     {
      "squadra": "Felina",
-     "punti": 8,
+     "punti": 7,
      "giocate": 7,
      "valori": [
-      8,
+      7,
       7,
       2,
-      2,
-      3,
+      1,
+      4,
       14,
-      16,
-      -2
+      18,
+      -4
      ],
      "noi": false,
      "pos": 9
@@ -411,16 +411,16 @@
     {
      "squadra": "Collagna",
      "punti": 7,
-     "giocate": 6,
+     "giocate": 7,
      "valori": [
       7,
-      6,
+      7,
       2,
       1,
-      3,
+      4,
       9,
-      16,
-      -7
+      19,
+      -10
      ],
      "noi": false,
      "pos": 10
@@ -462,16 +462,16 @@
     {
      "squadra": "Levizzano",
      "punti": 1,
-     "giocate": 6,
+     "giocate": 7,
      "valori": [
       1,
-      6,
+      7,
       0,
       1,
-      5,
-      7,
-      17,
-      -10
+      6,
+      9,
+      20,
+      -11
      ],
      "noi": false,
      "pos": 13
@@ -884,8 +884,8 @@
      "data": "2026-10-28",
      "casa": "Pol. Biasola-Rivalta",
      "ospite": "Levizzano",
-     "risultato": null,
-     "esito": null,
+     "risultato": "3-2",
+     "esito": "V",
      "noi": true,
      "ora": "21:00",
      "campo": "Asd Reggio Emilia Biasola"
@@ -895,7 +895,7 @@
      "data": "2026-10-28",
      "casa": "Bosco",
      "ospite": "Collagna",
-     "risultato": null,
+     "risultato": "3-0",
      "esito": null,
      "noi": false
     },
@@ -904,7 +904,7 @@
      "data": "2026-10-28",
      "casa": "Coviolo",
      "ospite": "Eagles Virtus Ancora",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
@@ -913,7 +913,7 @@
      "data": "2026-10-28",
      "casa": "Montefiorino",
      "ospite": "Felina",
-     "risultato": "1-1",
+     "risultato": "3-1",
      "esito": null,
      "noi": false
     },
