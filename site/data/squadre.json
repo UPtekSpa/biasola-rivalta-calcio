@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T21:40:11+00:00",
+ "aggiornato": "2026-10-30T11:11:39+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -292,6 +292,23 @@
      "pos": 2
     },
     {
+     "squadra": "Salvaterra",
+     "punti": 16,
+     "giocate": 8,
+     "valori": [
+      16,
+      8,
+      5,
+      1,
+      2,
+      15,
+      10,
+      5
+     ],
+     "noi": false,
+     "pos": 3
+    },
+    {
      "squadra": "Montefiorino",
      "punti": 16,
      "giocate": 8,
@@ -304,23 +321,6 @@
       16,
       16,
       0
-     ],
-     "noi": false,
-     "pos": 3
-    },
-    {
-     "squadra": "Salvaterra",
-     "punti": 13,
-     "giocate": 7,
-     "valori": [
-      13,
-      7,
-      4,
-      1,
-      2,
-      14,
-      10,
-      4
      ],
      "noi": false,
      "pos": 4
@@ -445,23 +445,6 @@
      "pos": 11
     },
     {
-     "squadra": "Real Casina 04 U21",
-     "punti": 1,
-     "giocate": 6,
-     "valori": [
-      1,
-      6,
-      0,
-      1,
-      5,
-      8,
-      18,
-      -10
-     ],
-     "noi": false,
-     "pos": 12
-    },
-    {
      "squadra": "Levizzano",
      "punti": 1,
      "giocate": 7,
@@ -473,6 +456,23 @@
       6,
       9,
       20,
+      -11
+     ],
+     "noi": false,
+     "pos": 12
+    },
+    {
+     "squadra": "Real Casina 04 U21",
+     "punti": 1,
+     "giocate": 7,
+     "valori": [
+      1,
+      7,
+      0,
+      1,
+      6,
+      8,
+      19,
       -11
      ],
      "noi": false,
@@ -924,7 +924,7 @@
      "data": "2026-10-28",
      "casa": "Real Casina 04 U21",
      "ospite": "Salvaterra",
-     "risultato": null,
+     "risultato": "0-1",
      "esito": null,
      "noi": false
     },
