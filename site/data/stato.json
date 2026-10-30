@@ -2,36 +2,36 @@
  "fonti": {
   "Calendario Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-30T11:11:32+00:00",
+   "quando": "2026-10-30T21:24:36+00:00",
    "elementi": 156
   },
   "Classifica Prima Squadra": {
    "ok": true,
-   "quando": "2026-10-30T11:11:33+00:00",
+   "quando": "2026-10-30T21:24:36+00:00",
    "elementi": 13
   },
   "Google News e RSS": {
    "ok": true,
-   "quando": "2026-10-30T11:11:36+00:00",
-   "elementi": 18
+   "quando": "2026-10-30T21:24:39+00:00",
+   "elementi": 16
   },
   "Comunicati FIGC Reggio Emilia": {
    "ok": true,
-   "quando": "2026-10-30T11:11:37+00:00",
-   "elementi": 0
+   "quando": "2026-10-30T21:24:42+00:00",
+   "elementi": 1
   },
   "www.calcioreggiano.com/": {
    "ok": true,
-   "quando": "2026-10-30T11:11:38+00:00",
+   "quando": "2026-10-30T21:24:43+00:00",
    "elementi": 3
   },
   "www.calcioreggiano.com/news/news.aspx": {
    "ok": true,
-   "quando": "2026-10-30T11:11:39+00:00",
-   "elementi": 6
+   "quando": "2026-10-30T21:24:44+00:00",
+   "elementi": 5
   }
  },
- "ultimo_aggiornamento": "2026-10-30T11:11:39+00:00",
+ "ultimo_aggiornamento": "2026-10-30T21:24:44+00:00",
  "figc_visti": [
   7458,
   7467,
@@ -67,6 +67,7 @@
   7803,
   7805,
   7809,
-  7819
+  7819,
+  7833
  ]
 }
