@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T11:41:41+00:00",
+ "aggiornato": "2026-11-01T21:01:32+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -112,8 +112,8 @@
      "data": "2026-11-01",
      "casa": "Coviolo",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "1-0",
+     "esito": "P",
      "noi": true,
      "ora": "14:30",
      "campo": "Cella Di Re Comunale"
@@ -259,6 +259,23 @@
    "classifica": [
     {
      "squadra": "Coviolo",
+     "punti": 25,
+     "giocate": 9,
+     "valori": [
+      25,
+      9,
+      8,
+      1,
+      0,
+      16,
+      1,
+      15
+     ],
+     "noi": false,
+     "pos": 1
+    },
+    {
+     "squadra": "Eagles Virtus Ancora",
      "punti": 22,
      "giocate": 8,
      "valori": [
@@ -267,26 +284,9 @@
       7,
       1,
       0,
-      15,
-      1,
-      14
-     ],
-     "noi": false,
-     "pos": 1
-    },
-    {
-     "squadra": "Eagles Virtus Ancora",
-     "punti": 19,
-     "giocate": 7,
-     "valori": [
-      19,
-      7,
-      6,
-      1,
-      0,
-      19,
-      2,
-      17
+      25,
+      3,
+      22
      ],
      "noi": false,
      "pos": 2
@@ -294,16 +294,16 @@
     {
      "squadra": "Salvaterra",
      "punti": 16,
-     "giocate": 8,
+     "giocate": 9,
      "valori": [
       16,
-      8,
+      9,
       5,
       1,
-      2,
+      3,
       15,
-      10,
-      5
+      11,
+      4
      ],
      "noi": false,
      "pos": 3
@@ -311,22 +311,39 @@
     {
      "squadra": "Montefiorino",
      "punti": 16,
-     "giocate": 8,
+     "giocate": 9,
      "valori": [
       16,
-      8,
+      9,
       5,
       1,
-      2,
-      16,
-      16,
-      0
+      3,
+      18,
+      20,
+      -2
      ],
      "noi": false,
      "pos": 4
     },
     {
      "squadra": "Pol. Biasola-Rivalta",
+     "punti": 12,
+     "giocate": 9,
+     "valori": [
+      12,
+      9,
+      4,
+      0,
+      5,
+      16,
+      13,
+      3
+     ],
+     "noi": true,
+     "pos": 5
+    },
+    {
+     "squadra": "Folese",
      "punti": 12,
      "giocate": 8,
      "valori": [
@@ -335,12 +352,12 @@
       4,
       0,
       4,
-      16,
       12,
-      4
+      12,
+      0
      ],
-     "noi": true,
-     "pos": 5
+     "noi": false,
+     "pos": 6
     },
     {
      "squadra": "Bosco",
@@ -357,7 +374,7 @@
       2
      ],
      "noi": false,
-     "pos": 6
+     "pos": 7
     },
     {
      "squadra": "Saxum United",
@@ -374,24 +391,41 @@
       0
      ],
      "noi": false,
-     "pos": 7
+     "pos": 8
     },
     {
-     "squadra": "Folese",
-     "punti": 9,
-     "giocate": 7,
+     "squadra": "Collagna",
+     "punti": 10,
+     "giocate": 8,
      "valori": [
-      9,
-      7,
-      3,
-      0,
-      4,
-      8,
       10,
-      -2
+      8,
+      3,
+      1,
+      4,
+      10,
+      19,
+      -9
      ],
      "noi": false,
-     "pos": 8
+     "pos": 9
+    },
+    {
+     "squadra": "Amici di Davide",
+     "punti": 8,
+     "giocate": 8,
+     "valori": [
+      8,
+      8,
+      2,
+      2,
+      4,
+      12,
+      15,
+      -3
+     ],
+     "noi": false,
+     "pos": 10
     },
     {
      "squadra": "Felina",
@@ -408,55 +442,21 @@
       -4
      ],
      "noi": false,
-     "pos": 9
-    },
-    {
-     "squadra": "Collagna",
-     "punti": 7,
-     "giocate": 7,
-     "valori": [
-      7,
-      7,
-      2,
-      1,
-      4,
-      9,
-      19,
-      -10
-     ],
-     "noi": false,
-     "pos": 10
-    },
-    {
-     "squadra": "Amici di Davide",
-     "punti": 5,
-     "giocate": 7,
-     "valori": [
-      5,
-      7,
-      1,
-      2,
-      4,
-      9,
-      13,
-      -4
-     ],
-     "noi": false,
      "pos": 11
     },
     {
      "squadra": "Levizzano",
      "punti": 1,
-     "giocate": 7,
+     "giocate": 8,
      "valori": [
       1,
-      7,
+      8,
       0,
       1,
-      6,
-      9,
-      20,
-      -11
+      7,
+      11,
+      23,
+      -12
      ],
      "noi": false,
      "pos": 12
@@ -464,16 +464,16 @@
     {
      "squadra": "Real Casina 04 U21",
      "punti": 1,
-     "giocate": 7,
+     "giocate": 8,
      "valori": [
       1,
-      7,
+      8,
       0,
       1,
-      6,
-      8,
-      19,
-      -11
+      7,
+      9,
+      25,
+      -16
      ],
      "noi": false,
      "pos": 13
@@ -933,8 +933,8 @@
      "data": "2026-11-01",
      "casa": "Coviolo",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "1-0",
+     "esito": "P",
      "noi": true,
      "ora": "14:30",
      "campo": "Cella Di Re Comunale"
@@ -944,7 +944,7 @@
      "data": "2026-11-01",
      "casa": "Eagles Virtus Ancora",
      "ospite": "Real Casina 04 U21",
-     "risultato": null,
+     "risultato": "6-1",
      "esito": null,
      "noi": false
     },
@@ -962,7 +962,7 @@
      "data": "2026-11-01",
      "casa": "Folese",
      "ospite": "Montefiorino",
-     "risultato": null,
+     "risultato": "4-2",
      "esito": null,
      "noi": false
     },
@@ -971,7 +971,7 @@
      "data": "2026-11-01",
      "casa": "Salvaterra",
      "ospite": "Collagna",
-     "risultato": null,
+     "risultato": "0-1",
      "esito": null,
      "noi": false
     },
@@ -980,7 +980,7 @@
      "data": "2026-11-01",
      "casa": "Levizzano",
      "ospite": "Amici di Davide",
-     "risultato": null,
+     "risultato": "2-3",
      "esito": null,
      "noi": false
     },
