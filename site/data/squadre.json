@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-02T23:48:45+00:00",
+ "aggiornato": "2026-11-03T12:38:09+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -343,6 +343,23 @@
      "pos": 5
     },
     {
+     "squadra": "Bosco",
+     "punti": 12,
+     "giocate": 8,
+     "valori": [
+      12,
+      8,
+      3,
+      3,
+      2,
+      10,
+      8,
+      2
+     ],
+     "noi": false,
+     "pos": 6
+    },
+    {
      "squadra": "Folese",
      "punti": 12,
      "giocate": 8,
@@ -355,23 +372,6 @@
       12,
       12,
       0
-     ],
-     "noi": false,
-     "pos": 6
-    },
-    {
-     "squadra": "Bosco",
-     "punti": 11,
-     "giocate": 7,
-     "valori": [
-      11,
-      7,
-      3,
-      2,
-      2,
-      10,
-      8,
-      2
      ],
      "noi": false,
      "pos": 7
@@ -429,13 +429,13 @@
     },
     {
      "squadra": "Felina",
-     "punti": 7,
-     "giocate": 7,
+     "punti": 8,
+     "giocate": 8,
      "valori": [
-      7,
-      7,
+      8,
+      8,
       2,
-      1,
+      2,
       4,
       14,
       18,
@@ -953,7 +953,7 @@
      "data": "2026-11-01",
      "casa": "Felina",
      "ospite": "Bosco",
-     "risultato": null,
+     "risultato": "0-0",
      "esito": null,
      "noi": false
     },
