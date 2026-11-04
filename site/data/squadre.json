@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-04T12:47:59+00:00",
+ "aggiornato": "2026-11-04T22:29:44+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -2009,8 +2009,8 @@
      "ora": "15:00",
      "casa": "Saxum United A.R.L.",
      "ospite": "Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "6-3",
+     "esito": "P",
      "noi": true,
      "fonte": "figc",
      "campo": "Rivalta Parrocchiale"
@@ -2021,6 +2021,18 @@
      "ora": "15:00",
      "casa": "Biasola-Rivalta",
      "ospite": "Masone",
+     "risultato": null,
+     "esito": null,
+     "noi": true,
+     "fonte": "figc",
+     "campo": "Reggio Emilia Biasola"
+    },
+    {
+     "giornata": 10,
+     "data": "2026-11-14",
+     "ora": "15:00",
+     "casa": "Biasola-Rivalta",
+     "ospite": "Borzanese Quattrocastella",
      "risultato": null,
      "esito": null,
      "noi": true,
