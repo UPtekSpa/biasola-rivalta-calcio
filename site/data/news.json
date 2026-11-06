@@ -1,5 +1,26 @@
 [
  {
+  "id": "d2e390279ebd",
+  "titolo": "Comunicato Ufficiale n. 39 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7865/CU39.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-06T12:00:00+00:00",
+  "trovata": "2026-11-06T21:58:47+00:00",
+  "estratto": "BIASOLA-RIVALTA FOLESE RIVALTA PARROCCHIALE 8/11/26 14:30 10A · BIASOLA-RIVALTA MASONE REGGIO EMILIA BIASOLA 7/11/26 15:00 9A",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA FOLESE RIVALTA PARROCCHIALE 8/11/26 14:30 10A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA MASONE REGGIO EMILIA BIASOLA 7/11/26 15:00 9A"
+   }
+  ]
+ },
+ {
   "id": "8a32ba531603",
   "titolo": "Comunicato Ufficiale n. 38 FIGC Reggio Emilia: le righe sulla Biasola",
   "link": "https://www.figcreggioemilia.it/files/announcements/2026/7851/CU38.pdf",
