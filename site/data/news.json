@@ -1,5 +1,42 @@
 [
  {
+  "id": "b7f7bfdb2479",
+  "titolo": "Comunicato Ufficiale n. 40 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7876/CU40.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-11T12:00:00+00:00",
+  "trovata": "2026-11-11T23:22:14+00:00",
+  "estratto": "BIASOLA-RIVALTA FOLESE 3 - 4 · 7/11/26 9/A BIASOLA-RIVALTA MASONE 1 - 1 · BRUSCHI JACOPO (AUDACE A.S.D.) DI GIORGIO LUCA (BIASOLA-RIVALTA)",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "BIASOLA-RIVALTA FOLESE 3 - 4"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "7/11/26 9/A BIASOLA-RIVALTA MASONE 1 - 1"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "BRUSCHI JACOPO (AUDACE A.S.D.) DI GIORGIO LUCA (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "PEDERINI ALBERTO (BIASOLA-RIVALTA) DOMINICI GIOVANNI (MASONE)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 21/11/26 15:00 12A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "CASALGRANDE A.S.D. BIASOLA-RIVALTA CASALGRANDE CAMPO A 23/11/26 20:00 11A"
+   }
+  ]
+ },
+ {
   "id": "5bccd1c6d7d6",
   "titolo": "Terza categoria: montefiorino-eagles finisce in anticipo",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8079",
