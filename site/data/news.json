@@ -1,5 +1,33 @@
 [
  {
+  "id": "9a9d8b9d2b48",
+  "titolo": "Comunicato Ufficiale n. 41 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7889/CU41.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-13T12:00:00+00:00",
+  "trovata": "2026-11-13T12:52:27+00:00",
+  "estratto": "BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA RINVIATA A DATA DA DESTINARI",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "PULCINI",
+    "testo": "BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA RINVIATA A DATA DA DESTINARI"
+   }
+  ]
+ },
+ {
+  "id": "0b0e5830beb0",
+  "titolo": "TERZA CATEGORIA: MONTEFIORINO ED EAGLES DOVRANNO RIGIOCARE LA PARTITA PER 4 MINUTI",
+  "link": "https://solodilettanti.it/terza-categoria-montefiorino-ed-eagles-dovranno-rigiocare-la-partita-per-4-minuti/",
+  "fonte": "solodilettanti.it",
+  "tipo": "campionato",
+  "data": "2026-11-13T09:03:46+00:00",
+  "trovata": "2026-11-13T12:52:25+00:00",
+  "estratto": "La partita del girone A di Terza Categoria tra Montefiorino e Eagles Sassuolo dovra essere rigiocata solo per quattro minuti. Infatti sabato scorso nell’anticipo l’arbitro Hamza Haddaji di Modena ha sospeso la gara a 4′ dalla fine per una presunta offesa razziale partita dalle tribune. Un ulteriore ",
+  "squadra": "prima-squadra"
+ },
+ {
   "id": "f821b136cf29",
   "titolo": "MERCATO: ALTRO ACQUISTO PER IL MEDOLLA SAN FELICE E AL 4VILLE CAMBIA LA PANCHINA",
   "link": "https://solodilettanti.it/mercato-altro-acquisto-per-il-medolla-san-felice-e-al-4ville-cambia-la-panchina/",
