@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-18T13:40:34+00:00",
+ "aggiornato": "2026-11-18T23:19:05+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -147,7 +147,9 @@
      "ospite": "Montefiorino",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "14:30",
+     "campo": "Rivalta Parrocchiale"
     },
     {
      "giornata": 14,
@@ -1159,7 +1161,9 @@
      "ospite": "Montefiorino",
      "risultato": null,
      "esito": null,
-     "noi": true
+     "noi": true,
+     "ora": "14:30",
+     "campo": "Rivalta Parrocchiale"
     },
     {
      "giornata": 13,
@@ -2033,7 +2037,7 @@
     },
     {
      "giornata": 10,
-     "data": "2026-11-14",
+     "data": "2026-11-28",
      "ora": "15:00",
      "casa": "Biasola-Rivalta",
      "ospite": "Borzanese Quattrocastella",

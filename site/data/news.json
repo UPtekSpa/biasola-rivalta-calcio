@@ -1,5 +1,38 @@
 [
  {
+  "id": "1273eec64369",
+  "titolo": "Comunicato Ufficiale n. 43 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7911/CU43.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-18T12:00:00+00:00",
+  "trovata": "2026-11-18T23:19:02+00:00",
+  "estratto": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 6/12/26 14:30 · BIASOLA-RIVALTA POLISPORTIVA MONTEFIORINO RIVALTA PARROCCHIALE 29/11/26 14:30 13A · BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA REGGIO EMILIA BIASOLA 28/11/26 15:00 10A K",
+  "squadra": "juniores",
+  "righe": [
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 6/12/26 14:30"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "BIASOLA-RIVALTA POLISPORTIVA MONTEFIORINO RIVALTA PARROCCHIALE 29/11/26 14:30 13A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA REGGIO EMILIA BIASOLA 28/11/26 15:00 10A K"
+   },
+   {
+    "sezione": "ALLIEVI",
+    "testo": "FALKGALILEO GATTATICO CLUB REGGIO EMILIA BIASOLA 29/11/26 10:30 12A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED VIRTUS BAGNOLO REGGIO EMILIA BIASOLA 28/11/26 18:30 10A K"
+   }
+  ]
+ },
+ {
   "id": "788afb9eb0be",
   "titolo": "Terza categoria: l'uragano sozzigalli si abbatte sulla gualtierese",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8092",
