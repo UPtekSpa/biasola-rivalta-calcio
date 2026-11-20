@@ -1,5 +1,41 @@
 [
  {
+  "id": "15346d3c2972",
+  "titolo": "PANCHINE: LA SOLIERESE HA ESONERATO GIUSEPPE GRECO E NUOVO MISTER PER IL VALLALTA",
+  "link": "https://solodilettanti.it/panchine-la-solierese-ha-esonerato-giuseppe-greco-e-nuovo-mister-per-il-vallalta/",
+  "fonte": "solodilettanti.it",
+  "tipo": "campionato",
+  "data": "2026-11-20T14:57:31+00:00",
+  "trovata": "2026-11-20T22:59:49+00:00",
+  "estratto": "La Solierese, penultima nel girone B di Promozione, ha esonerato mister Giuseppe Greco (foto). La squadra sarà affidata al mister della Juniores, Dario Capobianco, in collaborazione con il vice allenatore Fabio Angiolillo e nei prossimi giorni sarà annunciata la nuova guida tecnica. In Seconda Categ",
+  "squadra": "juniores"
+ },
+ {
+  "id": "fcdfd8caf8b8",
+  "titolo": "Comunicato Ufficiale n. 44 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7930/CU44.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-20T12:00:00+00:00",
+  "trovata": "2026-11-20T22:59:51+00:00",
+  "estratto": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 6/12/26 14:30 · REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 21/11/26 15:00 12A · CASALGRANDE A.S.D. BIASOLA-RIVALTA CASALGRANDE CAMPO A 23/11/26 20:00 11A",
+  "squadra": "juniores",
+  "righe": [
+   {
+    "sezione": null,
+    "testo": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 6/12/26 14:30"
+   },
+   {
+    "sezione": "SECONDA CATEGORIA",
+    "testo": "REAL CASINA 04 BIASOLA-RIVALTA CASINA CASTIGNOLA 21/11/26 15:00 12A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "CASALGRANDE A.S.D. BIASOLA-RIVALTA CASALGRANDE CAMPO A 23/11/26 20:00 11A"
+   }
+  ]
+ },
+ {
   "id": "0e2aa764cf2e",
   "titolo": "RUBIERESE: NUNZIO AZZURRO NUOVO MISTER DELLA JUNIORES ELITE’ E CAMBIO ANCHE NELL’UNDER 18",
   "link": "https://solodilettanti.it/rubierese-nunzio-azzurro-nuovo-mister-della-juniores-elite-e-cambio-anche-nellunder-18/",
@@ -1244,6 +1280,17 @@
     "testo": "BIASOLA-RIVALTA INVICTA GAVASSETO A.S.D. REGGIO EMILIA BIASOLA 12/09/26 15:00 1A"
    }
   ]
+ },
+ {
+  "id": "c7a4ab22a63d",
+  "titolo": "Tabellino partita Biasola Rivalta vs Saxum United",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUVJEVFBLMGxZMnREX2NnX05PZ3Mza080MDUweWhmU0Q1Ykczd3NQUFBGbWFRMHRVQUFBMThlcWVQRVBmNXZnOWViZmIwdUdDeW5fV21lXzNUYzZzb3JneEtsTWx4bTlEVzNmVGp6UHBQWDNlRUUwY0Rsa3dnYzZEdmR4Z1d6NjRLNllwbVdCNVFKT3E4T0FoS3ZQMGxZaFJvSGpRLWtrQktMSVBQU3ZUZTdxVHdNRXc?oc=5",
+  "fonte": "Tuttocampo",
+  "tipo": "societa",
+  "data": "2026-08-28T20:07:03+00:00",
+  "trovata": "2026-11-20T22:59:47+00:00",
+  "estratto": "Tabellino partita Biasola Rivalta vs Saxum United Tuttocampo",
+  "squadra": null
  },
  {
   "id": "8292ad7497e1",
