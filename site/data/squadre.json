@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T22:05:19+00:00",
+ "aggiornato": "2026-11-22T13:05:46+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -134,8 +134,8 @@
      "data": "2026-11-21",
      "casa": "Real Casina 04 U21",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:00",
      "campo": "Casina Castignola"
@@ -381,6 +381,23 @@
      "pos": 7
     },
     {
+     "squadra": "Pol. Biasola-Rivalta",
+     "punti": 13,
+     "giocate": 11,
+     "valori": [
+      13,
+      11,
+      4,
+      1,
+      6,
+      19,
+      17,
+      2
+     ],
+     "noi": true,
+     "pos": 8
+    },
+    {
      "squadra": "Collagna",
      "punti": 13,
      "giocate": 10,
@@ -395,23 +412,6 @@
       -11
      ],
      "noi": false,
-     "pos": 8
-    },
-    {
-     "squadra": "Pol. Biasola-Rivalta",
-     "punti": 12,
-     "giocate": 10,
-     "valori": [
-      12,
-      10,
-      4,
-      0,
-      6,
-      19,
-      17,
-      2
-     ],
-     "noi": true,
      "pos": 9
     },
     {
@@ -467,13 +467,13 @@
     },
     {
      "squadra": "Real Casina 04 U21",
-     "punti": 1,
-     "giocate": 10,
+     "punti": 2,
+     "giocate": 11,
      "valori": [
-      1,
-      10,
+      2,
+      11,
       0,
-      1,
+      2,
       9,
       12,
       33,
@@ -1130,8 +1130,8 @@
      "data": "2026-11-21",
      "casa": "Real Casina 04 U21",
      "ospite": "Pol. Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "0-0",
+     "esito": "N",
      "noi": true,
      "ora": "15:00",
      "campo": "Casina Castignola"
