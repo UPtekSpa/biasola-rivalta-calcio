@@ -1,5 +1,16 @@
 [
  {
+  "id": "445c71a918ac",
+  "titolo": "Terza categoria: fogliano travolge deco' con un nettissimo 8-0",
+  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8105",
+  "fonte": "calcioreggiano.com",
+  "tipo": "campionato",
+  "data": "2026-11-24T03:11:58+00:00",
+  "trovata": "2026-11-24T03:11:58+00:00",
+  "estratto": "La pioggia caduta in settimana cancella ben nove partite",
+  "squadra": "prima-squadra"
+ },
+ {
   "id": "15346d3c2972",
   "titolo": "PANCHINE: LA SOLIERESE HA ESONERATO GIUSEPPE GRECO E NUOVO MISTER PER IL VALLALTA",
   "link": "https://solodilettanti.it/panchine-la-solierese-ha-esonerato-giuseppe-greco-e-nuovo-mister-per-il-vallalta/",
@@ -1014,39 +1025,6 @@
     "testo": "FALKGALILEO BOIARDO MAER REGGIO EMILIA BIASOLA 27/09/26 10:30 3A"
    }
   ]
- },
- {
-  "id": "6f851760a6a6",
-  "titolo": "Terza categoria: si riparte per vincere",
-  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8003",
-  "fonte": "calcioreggiano.com",
-  "tipo": "campionato",
-  "data": "2026-09-24T20:41:40+00:00",
-  "trovata": "2026-09-24T20:41:40+00:00",
-  "estratto": "Pronti per la seconda giornata di campionato",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "34532a18b7e1",
-  "titolo": "Terza categoria: crolla il fattore campo",
-  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=7995",
-  "fonte": "calcioreggiano.com",
-  "tipo": "campionato",
-  "data": "2026-09-24T20:41:40+00:00",
-  "trovata": "2026-09-24T20:41:40+00:00",
-  "estratto": "Sono solo quattro le vittorie casalinghe in questo esordio di campionato",
-  "squadra": "prima-squadra"
- },
- {
-  "id": "9629b1ec1e9d",
-  "titolo": "Terza categoria: via al campionato delle grandi piazze",
-  "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=7991",
-  "fonte": "calcioreggiano.com",
-  "tipo": "campionato",
-  "data": "2026-09-24T20:41:40+00:00",
-  "trovata": "2026-09-24T20:41:40+00:00",
-  "estratto": "Trentanove squadre in campo in cerca di un posto al sole",
-  "squadra": "prima-squadra"
  },
  {
   "id": "e467334d9edc",
