@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T15:18:49+00:00",
+ "aggiornato": "2026-11-26T00:52:22+00:00",
  "societa": {
   "nome": "Biasola Rivalta Calcio",
   "nome_esteso": "Biasola-Rivalta Calcio A.P.S.",
@@ -1100,7 +1100,7 @@
     },
     {
      "giornata": 12,
-     "data": "2026-11-22",
+     "data": "2026-12-06",
      "casa": "Amici di Davide",
      "ospite": "Coviolo",
      "risultato": null,
@@ -1109,7 +1109,7 @@
     },
     {
      "giornata": 12,
-     "data": "2026-11-22",
+     "data": "2026-12-06",
      "casa": "Bosco",
      "ospite": "Folese",
      "risultato": null,
@@ -1118,7 +1118,7 @@
     },
     {
      "giornata": 12,
-     "data": "2026-11-22",
+     "data": "2026-12-06",
      "casa": "Collagna",
      "ospite": "Eagles Virtus Ancora",
      "risultato": null,
@@ -1138,7 +1138,7 @@
     },
     {
      "giornata": 12,
-     "data": "2026-11-22",
+     "data": "2026-12-06",
      "casa": "Salvaterra",
      "ospite": "Felina",
      "risultato": null,
@@ -1147,7 +1147,7 @@
     },
     {
      "giornata": 12,
-     "data": "2026-11-22",
+     "data": "2026-12-06",
      "casa": "Saxum United",
      "ospite": "Levizzano",
      "risultato": null,
@@ -2053,8 +2053,8 @@
      "ora": "20:00",
      "casa": "Casalgrande A.S.D.",
      "ospite": "Biasola-Rivalta",
-     "risultato": null,
-     "esito": null,
+     "risultato": "3-1",
+     "esito": "P",
      "noi": true,
      "fonte": "figc",
      "campo": "Casalgrande Campo A"

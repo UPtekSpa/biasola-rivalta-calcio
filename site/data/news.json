@@ -1,5 +1,16 @@
 [
  {
+  "id": "622027cdd3b9",
+  "titolo": "MERCATO: IN ATTESA DELL’APERTURA I PRIMI MOVIMENTI DALLA SERIE D ALLA TERZA CATEGORIA",
+  "link": "https://solodilettanti.it/mercato-in-attesa-dellapertura-i-primi-movimenti-dalla-serie-d-alla-terza-categoria/",
+  "fonte": "solodilettanti.it",
+  "tipo": "campionato",
+  "data": "2026-11-25T15:21:04+00:00",
+  "trovata": "2026-11-26T00:52:16+00:00",
+  "estratto": "In attesa dell’apertura del mercato invernale prevista ai primi di dicembre, ci sono già alcuni movimenti di mercato. In Serie D nuova avventura per il difensore classe 2007 Stefano Gualtieri (foto di Barbara Bastoni), che dal Lentigione si trasferisce a titolo definitivo all’Igea Virtus. In Promozi",
+  "squadra": "prima-squadra"
+ },
+ {
   "id": "9b4e984240c5",
   "titolo": "FOSSIL CUP: News - 23/11/2026 PROGRAMMA DELL’ULTIMA SETTIMANA DI FASE A GIORNI: -MARTEDÌ 24 NOVEMBRE Monari Nasi San Damaso – Luzzara, ore 21.00 Campo sintetico Guidi, via Viterbo 27, Modena. Terre Matildiche – Persiceto Calcio, ore 20.45 Campo sintetico di Salvarano, via Kennedy, Salvarano. Academy Moretti – Lentigione, ore 20.45 Campo sintetico di Quarto di Gossolengo, via Dalla Chiesa, Quarto. Original Celtic Bhoys – Team Traversetolo, ore 20.45 Campo sintetico Cimurri, via Mutilati del Lavoro, Reggio Emilia. Borgo San Donnino – Guastalla, ore 21.15 Campo sintetico Ballotta, via Caduti di Cefalonia, Fidenza. Reggio...",
   "link": "https://www.calcioreggiano.com/news/dettaglio.aspx?idnews=8101",
@@ -20,6 +31,51 @@
   "trovata": "2026-11-24T03:11:58+00:00",
   "estratto": "La pioggia caduta in settimana cancella ben nove partite",
   "squadra": "prima-squadra"
+ },
+ {
+  "id": "bddda4b3284c",
+  "titolo": "Comunicato Ufficiale n. 45 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/comunicati/2026/7940/CU45.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-23T12:00:00+00:00",
+  "trovata": "2026-11-26T00:52:19+00:00",
+  "estratto": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 13/12/26 14:30 · FALKGALILEO ARCETANA REGGIO EMILIA BIASOLA 10/12/26 15:00 10A K · GIRONE A 12/A 21-11-26 REAL CASINA 04 BIASOLA-RIVALTA",
+  "squadra": "prima-squadra",
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FOGLIANO A.S.D. BIASOLA-RIVALTA FOGLIANO COMUNALE 13/12/26 14:30"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "FALKGALILEO ARCETANA REGGIO EMILIA BIASOLA 10/12/26 15:00 10A K"
+   },
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "GIRONE A 12/A 21-11-26 REAL CASINA 04 BIASOLA-RIVALTA"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "CASALGRANDE A.S.D. BIASOLA-RIVALTA 3 - 1"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "DI GIORGIO LUCA (BIASOLA-RIVALTA) ALADJE BILE AMAN MOISE (MONTANARA CALCIO"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "CIAGLIA ALEX (BIASOLA-RIVALTA) GALLETTA ANTONIO (CASALGRANDE A.S.D.)"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "IBATICI MATTIA (BIASOLA-RIVALTA) SONCINI ANDREA (BIASOLA-RIVALTA)"
+   },
+   {
+    "sezione": "ALLIEVI",
+    "testo": "FALKGALILEO ARCETANA REGGIO EMILIA BIASOLA 10/12/26 15:00 10A K"
+   }
+  ]
  },
  {
   "id": "15346d3c2972",
