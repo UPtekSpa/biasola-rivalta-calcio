@@ -1,5 +1,38 @@
 [
  {
+  "id": "a08102d41bda",
+  "titolo": "Comunicato Ufficiale n. 46 FIGC Reggio Emilia: le righe sulla Biasola",
+  "link": "https://www.figcreggioemilia.it/files/announcements/2026/7958/CU46.pdf",
+  "fonte": "figcreggioemilia.it",
+  "tipo": "ufficiale",
+  "data": "2026-11-27T12:00:00+00:00",
+  "trovata": "2026-11-28T00:23:49+00:00",
+  "estratto": "GIRONE A 12/A REAL CASINA 04 BIASOLA-RIVALTA 0 - 0 · BIASOLA-RIVALTA POLISPORTIVA MONTEFIORINO RIVALTA PARROCCHIALE 29/11/26 14:30 13A · BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA REGGIO EMILIA BIASOLA 28/11/26 15:00 10A K",
+  "squadra": null,
+  "righe": [
+   {
+    "sezione": "TERZA CATEGORIA",
+    "testo": "GIRONE A 12/A REAL CASINA 04 BIASOLA-RIVALTA 0 - 0"
+   },
+   {
+    "sezione": "CALCIO A 5",
+    "testo": "BIASOLA-RIVALTA POLISPORTIVA MONTEFIORINO RIVALTA PARROCCHIALE 29/11/26 14:30 13A"
+   },
+   {
+    "sezione": "JUNIORES",
+    "testo": "BIASOLA-RIVALTA BORZANESE QUATTROCASTELLA REGGIO EMILIA BIASOLA 28/11/26 15:00 10A K"
+   },
+   {
+    "sezione": "ALLIEVI",
+    "testo": "FALKGALILEO GATTATICO CLUB REGGIO EMILIA BIASOLA 29/11/26 10:30 12A"
+   },
+   {
+    "sezione": "GIOVANISSIMI",
+    "testo": "REGGIO UNITED VIRTUS BAGNOLO REGGIO EMILIA BIASOLA 28/11/26 18:30 10A K"
+   }
+  ]
+ },
+ {
   "id": "622027cdd3b9",
   "titolo": "MERCATO: IN ATTESA DELL’APERTURA I PRIMI MOVIMENTI DALLA SERIE D ALLA TERZA CATEGORIA",
   "link": "https://solodilettanti.it/mercato-in-attesa-dellapertura-i-primi-movimenti-dalla-serie-d-alla-terza-categoria/",
